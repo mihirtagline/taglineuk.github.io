@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Horizontal & Vertical Scroll Progress Bar Examples</title>  
+    <style>
+        /* horizontal scroll bar */
+        body{
+            height: 5000px;
+        }
+        /* vertical scroll bar */
+        .scrollBar {
+            position: fixed;
+            top: 0;
+            right: 2vw;
+            height: 0%;
+            width: 10px;
+            background: #49e;
+            -webkit-transition: height 200ms ease;
+            transition: height 200ms ease;
+            text-align: right;
+            color: #fff;
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            border-radius: 1em;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="scrollBar">
+    </div>
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+    <script>
+        $(document).scroll(function (e) {
+
+            var scrollAmount = $(window).scrollTop();
+
+            var documentHeight = $(document).height();
+
+            var windowHeight = $(window).height();
+
+            var scrollPercent = (scrollAmount / (documentHeight - windowHeight)) * 100;
+
+            $(".scrollBar").css("height", scrollPercent + "%");
+
+        });
+
+    </script>
+</body>
+
+</html>
