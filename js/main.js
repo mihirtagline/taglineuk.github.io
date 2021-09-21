@@ -74,9 +74,6 @@ if ($('select').length) {
     });
 }
 
-AOS.init({
-    easing: 'ease-out-back'
-});
 
 $(document).ready(function () {
     $('.social_dropdown_wrap .open_drop_button').click(function () {
@@ -87,4 +84,23 @@ $(document).ready(function () {
 $("html").click(function (e) {
     if ($(e.target).closest('.social_dropdown_wrap').length == 0)
         $(".social_dropdown").removeClass('social_dropdown_wrap--animate');
+});
+
+
+$(function () {
+    $('.accordion').find('.accordion-title').on('click', function () {
+        // Adds Active Class
+        $(this).toggleClass('active');
+        // Expand or Collapse This Panel
+        $(this).next().slideToggle('fast');
+        // Hide The Other Panels
+        $('.accordion-content').not($(this).next()).slideUp('fast');
+        // Removes Active Class From Other Titles
+        $('.accordion-title').not($(this)).removeClass('active');
+    });
+});
+
+
+AOS.init({
+    easing: 'ease-out-back'
 });

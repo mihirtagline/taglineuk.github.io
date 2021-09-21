@@ -15,14 +15,6 @@ body{
     
 }
 @font-face {
-    font-family: 'Helvetica';
-    src: url(../fonts/Helvetica.ttf) format(TrueType);
-}
-@font-face {
-    font-family: 'Helvetica-Bold';
-    src: url(../fonts/Helvetica-Bold.ttf) format(TrueType);
-}
-@font-face {
     font-family: 'Fontawesome';
     src: url(../fonts/fontawesome-webfont.woff);
 }
@@ -70,7 +62,7 @@ img,canvas,iframe,video{
     color: $black-dark-color !important;
 }
 .desc-color{
-    color: $desc-color;
+    color: $desc-color !important;
 }
 .primary-background{
     background-color: $primary-color !important;
@@ -85,13 +77,13 @@ img,canvas,iframe,video{
     background-color: $light-dark-blue !important;
 }
 .font-light{
-    font-weight: $font-light;
+    font-weight: $font-light !important;
 }
 .font-medium{
-    font-weight: $font-medium;
+    font-weight: $font-medium !important;
 }
 .font-bold{
-    font-weight: $font-bold;
+    font-weight: $font-bold !important;
 }
 .table_wrap{
     display: table;
@@ -445,7 +437,7 @@ img,canvas,iframe,video{
                         justify-content: center;
                         font-size: 35px;
                     }
-                    label{
+                    a{
                         font-size: 16px;
                         font-weight: $font-medium;
                         color: $text-black;
@@ -598,7 +590,7 @@ img,canvas,iframe,video{
         width: 50px;
         height: 50px;
         margin-bottom: 20px;
-        font-size: 30px;
+        font-size: 40px;
     }
     .service_title{
         h5{
@@ -1923,8 +1915,212 @@ img,canvas,iframe,video{
 
 // Mobile App Development Page Css Start
 
-.development_content_wrap{
+.development_content_section{
+    padding: 100px 0 50px;
+    .developmet_icon{
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: $desc-color;
+    }
+}
+.benefits_section{
+    padding: 100px 0;
+}
+.benefits_box_wrap{
+    padding: 15px 10px;
+    background: #FEF3E4;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px 0px rgba(0 ,0 ,0 , 0.10);
+    max-width: 230px;
+    margin-top: 20px;
+    @include media-md{
+        max-width: 48% !important;
+    }
+    @include media-sm{
+        max-width: 100% !important;
+        margin: 10px 0 !important; 
+    }
+    .icon_wrap{
+        ion-icon{
+            color: $desc-color;
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+    }
+    h2{
+        font-size: 18px;
+        font-weight: $font-bold;
+        color: $desc-color;
+        margin-bottom: 8px;
+        letter-spacing: 0;
+    }
+    h6{
+        font-size: 15px;
+        font-weight: $font-regular;
+        color: $light-grey-color;
+        line-height: 25px;
+        margin-bottom: 0;
+        letter-spacing: 0;
+    }
+    &.bg-pink{
+        background: #FAE6E7;
+        max-width: 280px;
+        margin-left: 20px;
+    }
+    &.bg-green{
+        background: #EAF3EF;
+        max-width: 230px;
+    }
+    &.bg-purpel{
+        background: #E0E9FA;
+        max-width: 335px;
+        margin-left: 20px;
+        @include media-xl{
+            max-width: 275px;
+        }
+    }
+}
 
+.workflow_section{
+    padding-bottom: 100px;
+}
+
+.flow_box_wrap{
+    display: flex;
+    align-items: center;
+    height: 340px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 5px;
+    position: relative;
+    margin-top: 30px;
+    h2{
+        position: absolute;
+        font-size: 370px;
+        left: -60px;
+        font-weight: $font-bold;
+        line-height: normal;
+        opacity: 0.1;
+    }
+    .flow_inner_wrap{
+        padding-left: 60px;
+        @include media-xl{
+            padding-left: 40px;
+        }
+        h3{
+            font-size: 18px;
+            font-weight: $font-bold;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 15px;
+            font-weight: $font-regular;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.faq_section{
+    padding: 100px 0;
+    background-color: $light-bg-color;
+    margin-bottom: 100px;
+    .accordion{
+        .accordion-item{
+            .main-accordion{
+                .accordion-title{
+                    margin-bottom: 20px;
+                    display: block;
+                    span{
+                        font-weight: $font-medium;
+                        color: $desc-color;
+                        font-size: 18px;
+                        width: 95%;
+                    }
+                    ion-icon{
+                        font-weight: $font-medium;
+                        color: $desc-color;
+                        font-size: 18px;
+                        width: 5%;
+                        margin-top: 6px;
+                    }
+                }
+                .accordion-content{
+                    background-color: #fff;
+                    padding: 15px;
+                    border-radius: 7px;
+                    margin-bottom: 15px;
+                    p{
+                        font-size: 15px;
+                        color: $desc-color;
+                        line-height: 22px;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
 }
 
 // Mobile App Development Page Css End
+
+// Porfolio Page Css Start
+
+.portfolio{
+    padding: 100px 0;
+}
+.portfolio_filters{
+    ul{
+        width: max-content;
+        margin: 0 auto;
+        li{
+            position: relative;
+            color: rgba($color: #000000, $alpha: 0.45);
+            padding: 0 20px;
+            font-size: 20px;
+            font-weight: $font-medium;
+            text-transform: uppercase;
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: $trasition;
+            &.active{
+                color: $dark-blue-color;
+            }
+            &:hover{
+                color: $dark-blue-color;
+            }
+        }
+        li+li::before{
+            position: absolute;
+            content: "";
+            left: -4px;
+            width: 7px;
+            height: 7px;
+            border-radius: 100%;
+            background: rgba($color: #000000, $alpha: 0.45);
+        }
+    }
+}
+.portfolio_content{
+    margin-top: 100px;
+    .comman_title{
+        h2{
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+    }
+    .portfolio_image{
+        height: 350px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+    }
+}
+
+// Porfolio Page Css End
