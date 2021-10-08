@@ -698,6 +698,10 @@ video {
   margin-bottom: 25px;
 }
 
+.footer_bottom .widget span {
+  font-size: 18px;
+}
+
 .inquiry li {
   padding-bottom: 10px;
 }

@@ -139,13 +139,23 @@
         padding-bottom: 30px;
     }
     .footer_bottom {
-        margin-bottom: 28px;
+        margin-bottom: 24px;
+    }
+    .follow_bottom {
+        margin-bottom: 40px;
     }
     .footer_bottom .widget p {
         margin-bottom: 8px;
+        font-size: 16px;
     }
     .footer_bottom .widget h3 {
         font-size: 28px;
+    }
+    .footer_bottom .widget span {
+        font-size: 16px;
+    }
+    .inquiry li {
+        padding-bottom: 6px;
     }
     .latest_form h3 {
         font-size: 28px;
@@ -223,7 +233,10 @@
         margin-bottom: 16px;
     }
     .footer_bottom {
-        margin-bottom: 26px;
+        margin-bottom: 16px;
+    }
+    .follow_bottom {
+        margin-bottom: 30px;
     }
     .footer_bottom .widget p {
         font-size: 14px;
@@ -234,9 +247,11 @@
     .footer_bottom .widget span {
         font-size: 14px;
     }
+    .inquiry li {
+        padding-bottom: 0px;
+    }
     .inquiry li a {
         font-size: 16px;
-        line-height: 24px;
     }
     .latest_form h3 {
         font-size: 24px
