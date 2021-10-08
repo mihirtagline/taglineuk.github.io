@@ -718,14 +718,9 @@ video {
   font-weight: 700;
 }
 
-.latest_form .footer_p {
-  font-size: 18px;
-  max-width: 452px;
-  padding-bottom: 25px;
-}
-
 .latest_form p {
   font-size: 18px;
+  max-width: 452px;
 }
 
 .latest_form span {

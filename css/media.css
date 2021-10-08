@@ -152,9 +152,18 @@
     }
     .tagline_form input {
         padding: 8px 10px;
+        height: 42px;
     }
     .tagline_form input {
         padding: 8px 16px;
+    }
+    .tagline_form .form_btn {
+        font-size: 16px;
+        height: 42px;
+        min-width: 122px;
+    }
+    .tagline_form .form-control::-webkit-input-placeholder {
+        font-size: 16px;
     }
     .footer_img {
         padding-top: 30px;
@@ -186,7 +195,7 @@
         font-size: 30px;
     }
     .bg_gray .banner_text p {
-        font-size: 10px;
+        font-size: 12px;
     }
     .section .who_heading h3 {
         line-height: 34px;
@@ -195,6 +204,9 @@
     .section .who_heading p {
         font-size: 14px;
         line-height: 26px;
+    }
+    .section .vision_part h3 {
+        padding-left: 16px;
     }
     .section .vision_title {
         line-height: 26px;
@@ -229,14 +241,12 @@
     .latest_form h3 {
         font-size: 24px
     }
-    .latest_form .footer_p {
-        font-size: 14px;
-    }
     .latest_form p {
         font-size: 14px;
     }
     .tagline_form input {
-        padding: 8px 10px;
+        padding: 6px 10px;
+        height: 40px;
     }
     .tagline_form p {
         line-height: 24px;
@@ -245,6 +255,8 @@
         font-size: 14px;
     }
     .tagline_form .form_btn {
-        min-width: auto;
+        min-width: 110px;
+        font-size: 14px;
+        height: 40px;
     }
 }

@@ -665,13 +665,9 @@ video {
         font-size: 30px;
         font-weight: $font-weight-700;
     }
-    .footer_p {
-        font-size: $comman_text;
-        max-width: 452px;
-        padding-bottom: 25px;
-    }
     p {
         font-size: $comman_text;
+        max-width: 452px;
     }
     span {
         color: $theme-red;
