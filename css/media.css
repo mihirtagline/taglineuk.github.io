@@ -3,6 +3,7 @@
 *--------------------------------------*/
 
 @media only screen and (max-width:1199px) {
+    /* about us css*/
     .section {
         padding: 70px 0px;
     }
@@ -15,6 +16,10 @@
     .section1 .our_box_wrap {
         margin-top: 50px;
     }
+    /* contact us css*/
+    .contact_text span {
+        font-size: 7.80vw;
+    }
 }
 
 
@@ -23,6 +28,7 @@
 *--------------------------------------*/
 
 @media only screen and (max-width:991px) {
+    /* about us css*/
     .bg_gray .banner_text {
         padding: 70px 0px 80px;
     }
@@ -37,6 +43,10 @@
     }
     .footer_bottom {
         margin-bottom: 46px;
+    }
+    /* contact us css*/
+    .contact_text span {
+        font-size: 10.66vw;
     }
 }
 
@@ -73,6 +83,16 @@
     .footer_bottom {
         margin-bottom: 36px;
     }
+    /* contact us css*/
+    .medium_divider {
+        min-height: 400px;
+    }
+    .contact_text span {
+        font-size: 10.16vw;
+    }
+    .contact_text p {
+        font-size: 26px;
+    }
 }
 
 
@@ -84,6 +104,9 @@
     .theme-span {
         font-size: 12.0vw;
     }
+    .contact_text span {
+        font-size: 11.76vw;
+    }
 }
 
 
@@ -92,6 +115,7 @@
 *--------------------------------------*/
 
 @media only screen and (max-width:575px) {
+    /* about us css*/
     .section {
         padding: 50px 0px;
     }
@@ -178,6 +202,29 @@
     .footer_img {
         padding-top: 30px;
     }
+    /* contact us css */
+    .medium_divider {
+        min-height: 350px;
+    }
+    .contact_text span {
+        font-size: 13.16vw;
+    }
+    .contact_text p {
+        font-size: 22px;
+    }
+    .contact_form {
+        padding: 10px 20px;
+    }
+    .contact_form h2 {
+        font-size: 40px;
+        margin-bottom: 26px
+    }
+    .comman_anchor_robot {
+        margin-top: 55px;
+    }
+    .contact_form .form-group {
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -186,6 +233,7 @@
 *--------------------------------------*/
 
 @media only screen and (max-width:380px) {
+    /* about us css */
     .section {
         padding: 30px 0px;
     }
@@ -273,5 +321,28 @@
         min-width: 110px;
         font-size: 14px;
         height: 40px;
+    }
+    /* contact us css */
+    .medium_divider {
+        min-height: 300px;
+    }
+    .contact_text span {
+        font-size: 13.16vw;
+    }
+    .contact_text p {
+        font-size: 18px;
+    }
+    .contact_form {
+        padding: 10px;
+    }
+    .contact_form h2 {
+        font-size: 30px;
+        margin-bottom: 16px
+    }
+    .comman_anchor_robot {
+        margin-top: 35px;
+    }
+    .contact_form .form-group {
+        margin-bottom: 16px;
     }
 }

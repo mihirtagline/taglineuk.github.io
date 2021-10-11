@@ -636,9 +636,11 @@ video {
             font-weight: $font-weight-300;
             font-size: $comman_text;
             margin-bottom: 25px;
+            font-family: $font-family-Roboto;
         }
         span {
             font-size: $comman_text;
+            font-weight: $font-weight-300;
         }
     }
 }
@@ -651,6 +653,7 @@ video {
             font-family: $font-family-Roboto;
             font-weight: $font-weight-300;
             font-size: $comman_text;
+            color: $theme-black;
         }
     }
 }
@@ -671,9 +674,12 @@ video {
     p {
         font-size: $comman_text;
         max-width: 452px;
+        font-family: $font-family-Roboto;
+        font-weight: 300;
     }
     span {
         color: $theme-red;
+        font-weight: $font-weight-400;
     }
 }
 
@@ -723,9 +729,13 @@ video {
         font-size: 15px;
         line-height: 30px;
         margin: 0;
+        font-weight: $font-weight-300;
+        font-family: $font-family-Roboto;
     }
     span {
         color: $theme-red;
+        font-weight: $font-weight-400;
+        font-family: $font-family-Roboto;
     }
 }
 
@@ -740,4 +750,101 @@ video {
             }
         }
     }
+}
+
+// start contact css
+//01. start header style
+.contact_header {
+    .navbar-light {
+        .navbar-nav {
+            .nav-link {
+                color: $theme-white
+            }
+        }
+    }
+}
+
+.medium_divider {
+    min-height: 430px;
+    height: 100%;
+}
+
+.contact_text {
+    padding-top: 26px;
+    span {
+        font-weight: 700;
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        text-transform: uppercase;
+        font-size: 4.16vw;
+    }
+    p {
+        font-size: 30px;
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        max-width: 540px;
+        margin: 0 auto;
+    }
+}
+
+// 02.start footer style
+.footer_section {
+    padding: 69px 0px 78px;
+}
+
+.contact_form {
+    -webkit-box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+    padding: 10px 30px;
+    margin-top: -160px;
+    position: relative;
+    z-index: 10;
+    h2 {
+        font-size: 50px;
+        font-weight: $font-weight-700;
+        margin-bottom: 48px;
+    }
+    .form-group {
+        margin-bottom: 25px;
+    }
+    .form-control {
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid #C4C4C4;
+    }
+    .btn_toggle:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        width: 0;
+        height: 0;
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+        border-top: 14px solid #c4c4c4;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        pointer-events: none;
+        cursor: pointer;
+    }
+}
+
+.text_bottom {
+    margin-bottom: 20px;
+}
+
+.comman_anchor_robot {
+    font-family: "Roboto", sans-serif;
+    font-weight: $font-weight-700;
+    font-size: $comman_text;
+    margin-top: 115px;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #c4c4c4;
+    font-weight: $font-weight-300;
+    font-family: $font-family-Roboto;
+    font-size: $comman_text;
 }

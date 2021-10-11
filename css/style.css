@@ -696,10 +696,12 @@ video {
   font-weight: 300;
   font-size: 18px;
   margin-bottom: 25px;
+  font-family: "Roboto", sans-serif;
 }
 
 .footer_bottom .widget span {
   font-size: 18px;
+  font-weight: 300;
 }
 
 .inquiry li {
@@ -711,6 +713,7 @@ video {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 18px;
+  color: #000;
 }
 
 .follow a img {
@@ -725,10 +728,13 @@ video {
 .latest_form p {
   font-size: 18px;
   max-width: 452px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 .latest_form span {
   color: #e53e30;
+  font-weight: 400;
 }
 
 .tagline_form form {
@@ -792,10 +798,14 @@ video {
   font-size: 15px;
   line-height: 30px;
   margin: 0;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
 }
 
 .tagline_form span {
   color: #e53e30;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
 }
 
 .footer_img {
@@ -809,5 +819,99 @@ video {
 .footer_img ul li .certifiact_img {
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.contact_header .navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.medium_divider {
+  min-height: 430px;
+  height: 100%;
+}
+
+.contact_text {
+  padding-top: 26px;
+}
+
+.contact_text span {
+  font-weight: 700;
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  text-transform: uppercase;
+  font-size: 4.16vw;
+}
+
+.contact_text p {
+  font-size: 30px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.footer_section {
+  padding: 69px 0px 78px;
+}
+
+.contact_form {
+  -webkit-box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+  padding: 10px 30px;
+  margin-top: -160px;
+  position: relative;
+  z-index: 10;
+}
+
+.contact_form h2 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+
+.contact_form .form-group {
+  margin-bottom: 25px;
+}
+
+.contact_form .form-control {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.contact_form .btn_toggle:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  width: 0;
+  height: 0;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+  border-top: 14px solid #c4c4c4;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.text_bottom {
+  margin-bottom: 20px;
+}
+
+.comman_anchor_robot {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 115px;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #c4c4c4;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
 }
 /*# sourceMappingURL=style.css.map */
