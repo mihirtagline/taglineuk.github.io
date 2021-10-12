@@ -103,8 +103,8 @@
                                 <div class="row">
                                     <div class="col-lg-4">
                                         <div class="form-group">
-                                            <select name="items" class="form-control cascade pincode" id="pincode" required="required">
-                                            <option value="" selected="">Code</option>
+                                            <select name="items" class="form-control cascade countries pincode" id="pincode" required="required">
+                                            <!-- <option value="" selected="">Code</option> -->
                                         </select>
                                         </div>
                                     </div>
@@ -768,7 +768,7 @@
                 ZAN: "+255 24",
                 ZIM: "+263"
             }
-            var pinout = "<select><option class=''>Pin</option>";
+            var pinout = "<select><option class=''>+91</option>";
             for (var i in pincode) {
                 pinout += "<option class='" + i + "'>" + pincode[i] + "</option>";
             }

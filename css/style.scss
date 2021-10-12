@@ -770,7 +770,7 @@ video {
 }
 
 .contact_text {
-    padding-top: 26px;
+    padding-top: 66px;
     span {
         font-weight: 700;
         -webkit-text-stroke: 1px #fff;
@@ -796,7 +796,7 @@ video {
 .contact_form {
     -webkit-box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
-    padding: 10px 30px;
+    padding: 10px 30px 45px;
     margin-top: -160px;
     position: relative;
     z-index: 10;
@@ -839,7 +839,7 @@ video {
     font-family: "Roboto", sans-serif;
     font-weight: $font-weight-700;
     font-size: $comman_text;
-    margin-top: 115px;
+    margin-top: 100px;
 }
 
 .form-control::-webkit-input-placeholder {
@@ -847,4 +847,204 @@ video {
     font-weight: $font-weight-300;
     font-family: $font-family-Roboto;
     font-size: $comman_text;
+}
+
+.countries:first-child {
+    color: #c4c4c4;
+    font-family: $font-family-Roboto;
+    font-size: $comman_text;
+    font-weight: $font-weight-300;
+}
+
+// start blog css
+//01. start banner style
+.blog_text {
+    p {
+        max-width: 524px;
+    }
+}
+
+// 02.start recent post style
+.recent_post {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 55px;
+    position: relative;
+    margin-top: -202px;
+    h4 {
+        margin-bottom: 30px;
+        color: #6F7D8C;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    p {
+        font-family: "Roboto", sans-serif;
+        font-weight: $font-weight-300;
+        line-height: 40px;
+        color: #6F7D8C;
+        margin-bottom: 38px;
+        font-size: 20px;
+    }
+}
+
+.general_anchor {
+    text-transform: uppercase;
+    color: $theme-red;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+// 03. start other blog post css
+.card_body {
+    padding: 18px;
+    h5 {
+        color: #6F7D8C;
+        font-weight: 600;
+        line-height: 35px;
+        margin: 0;
+    }
+    p {
+        font-size: $comman_text;
+        font-family: $font-family-Roboto;
+        color: #6F7D8C;
+        margin: 18px 0px;
+        line-height: 30px;
+    }
+}
+
+// 04.strat email update css
+.box_shadow {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form_content_wrap {
+    padding: 60px 52px;
+}
+
+.email_box {
+    h3 {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 60px;
+        color: #6F7D8C;
+        margin-bottom: 25px;
+    }
+    p {
+        font-size: 21px;
+        font-family: $font-family-Roboto;
+        line-height: 38px;
+        font-weight: $font-weight-300;
+        color: $theme-black;
+        margin-bottom: 60px;
+    }
+}
+
+#styled-checkbox-1 {
+    display: none;
+}
+
+.email_update_input {
+    .email_input {
+        height: 60px;
+        border: 1px solid #e3e3e3;
+        border-radius: 0;
+        margin-bottom: 28px;
+        &::-webkit-input-placeholder {
+            color: #c4c4c4;
+        }
+        &:-ms-input-placeholder {
+            color: #c4c4c4;
+        }
+        &::placeholder {
+            color: #c4c4c4;
+        }
+    }
+    .styled-checkbox {
+        &+label {
+            position: relative;
+            cursor: pointer;
+            padding: 0;
+            &:before {
+                content: "";
+                margin-right: 18px;
+                display: inline-block;
+                vertical-align: text-top;
+                width: 20px;
+                height: 20px;
+                border: 1px solid #c4c4c4;
+            }
+        }
+        &:checked {
+            &+label {
+                &:after {
+                    content: "";
+                    position: absolute;
+                    left: 5px;
+                    top: 18px;
+                    background: $theme-black;
+                    width: 2px;
+                    height: 2px;
+                    box-shadow: 2px 0 0 $theme-black, 4px 0 0 $theme-black, 4px -2px 0 $theme-black, 4px -4px 0 $theme-black, 4px -6px 0 $theme-black, 4px -8px 0 $theme-black;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+    .terms_text {
+        color: $theme-black;
+        font-family: $font-family-Roboto;
+        font-weight: $font-weight-300;
+        line-height: 38px;
+    }
+}
+
+.email_btn {
+    border-radius: 5px;
+    margin-top: 66px;
+    text-transform: uppercase;
+    font-weight: $font-weight-700;
+    font-family: $font-family-Roboto;
+    font-size: $comman_text;
+}
+
+// 05.start other blog post css
+.border-bottom {
+    border-bottom: 1px solid #d7d7d7 !important;
+}
+
+.card_bottom {
+    padding-bottom: 16px;
+}
+
+.pagination {
+    margin-top: 50px;
+    .page-link {
+        border: 0;
+        color: $theme-black;
+        font-weight: $font-weight-400;
+        font-family: $font-family-Roboto;
+        font-size: 30px;
+        padding: 0px 12px;
+        &:hover {
+            z-index: 2;
+            color: #0056b3;
+            text-decoration: none;
+            border-color: #dee2e6;
+            color: #E53E30;
+            background-color: transparent;
+        }
+    }
+}
+
+.gallery_item {
+    overflow: hidden;
+}
+
+.gallery_item img {
+    transition: all ease-in-out 0.4s;
+    width: 100%;
+}
+
+.gallery_item:hover img {
+    transform: scale(1.1);
 }
