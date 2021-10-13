@@ -24,6 +24,9 @@
     .blog_text span {
         font-size: 6.8vw;
     }
+    .recent_post {
+        padding: 44px;
+    }
 }
 
 
@@ -32,6 +35,7 @@
 *--------------------------------------*/
 
 @media (min-width:992px) and (max-width:1199px) {
+    /* blog css */
     .form_content_wrap {
         padding: 31px 34px;
     }
@@ -43,8 +47,23 @@
         font-size: 18px;
         line-height: 32px;
     }
-    .email_btn {
-        /* margin-top: 20px; */
+    /* blog-detail css */
+    .business_section h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .business_section h5 {
+        font-size: 14px;
+        margin: 14px 0px;
+    }
+    .business_section p {
+        margin-bottom: 12px;
+    }
+    .business_section .business_links {
+        margin-bottom: 0px;
+    }
+    .blog_detail h5 {
+        font-size: 14px;
     }
 }
 
@@ -83,6 +102,9 @@
     /* blog css */
     .blog_text span {
         font-size: 9.3vw;
+    }
+    .recent_post {
+        margin-top: -60px;
     }
 }
 
@@ -133,6 +155,10 @@
         margin-top: 60px;
     }
     /* blog css */
+    .header_img:after {
+        left: 90px;
+        top: 18px;
+    }
     .blog_text {
         padding-top: 60px !important;
     }
@@ -145,6 +171,10 @@
     }
     .card_bottom {
         padding-bottom: 0px;
+    }
+    /* blog-detail css */
+    .blog_detail h5 {
+        font-size: 18px;
     }
 }
 
@@ -290,6 +320,9 @@
         padding: 6px 20px;
     }
     /* blog css */
+    .header_img:after {
+        top: 10px;
+    }
     .blog_text span {
         font-size: 12vw;
     }
@@ -339,6 +372,46 @@
     }
     .pagination .page-link img {
         width: 30px;
+    }
+    /* blog-detail css */
+    .business_section h3 {
+        line-height: 40px;
+    }
+    .business_section h5 {
+        font-size: 16px;
+        margin: 16px 0px;
+    }
+    .business_section p {
+        margin-bottom: 16px;
+    }
+    .blog_detail h5 {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+    .name_links {
+        margin-top: 20px;
+    }
+    .name_links li {
+        text-align: center;
+        padding: 5px 15px;
+    }
+    .name_links li a {
+        font-size: 14px;
+    }
+    .media .media_img {
+        margin-right: 10px;
+    }
+    .media .media-body h5 {
+        font-size: 20px;
+    }
+    .media .bg_offgray {
+        padding: 10px;
+    }
+    .comment .comment_lead {
+        font-size: 15px;
+        margin: 20px 0px;
+        line-height: 26px;
     }
 }
 
@@ -476,6 +549,9 @@
         font-size: 14px;
     }
     /* blog css */
+    .header_img:after {
+        height: 60px;
+    }
     .blog_text span {
         font-size: 12vw;
     }
@@ -542,5 +618,64 @@
     }
     .pagination .page-link img {
         width: 24px;
+    }
+    /* blog-detail css */
+    .business_section h6 {
+        font-size: 14px;
+    }
+    .business_section h3 {
+        line-height: 36px;
+    }
+    .business_section h5 {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .blog_detail h5 {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+    .name_links {
+        margin-top: 20px;
+    }
+    .name_links li {
+        text-align: center;
+        padding: 5px 15px;
+    }
+    .name_links li a {
+        font-size: 14px;
+    }
+    .social_icon {
+        margin-top: 16px;
+    }
+    .comment h4 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .media .media_img {
+        width: 62px;
+        margin-right: 8px;
+    }
+    .media .media-body h5 {
+        font-size: 16px;
+        line-height: 24px
+    }
+    .media .media-body p {
+        font-size: 14px;
+    }
+    .media .bg_offgray {
+        padding: 8px 10px;
+    }
+    .media .chat {
+        font-size: 14px;
+        padding-right: 8px;
+    }
+    .media img {
+        width: 16px;
+    }
+    .comment .comment_lead {
+        font-size: 14px;
+        line-height: 24px;
+        margin: 16px 0px;
     }
 }
