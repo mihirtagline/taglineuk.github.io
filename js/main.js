@@ -105,7 +105,7 @@ AOS.init({
 });
 
 
-// json file js
+// counter js
 $(document).ready(function() {
     if ($(window).innerWidth > 768) {
         $(".full_height").css('height', '')
@@ -114,161 +114,17 @@ $(document).ready(function() {
     }
 })
 
-// Blogging = document.getElementById("Blogging");
-// Blogging_animation = bodymovin.loadAnimation({
-//     wrapper: Blogging,
-//     animType: "svg",
-//     loop: true,
-//     autoplay: true,
-//     path: 'animation/Blogging.json'
-// });
+Blogging = document.getElementById("Blogging");
+Blogging_animation = bodymovin.loadAnimation({
+    wrapper: Blogging,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/Blogging.json'
+});
 
 
 $('.counter_wrap').counterUp({
     delay: 20,
     time: 2000
-});
-
-
-
-// slick slider synchrinize js
-
-$('.slider-for').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    asNavFor: '.slider-nav',
-});
-$('.slider-nav').slick({
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    asNavFor: '.slider-for',
-    dots: false,
-    infinite: true,
-    prevArrow: '<img src="image/icons/arrow-forward-left.svg">',
-    nextArrow: '<img src="image/icons/arrow-forward-right.svg">',
-    centerMode: true,
-    responsive: [{
-            breakpoint: 991,
-            settings: {
-                slidesToShow: 3,
-            }
-        },
-        {
-            breakpoint: 767,
-            settings: {
-                slidesToShow: 2,
-            }
-        },
-        {
-            breakpoint: 500,
-            settings: {
-                slidesToShow: 1,
-            }
-        }
-    ],
-    focusOnSelect: true
-});
-
-
-
-// slick slider apart js
-
-window.onload = function() {
-    $slideshow = $('.slider').slick({
-        dots: false,
-        autoplay: false,
-        arrows: true,
-        prevArrow: '<img src="image/icons/reverse arrow.svg" class="slick_left_arrow">',
-        nextArrow: '<img src="image/icons/forward arrow.svg" class="slick_right_arrow">',
-        slidesToShow: 1,
-        slidesToScroll: 1
-    });
-};
-
-
-
-// slicks slider stories js
-$('.slick-carousel').slick({
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    arrows: true,
-    dots: false,
-    infinite: true,
-    responsive: [{
-            breakpoint: 1399,
-            settings: {
-                slidesToShow: 4,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 1199,
-            settings: {
-                slidesToShow: 3,
-            }
-        },
-        {
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 3,
-            }
-        },
-        {
-            breakpoint: 800,
-            settings: {
-                slidesToShow: 2,
-            }
-        },
-
-        {
-            breakpoint: 576,
-            settings: {
-                slidesToShow: 1,
-            }
-        }
-
-    ]
-
-});
-
-
-// slick slider portfolio js
-
-
-var $st = $('.pagination');
-var $slickEl = $('.center');
-
-$slickEl.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide) {
-    var i = (currentSlide ? currentSlide : 0) + 1;
-    $st.text(i + ' of ' + slick.slideCount);
-});
-
-$slickEl.slick({
-    centerMode: true,
-    slidesToShow: 3,
-    focusOnSelect: true,
-    dots: false,
-    infinite: false,
-    nextArrow: $(".next"),
-    prevArrow: $(".prev"),
-    responsive: [{
-            breakpoint: 768,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 1
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 1
-            }
-        }
-    ]
 });
