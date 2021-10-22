@@ -1822,11 +1822,9 @@ video {
   padding: 20px 0;
 }
 
-.portfolio_slider .slick-list .slide:not(.slick-active) {
-  cursor: pointer;
-}
-
 .portfolio_slider .slick-list .slick-current {
+  position: relative;
+  z-index: 2;
   -webkit-transform: scale(1.09);
           transform: scale(1.09);
 }

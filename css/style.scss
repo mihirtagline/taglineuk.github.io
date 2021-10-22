@@ -1744,11 +1744,10 @@ video {
             .slick-active {
                 padding: 20px 0;
             }
-            &:not(.slick-active) {
-                cursor: pointer;
-            }
         }
         .slick-current {
+            position: relative;
+            z-index: 2;
             transform: scale(1.09);
         }
     }
