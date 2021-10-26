@@ -25,7 +25,7 @@
 
     <header class="header_wrap">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a href="#"><img src="image/tagline logo.png" alt="tagline_logo"></a>
+            <a href="#"><img src="image/tagline logo.png" alt="tagline_logo" class="header_logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,14 +36,13 @@
                         <a class="nav-link dropdown-link dropdown-toggle" href="#" id="dropdown01" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Service
                           </a>
-                        <div class="dropdown-menu megamenu" aria-labelledby="navbarDropdown">
-                            <div class="container">
+                        <div class="dropdown-menu megamenu " aria-labelledby="navbarDropdown">
+                            <div class="dropdown_wrap">
                                 <div class="row">
-                                    <div class="col-sm-6 col-lg-4">
+                                    <div class="col-lg-4 col-sm-6">
                                         <div class="menu_overlay">
                                             <div class="heading_overlay">
                                                 <div class="d-flex align-items-center">
-
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                                                 <path d="M9.99967 3.33331H29.9997C30.4417 3.33331 30.8656 3.50891 31.1782 3.82147C31.4907 4.13403 31.6663 4.55795 31.6663 4.99998V35C31.6663 35.442 31.4907 35.8659 31.1782 36.1785C30.8656 36.4911 30.4417 36.6666 29.9997 36.6666H9.99967C9.55765 36.6666 9.13372 36.4911 8.82116 36.1785C8.5086 35.8659 8.33301 35.442 8.33301 35V4.99998C8.33301 4.55795 8.5086 4.13403 8.82116 3.82147C9.13372 3.50891 9.55765 3.33331 9.99967 3.33331ZM19.9997 28.3333C19.5576 28.3333 19.1337 28.5089 18.8212 28.8215C18.5086 29.134 18.333 29.558 18.333 30C18.333 30.442 18.5086 30.8659 18.8212 31.1785C19.1337 31.4911 19.5576 31.6666 19.9997 31.6666C20.4417 31.6666 20.8656 31.4911 21.1782 31.1785C21.4907 30.8659 21.6663 30.442 21.6663 30C21.6663 29.558 21.4907 29.134 21.1782 28.8215C20.8656 28.5089 20.4417 28.3333 19.9997 28.3333Z" fill="url(#paint0_linear_498:101)"/>
                                                 <defs>
@@ -53,10 +52,8 @@
                                                 </linearGradient>
                                                 </defs>
                                                 </svg>
-                                                    <div class="dropdown_wrap">
-                                                        <div class="header_content">
-                                                            <h5 class="mb-0"><a href="">Mobile Development</a></h5>
-                                                        </div>
+                                                    <div class="header_content">
+                                                        <h5 class="mb-0"><a href="">Mobile Development</a></h5>
                                                     </div>
                                                 </div>
                                             </div>
@@ -83,7 +80,7 @@
                                                     </linearGradient>
                                                     </defs>
                                                     </svg>
-                                                    <div class="dropdown_wrap header_content">
+                                                    <div class="header_content">
                                                         <h5 class="mb-0"><a href="">Web Development</a></h5>
                                                     </div>
                                                 </div>
@@ -102,7 +99,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-sm-6 col-lg-4">
+                                    <div class="col-sm-12 col-lg-4">
                                         <div class="menu_overlay">
                                             <div class="d-flex align-items-center">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -139,7 +136,7 @@
                                                 </linearGradient>
                                                 </defs>
                                             </svg>
-                                                <div class="dropdown_wrap header_content">
+                                                <div class="header_content">
                                                     <h5 class="mb-0"><a href="">Digital Marketing</a></h5>
                                                 </div>
                                             </div>
@@ -155,7 +152,7 @@
                                     </div>
 
                                     <div class="col-sm-6 col-lg-4">
-                                        <div class="d-flex align-items-center">
+                                        <div class="d-flex align-items-center header_bottom">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                                                 <path d="M17.9297 0.0859375C17.6641 0.21875 17.6016 0.382812 17.1875 2.03906C16.9688 2.90625 16.7266 3.74219 16.6406 3.89844C16.4297 4.32031 15.9609 4.75 15.5469 4.89062C14.6484 5.21875 13.375 5.74219 12.7969 6.02344C12.25 6.28125 12.0781 6.32812 11.6484 6.32812C11.0234 6.32812 10.8047 6.23438 9.10156 5.20312C7.35156 4.14844 7.58594 4.10156 5.84375 5.84375C4.10156 7.58594 4.14844 7.35156 5.20312 9.10156C6.22656 10.7969 6.32812 11.0234 6.32812 11.6328C6.32812 12.0781 6.28125 12.2422 5.90625 13.0391C5.67969 13.5391 5.35938 14.3125 5.19531 14.7656C4.83594 15.7734 4.76562 15.9062 4.44531 16.2344C4.05469 16.6328 3.73438 16.7578 2.03906 17.1875C1.17188 17.4062 0.398438 17.625 0.3125 17.6719C0.03125 17.8516 0 18.0859 0 20C0 21.9141 0.03125 22.1484 0.3125 22.3281C0.398438 22.375 1.17188 22.5938 2.03906 22.8125C2.90625 23.0312 3.74219 23.2734 3.89844 23.3594C4.375 23.6016 4.75 24.0469 4.96875 24.6484C5.36719 25.7188 5.73438 26.6094 6.03125 27.2188C6.28125 27.75 6.32812 27.9219 6.32812 28.3516C6.32812 28.9766 6.23438 29.1953 5.20312 30.8984C4.14844 32.6484 4.10156 32.4141 5.84375 34.1562C7.58594 35.8984 7.35156 35.8516 9.10156 34.7969C10.8047 33.7734 11.0234 33.6719 11.6406 33.6719C12.0703 33.6719 12.25 33.7188 12.7344 33.9531C13.4375 34.2891 14.7969 34.8516 15.3828 35.0391C15.8672 35.1953 16.4219 35.6641 16.6406 36.1016C16.7266 36.2578 16.9688 37.0938 17.1875 37.9609C17.4062 38.8281 17.625 39.6016 17.6719 39.6875C17.8516 39.9688 18.0859 40 20.0391 40H21.9531L22.1797 39.7812C22.3906 39.5938 22.4609 39.3828 22.8438 37.875C23.4219 35.5703 23.5078 35.4531 25.1406 34.8438C25.6875 34.6406 26.5234 34.2891 27 34.0703C27.7578 33.7188 27.9297 33.6719 28.3672 33.6719C28.9766 33.6719 29.2031 33.7734 30.8984 34.7969C32.6484 35.8516 32.4141 35.8984 34.1562 34.1562C35.8984 32.4141 35.8516 32.6641 34.7578 30.8359C33.7656 29.1797 33.6562 28.9375 33.6641 28.3516C33.6641 27.9609 33.7344 27.7344 34.1641 26.7812C34.4453 26.1641 34.75 25.4141 34.8438 25.1172C35.1719 24.1172 35.4844 23.6719 36.0938 23.3594C36.2578 23.2734 37.0938 23.0312 37.9609 22.8125C38.8281 22.5938 39.6016 22.375 39.6875 22.3281C39.9688 22.1484 40 21.9141 40 20C40 18.0859 39.9688 17.8516 39.6875 17.6719C39.6016 17.625 38.8281 17.4062 37.9609 17.1875C36.2656 16.7578 35.9453 16.6328 35.5547 16.2344C35.2344 15.9062 35.1641 15.7734 34.8047 14.7656C34.6406 14.3125 34.3203 13.5391 34.0938 13.0391C33.7188 12.2422 33.6719 12.0781 33.6719 11.6328C33.6719 11.0234 33.7734 10.7969 34.7969 9.10156C35.8516 7.35156 35.8984 7.58594 34.1562 5.84375C32.4141 4.10156 32.6484 4.14844 30.8984 5.20312C29.2031 6.22656 28.9766 6.32812 28.3672 6.32812C27.9219 6.32812 27.7578 6.28125 27 5.92188C26.5234 5.70312 25.6797 5.35156 25.125 5.14844C23.5078 4.54688 23.4062 4.41406 22.8125 2.03906C22.5938 1.17188 22.375 0.398438 22.3281 0.3125C22.2734 0.234375 22.1484 0.132812 22.0547 0.0859375C21.8125 -0.0234375 18.1484 -0.0234375 17.9297 0.0859375ZM22.4219 5.92969C25.4062 6.44531 27.9062 7.75 30.0781 9.92188C32.2812 12.125 33.6016 14.7031 34.1094 17.7734C34.2969 18.8984 34.2969 21.125 34.1172 22.1875C33.5859 25.2969 32.2422 27.9141 30.0781 30.0781C24.8203 35.3438 16.5547 35.7031 10.8125 30.9219C5.26562 26.2969 4.09375 18.1172 8.11719 12.0938C10.4844 8.55469 14.25 6.27344 18.5234 5.78906C19.4766 5.67969 21.375 5.75 22.4219 5.92969Z" fill="url(#paint0_linear_499:134)"/>
                                                 <path d="M18.9845 7.1875C12.6955 7.66406 7.63297 12.7734 7.19547 19.0781C6.6486 26.9063 13.1017 33.3594 20.9142 32.8047C23.2033 32.6406 25.2189 31.9531 27.1486 30.6719C31.5392 27.7422 33.6877 22.3594 32.5314 17.1953C32.2658 16.0313 32.047 15.4063 31.4767 14.2578C29.7502 10.7734 26.4298 8.20312 22.6408 7.42969C21.4689 7.1875 20.1564 7.10156 18.9845 7.1875ZM22.5002 8.85156C24.7423 9.38281 26.4298 10.3281 28.0548 11.9453C29.7033 13.6016 30.672 15.3594 31.1877 17.6641C31.3439 18.3594 31.3673 18.6875 31.3673 20C31.3673 21.3125 31.3439 21.6406 31.1877 22.3438C30.6798 24.6094 29.6877 26.4141 28.0548 28.0547C26.4142 29.6875 24.6095 30.6797 22.3439 31.1875C21.6408 31.3438 21.3127 31.3672 20.0002 31.3672C18.6877 31.3672 18.3595 31.3438 17.6642 31.1875C15.3595 30.6719 13.6017 29.7031 11.9455 28.0547C10.297 26.3984 9.32829 24.6406 8.81266 22.3359C8.65641 21.6406 8.63297 21.3125 8.63297 20C8.63297 18.6875 8.65641 18.3594 8.81266 17.6641C9.32829 15.3594 10.297 13.5938 11.9455 11.9453C13.5939 10.2969 15.4377 9.28906 17.6252 8.83594C18.7423 8.60156 18.7345 8.60156 20.2736 8.63281C21.4377 8.65625 21.8205 8.69531 22.5002 8.85156Z" fill="url(#paint1_linear_499:134)"/>
@@ -185,7 +182,7 @@
                                                 </linearGradient>
                                                 </defs>
                                             </svg>
-                                            <div class="dropdown_wrap header_content">
+                                            <div class="header_content">
                                                 <h5 class="mb-0"><a href="">Testing & Assurance</a></h5>
                                             </div>
                                         </div>
@@ -204,7 +201,7 @@
                                                     </linearGradient>
                                                     </defs>
                                                 </svg>
-                                                <div class="dropdown_wrap header_content">
+                                                <div class="header_content">
                                                     <h5 class="mb-0"><a href="">Design Service</a></h5>
                                                 </div>
                                             </div>
@@ -217,13 +214,13 @@
                         </div>
                     </li>
                     <li class="nav-item  dropdown megamenu-li">
-                        <a class="nav-link dropdown-toggle dropdown-link" href="#" id="dropdown01" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle dropdown-link" href="#" id="dropdown02" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Industry
                           </a>
                         <div class="dropdown-menu megamenu" aria-labelledby="navbarDropdown">
-                            <div class="container">
+                            <div class="dropdown_wrap">
                                 <div class="row">
-                                    <div class="col-sm-4 col-lg-4">
+                                    <div class="col-lg-4 col-sm-6">
                                         <div class="border_right1"></div>
                                         <div class="d-flex align-items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -235,7 +232,7 @@
                                                 </linearGradient>
                                                 </defs>
                                             </svg>
-                                            <div class="dropdown_wrap header_content">
+                                            <div class="header_content">
                                                 <h5 class="mb-0"><a href="">e Commerce</a></h5>
                                             </div>
                                         </div>
@@ -243,7 +240,7 @@
                                         <p class="header_lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
 
                                     </div>
-                                    <div class="col-sm-4 col-lg-4">
+                                    <div class="col-lg-4 col-sm-6">
                                         <div class="border_right1"></div>
                                         <div class="d-flex align-items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="38" height="34" viewBox="0 0 38 34" fill="none">
@@ -255,7 +252,7 @@
                                                 </linearGradient>
                                                 </defs>
                                             </svg>
-                                            <div class="dropdown_wrap header_content">
+                                            <div class="header_content">
                                                 <h5 class="mb-0"><a href="">Health & Medical</a></h5>
                                             </div>
                                         </div>
@@ -263,7 +260,7 @@
                                         <p class="header_lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
 
                                     </div>
-                                    <div class="col-sm-4 col-lg-4">
+                                    <div class="col-lg-4 col-sm-6">
                                         <div class="d-flex align-items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
                                                 <path d="M31.9997 30H18.6663V5C18.6663 3.67392 19.1931 2.40215 20.1308 1.46447C21.0685 0.526784 22.3403 0 23.6663 0H31.9997C32.4417 0 32.8656 0.175595 33.1782 0.488155C33.4907 0.800716 33.6663 1.22464 33.6663 1.66667V28.3333C33.6663 28.7754 33.4907 29.1993 33.1782 29.5118C32.8656 29.8244 32.4417 30 31.9997 30ZM15.333 30H1.99967C1.55765 30 1.13372 29.8244 0.821163 29.5118C0.508602 29.1993 0.333008 28.7754 0.333008 28.3333V1.66667C0.333008 1.22464 0.508602 0.800716 0.821163 0.488155C1.13372 0.175595 1.55765 0 1.99967 0H10.333C11.6591 0 12.9309 0.526784 13.8685 1.46447C14.8062 2.40215 15.333 3.67392 15.333 5V30ZM15.333 30H18.6663V33.3333H15.333V30Z" fill="url(#paint0_linear_502:193)"/>
@@ -274,7 +271,7 @@
                                                 </linearGradient>
                                                 </defs>
                                             </svg>
-                                            <div class="dropdown_wrap header_content">
+                                            <div class="header_content">
                                                 <h5 class="mb-0"><a href="">Education</a></h5>
                                             </div>
                                         </div>
@@ -282,7 +279,7 @@
                                         <p class="header_lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
                                     </div>
 
-                                    <div class="col-sm-4 col-lg-4">
+                                    <div class="col-lg-4 col-sm-6">
                                         <div class="border_right1"></div>
                                         <div class="d-flex align-items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 30" fill="none">
@@ -314,13 +311,13 @@
                                                 </linearGradient>
                                                 </defs>
                                             </svg>
-                                            <div class="dropdown_wrap header_content">
+                                            <div class="header_content">
                                                 <h5 class="mb-0"><a href="">Social Networking</a></h5>
                                             </div>
                                         </div>
                                         <p class="header_lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
                                     </div>
-                                    <div class="col-sm-4 col-lg-4">
+                                    <div class="col-lg-4 col-sm-6">
                                         <div class="border_right1"></div>
                                         <div class="d-flex align-items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="34" viewBox="0 0 40 34" fill="none">
@@ -337,13 +334,13 @@
                                                 </linearGradient>
                                                 </defs>
                                             </svg>
-                                            <div class="dropdown_wrap header_content">
+                                            <div class="header_content">
                                                 <h5 class="mb-0"><a href="">Food Delivery</a></h5>
                                             </div>
                                         </div>
                                         <p class="header_lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
                                     </div>
-                                    <div class="col-sm-4 col-lg-4">
+                                    <div class="col-lg-4 col-sm-6">
                                         <div class="border_left"></div>
                                         <div class="d-flex align-items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
@@ -355,14 +352,14 @@
                                                 </linearGradient>
                                                 </defs>
                                             </svg>
-                                            <div class="dropdown_wrap header_content">
+                                            <div class="header_content">
                                                 <h5 class="mb-0"><a href="">Event Management</a></h5>
                                             </div>
                                         </div>
                                         <p class="header_lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
                                     </div>
 
-                                    <div class="col-sm-4 col-lg-4">
+                                    <div class="col-lg-4 col-sm-6">
                                         <div class="border_right1"></div>
                                         <div class="d-flex align-items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="32" viewBox="0 0 34 32" fill="none">
@@ -374,13 +371,13 @@
                                                 </linearGradient>
                                                 </defs>
                                             </svg>
-                                            <div class="dropdown_wrap header_content">
+                                            <div class="header_content">
                                                 <h5 class="mb-0"><a href="">Taxi Booking</a></h5>
                                             </div>
                                         </div>
                                         <p class="header_lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
                                     </div>
-                                    <div class="col-sm-4 col-lg-4">
+                                    <div class="col-lg-4 col-sm-6">
                                         <div class="border_right1"></div>
                                         <div class="d-flex align-items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -412,7 +409,7 @@
                                                 </linearGradient>
                                                 </defs>
                                             </svg>
-                                            <div class="dropdown_wrap header_content">
+                                            <div class="header_content">
                                                 <h5 class="mb-0"><a href="">Fitness & Wellness</a></h5>
                                             </div>
                                         </div>
@@ -424,15 +421,16 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown megamenu-li">
-                        <a class="nav-link dropdown-link dropdown-toggle" href="#" id="dropdown01" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-link dropdown-toggle" href="#" id="dropdown03" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Company
                           </a>
                         <div class="dropdown-menu megamenu" aria-labelledby="navbarDropdown">
-                            <div class="container">
+                            <div class="dropdown_wrap">
                                 <div class="row">
-                                    <div class="col-lg-4">
-                                        <div class="menu_overlay">
-                                            <div class="heading_overlay">
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="company_name">
+                                            <div class="border_right"></div>
+                                            <div class="menu_overlay">
                                                 <div class="d-flex align-items-center">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                                                         <path d="M19.9997 18.3334C22.2098 18.3334 24.3294 19.2113 25.8922 20.7742C27.455 22.337 28.333 24.4566 28.333 26.6667V36.6667H11.6663V26.6667C11.6663 24.4566 12.5443 22.337 14.1071 20.7742C15.6699 19.2113 17.7895 18.3334 19.9997 18.3334ZM8.81301 23.3434C8.54777 24.238 8.39109 25.1613 8.34634 26.0934L8.33301 26.6667V36.6667H3.33301V29.1667C3.33268 27.7293 3.86306 26.3424 4.8224 25.2721C5.78174 24.2017 7.1025 23.5232 8.53134 23.3667L8.81467 23.3434H8.81301ZM31.1863 23.3434C32.6695 23.4338 34.0623 24.0866 35.0807 25.1688C36.099 26.2509 36.6661 27.6808 36.6663 29.1667V36.6667H31.6663V26.6667C31.6663 25.5117 31.4997 24.3967 31.1863 23.3434ZM9.16634 13.3334C10.2714 13.3334 11.3312 13.7724 12.1126 14.5538C12.894 15.3352 13.333 16.395 13.333 17.5C13.333 18.6051 12.894 19.6649 12.1126 20.4463C11.3312 21.2277 10.2714 21.6667 9.16634 21.6667C8.06127 21.6667 7.00146 21.2277 6.22006 20.4463C5.43866 19.6649 4.99967 18.6051 4.99967 17.5C4.99967 16.395 5.43866 15.3352 6.22006 14.5538C7.00146 13.7724 8.06127 13.3334 9.16634 13.3334ZM30.833 13.3334C31.9381 13.3334 32.9979 13.7724 33.7793 14.5538C34.5607 15.3352 34.9997 16.395 34.9997 17.5C34.9997 18.6051 34.5607 19.6649 33.7793 20.4463C32.9979 21.2277 31.9381 21.6667 30.833 21.6667C29.7279 21.6667 28.6681 21.2277 27.8867 20.4463C27.1053 19.6649 26.6663 18.6051 26.6663 17.5C26.6663 16.395 27.1053 15.3352 27.8867 14.5538C28.6681 13.7724 29.7279 13.3334 30.833 13.3334ZM19.9997 3.33337C21.7678 3.33337 23.4635 4.03575 24.7137 5.286C25.964 6.53624 26.6663 8.23193 26.6663 10C26.6663 11.7682 25.964 13.4638 24.7137 14.7141C23.4635 15.9643 21.7678 16.6667 19.9997 16.6667C18.2316 16.6667 16.5359 15.9643 15.2856 14.7141C14.0354 13.4638 13.333 11.7682 13.333 10C13.333 8.23193 14.0354 6.53624 15.2856 5.286C16.5359 4.03575 18.2316 3.33337 19.9997 3.33337Z" fill="url(#paint0_linear_502:279)"/>
@@ -443,19 +441,16 @@
                                                         </linearGradient>
                                                         </defs>
                                                         </svg>
-                                                    <div class="dropdown_wrap">
-                                                        <div class="header_content">
-                                                            <h5 class="mb-0"><a href="">Mobile Development</a></h5>
-                                                        </div>
+                                                    <div class="header_content">
+                                                        <h5 class="mb-0"><a href="">About us</a></h5>
                                                     </div>
                                                 </div>
+                                                <p class="header_lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
-                                        </div>
 
-                                        <div class="menu_overlay">
-                                            <div class="d-flex align-items-center">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                            <div class="menu_overlay">
+                                                <div class="d-flex align-items-center">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                                                     <path d="M11.3281 4.95313L2.77344 9.89844V19.9219V29.9453L11.4141 34.9297L20.0469 39.9219L28.6797 34.9375L37.3047 29.9609V19.9219V9.88282L28.75 4.94532C24.0469 2.22657 20.125 3.8147e-06 20.0391 0.00781631C19.9531 0.00781631 16.0312 2.23438 11.3281 4.95313ZM22.8125 14.4141C23.375 14.6953 23.8281 14.9375 23.8281 14.9609C23.8281 15.0391 18.3594 25.9375 18.3203 25.9375C18.2969 25.9375 17.8203 25.7109 17.2656 25.4297L16.25 24.9219L19.0078 19.4141C20.5156 16.3828 21.7656 13.9063 21.7812 13.9063C21.7891 13.9063 22.2578 14.1328 22.8125 14.4141ZM12.5547 15.9531L13.3594 16.7578L11.7812 18.3359L10.1953 19.9219L11.7812 21.5078L13.3594 23.0859L12.5391 23.9063L11.7188 24.7266L9.3125 22.3203L6.91406 19.9219L9.29688 17.5391C10.6094 16.2266 11.6953 15.1563 11.7188 15.1563C11.7344 15.1563 12.1172 15.5156 12.5547 15.9531ZM30.8594 17.5391L33.2422 19.9219L30.8594 22.3047C29.5469 23.6172 28.4453 24.6875 28.3984 24.6875C28.2969 24.6875 26.7969 23.1875 26.7969 23.0859C26.7969 23.0469 27.4922 22.3125 28.3359 21.4688L29.8828 19.9219L28.3359 18.375C27.4922 17.5313 26.7969 16.7969 26.7969 16.7578C26.7969 16.6563 28.2969 15.1563 28.3984 15.1563C28.4453 15.1563 29.5469 16.2266 30.8594 17.5391Z" fill="url(#paint0_linear_503:289)"/>
                                                     <defs>
                                                     <linearGradient id="paint0_linear_503:289" x1="20.0391" y1="39.9219" x2="20.0391" y2="0.00779724" gradientUnits="userSpaceOnUse">
@@ -464,18 +459,22 @@
                                                     </linearGradient>
                                                     </defs>
                                                     </svg>
-                                                <div class="dropdown_wrap header_content">
-                                                    <h5 class="mb-0"><a href="">About us</a></h5>
+                                                    <div class="header_content">
+                                                        <h5 class="mb-0"><a href="">Development Methodology</a></h5>
+                                                    </div>
                                                 </div>
+                                                <p class="header_lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-8">
+                                    <div class="col-lg-8 col-sm-6">
                                         <div class="row">
                                             <div class="col-lg-6">
-                                                <img src="image/blog1.png" alt="blog1" class="">
+                                                <div class="header_content pl-0">
+                                                    <h5><a href="">More from us</a></h5>
+                                                </div>
+                                                <img src="image/blog1.png" alt="blog1">
                                             </div>
                                             <div class="col-lg-6">
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
@@ -497,35 +496,32 @@
                         <a class="nav-link nav-link3" href="#">Blog</a>
                     </li>
                 </ul>
-                <a href="" class="comman_anchor header_btn ml-4">
-                    <span>Contact Us</span>
-                </a>
-            </div>
 
+            </div>
+            <a href="" class="comman_anchor header_btn ml-4">Contact Us</a>
         </nav>
     </header>
+
+    <div class="overlay12"></div>
+
 
     <!-- END SECTION HEADER -->
 
     <!-- START SECTION BANNER -->
     <div class="banner_section">
         <div class="container">
+            <div class="right_wrap" id="Blogging"></div>
+
             <div class="row section">
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-md-first">
                     <div class="banner_text">
                         <p class="comman_lead">A Place Where Your IDEAS transform into REALITY</p>
                         <h1>Empowering You With <span> INNOVATION <h2>&</h2> TECHNOLOGY</span></h1>
-                        <a href="" class="comman_anchor bg-transparent">
-                            <span class="theme-red">Schedual a call</span>
-                        </a>
+                        <button class="btn banner_btn">Schedual a call</button>
                     </div>
-
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="right_wrap" id="Blogging"></div>
                 </div>
             </div>
+
             <div class="scroll_down">
                 <a href="#scroll_down"><span></span><label>Scroll down</label></a>
             </div>
@@ -560,9 +556,7 @@
                     </p>
                 </div>
                 <div class="col-lg-6">
-                    <a href="" class="comman_anchor mt-3">
-                        <span>Get consult</span>
-                    </a>
+                    <a href="" class="comman_anchor mt-3">Get consult</a>
                 </div>
             </div>
             <div class="row mt-5">
@@ -896,9 +890,7 @@
                         <div class="education_section">
                             <div class="d-flex justify-content-between align-items-center education_bottom">
                                 <h2>Education</h2>
-                                <a href="javascript:void(0)" class="comman_anchor">
-                                    <span>Read more</span>
-                                </a>
+                                <a href="javascript:void(0)" class="comman_anchor">Read more</a>
                             </div>
                             <p class="mb_50">After the covid pandemic, we all can see the raise in the online education platform. parents nowadays, allow even their children to use smart devices to download an educational-based app to enhance their learning habits.</p>
                             <div class="row">
@@ -915,9 +907,7 @@
                         <div class="education_section">
                             <div class="d-flex justify-content-between align-items-center">
                                 <h2>Healthcare</h2>
-                                <a href="javascript:void(0)" class="comman_anchor">
-                                    <span>Read more</span>
-                                </a>
+                                <a href="javascript:void(0)" class="comman_anchor">Read more</a>
                             </div>
                             <p class="mb_50">After the covid pandemic, we all can see the raise in the online education platform. parents nowadays, allow even their children to use smart devices to download an educational-based app to enhance their learning habits.</p>
                             <div class="row">
@@ -934,9 +924,7 @@
                         <div class="education_section">
                             <div class="d-flex justify-content-between align-items-center">
                                 <h2>e Commerce</h2>
-                                <a href="javascript:void(0)" class="comman_anchor">
-                                    <span>Read more</span>
-                                </a>
+                                <a href="javascript:void(0)" class="comman_anchor">Read more</a>
                             </div>
                             <p class="mb_50">After the covid pandemic, we all can see the raise in the online education platform. parents nowadays, allow even their children to use smart devices to download an educational-based app to enhance their learning habits.</p>
                             <div class="row">
@@ -953,9 +941,7 @@
                         <div class="education_section">
                             <div class="d-flex justify-content-between align-items-center">
                                 <h2>Taxi booking</h2>
-                                <a href="javascript:void(0)" class="comman_anchor">
-                                    <span>Read more</span>
-                                </a>
+                                <a href="javascript:void(0)" class="comman_anchor">Read more</a>
                             </div>
                             <p class="mb_50">After the covid pandemic, we all can see the raise in the online education platform. parents nowadays, allow even their children to use smart devices to download an educational-based app to enhance their learning habits.</p>
                             <div class="row">
@@ -972,9 +958,7 @@
                         <div class="education_section">
                             <div class="d-flex justify-content-between align-items-center">
                                 <h2>Food delivery</h2>
-                                <a href="javascript:void(0)" class="comman_anchor">
-                                    <span>Read more</span>
-                                </a>
+                                <a href="javascript:void(0)" class="comman_anchor">Read more</a>
                             </div>
                             <p class="mb_50">After the covid pandemic, we all can see the raise in the online education platform. parents nowadays, allow even their children to use smart devices to download an educational-based app to enhance their learning habits.</p>
                             <div class="row">
@@ -991,9 +975,7 @@
                         <div class="education_section">
                             <div class="d-flex justify-content-between align-items-center">
                                 <h2>Event management</h2>
-                                <a href="javascript:void(0)" class="comman_anchor">
-                                    <span>Read more</span>
-                                </a>
+                                <a href="javascript:void(0)" class="comman_anchor">Read more</a>
                             </div>
                             <p class="mb_50">After the covid pandemic, we all can see the raise in the online education platform. parents nowadays, allow even their children to use smart devices to download an educational-based app to enhance their learning habits.</p>
                             <div class="row">
@@ -1010,9 +992,7 @@
                         <div class="education_section">
                             <div class="d-flex justify-content-between align-items-center">
                                 <h2>Social networking</h2>
-                                <a href="javascript:void(0)" class="comman_anchor">
-                                    <span>Read more</span>
-                                </a>
+                                <a href="javascript:void(0)" class="comman_anchor">Read more</a>
                             </div>
                             <p class="mb_50">After the covid pandemic, we all can see the raise in the online education platform. parents nowadays, allow even their children to use smart devices to download an educational-based app to enhance their learning habits.</p>
                             <div class="row">
@@ -1029,9 +1009,7 @@
                         <div class="education_section">
                             <div class="d-flex justify-content-between align-items-center">
                                 <h2>Fitness & Wellness</h2>
-                                <a href="javascript:void(0)" class="comman_anchor">
-                                    <span>Read more</span>
-                                </a>
+                                <a href="javascript:void(0)" class="comman_anchor">Read more</a>
                             </div>
                             <p class="mb_50">After the covid pandemic, we all can see the raise in the online education platform. parents nowadays, allow even their children to use smart devices to download an educational-based app to enhance their learning habits.</p>
                             <div class="row">
@@ -1126,14 +1104,12 @@
                 <span class="heading_s2">latest from us</span>
                 <div class="who_section d-flex justify-content-between align-items-center">
                     <h2><span class="comman_span theme-span ">blogs</span></h2>
-                    <a href="" class="comman_anchor blog_btn">
-                        <span>Read more<img src="image/icons/arrow-forward-outline.svg" alt="arrow_img" style="margin-left:5px"></span>
-                    </a>
+                    <a href="" class="comman_anchor blog_btn">Read more<img src="image/icons/arrow-forward-outline.svg" alt="arrow_img" style="margin-left:5px"></a>
                 </div>
 
                 <div class="row no-gutters align-items-center">
                     <div class="col-lg-6">
-                        <img src="image/digibox1.png" alt="digibox1_img" class="w-100">
+                        <a href=""><img src="image/digibox1.png" alt="digibox1_img" class="w-100"></a>
                     </div>
 
                     <div class="col-lg-6">
@@ -1153,7 +1129,7 @@
                     </div>
 
                     <div class="col-lg-6 order-xl-2 order-lg-2 order-md-1 order-sm-1 order-1">
-                        <img src="image/digibox2.png" alt="digibox2_img" class="w-100">
+                        <a href=""><img src="image/digibox2.png" alt="digibox2_img" class="w-100"></a>
                     </div>
                 </div>
             </div>
@@ -1290,9 +1266,7 @@
 
         </div>
         <div class="container">
-            <a href="javascript:void()" class="comman_anchor blog_btn">
-                <span>Read more<img src="image/icons/arrow-forward-outline.svg" alt="arrow_img" style="margin-left:5px"></span>
-            </a>
+            <a href="javascript:void()" class="comman_anchor blog_btn">Read more<img src="image/icons/arrow-forward-outline.svg" alt="arrow_img" style="margin-left:5px"></a>
         </div>
 
     </div>

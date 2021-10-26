@@ -258,3 +258,24 @@ $('.portfolio_slider').slick({
         }
     ]
 });
+
+// --------------------
+
+$("#dropdown01, #dropdown02, #dropdown03").click(function() {
+    if ($(this).parent().hasClass('show')) {
+        $('.overlay12').fadeOut(500);
+    } else {
+        $('.overlay12').fadeIn(500);
+    }
+});
+
+
+// ---------------------------------------
+
+$(document).ready(function() {
+    $('.navbar .dropdown').hover(function() {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown(400);
+    }, function() {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideUp(305)
+    });
+});
