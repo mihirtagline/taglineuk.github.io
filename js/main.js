@@ -148,7 +148,7 @@ $('.slider-nav').slick({
     nextArrow: '<img src="image/icons/arrow-forward-right.svg">',
     centerMode: true,
     responsive: [{
-            breakpoint: 991,
+            breakpoint: 1199,
             settings: {
                 slidesToShow: 3,
             }
@@ -279,7 +279,7 @@ $(document).ready(function() {
         }, function() {
             $(this).find('.dropdown-menu').first().stop(true, true).slideUp(305)
         });
-    }
+    };
     $('.dropdown-toggle').click(function() {
         $(this).next('.dropdown-menu').slideToggle(500);
     });
