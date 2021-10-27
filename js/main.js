@@ -240,7 +240,7 @@ $('.portfolio_slider').slick({
     slidesToShow: 3,
     focusOnSelect: true,
     dots: false,
-    autoplay: false,
+    autoplay: true,
     infinite: true,
     responsive: [{
             breakpoint: 992,
@@ -261,21 +261,57 @@ $('.portfolio_slider').slick({
 
 // --------------------
 
-$("#dropdown01, #dropdown02, #dropdown03").click(function() {
-    if ($(this).parent().hasClass('show')) {
-        $('.overlay12').fadeOut(500);
-    } else {
-        $('.overlay12').fadeIn(500);
-    }
-});
+// $("#dropdown01, #dropdown02, #dropdown03").click(function() {
+//     if ($(this).parent().hasClass('show')) {
+//         $('.overlay12').fadeOut(500);
+//     } else {
+//         $('.overlay12').fadeIn(500);
+//     }
+// });
 
 
 // ---------------------------------------
 
 $(document).ready(function() {
     $('.navbar .dropdown').hover(function() {
-        $(this).find('.dropdown-menu').first().stop(true, true).slideDown(400);
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown(450);
     }, function() {
         $(this).find('.dropdown-menu').first().stop(true, true).slideUp(305)
+    });
+});
+
+
+// --------------------------------
+
+$(window).on('scroll', function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 150) {
+        $('header').addClass('nav-fixed');
+    } else {
+        $('header').removeClass('nav-fixed');
+    }
+});
+
+$('.checkbtn').on('click', function() {
+    $('body').toggleClass('menu-open');
+});
+
+
+/*====================================*
+    05. SCROLLUP JS
+*=====================================*/
+
+$(document).ready(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+    $('.scrollup').click(function() {
+        $("html, body").animate({ scrollTop: 0 }, 1700);
+        return false;
     });
 });

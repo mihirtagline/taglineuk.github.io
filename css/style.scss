@@ -121,8 +121,17 @@ video {
     -webkit-text-stroke: 1px $theme-red !important;
 }
 
+.navbar-toggler-icon1 {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: 50%/100% 100% no-repeat;
+}
+
 // comman anchor Css Start
-.header_wrap {
+.header_wrap.transparent_header {
     position: absolute;
     top: 0;
     left: 0;
@@ -130,9 +139,19 @@ video {
     z-index: 1030;
 }
 
+.header_wrap.nav-fixed {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 15%);
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    background: #fff;
+}
+
 .comman_anchor {
     position: relative;
-    border: 1px solid #E53E30;
+    background-color: #E53E30;
     display: inline-block;
     padding: 8px 30px;
     border-radius: 100px;
@@ -146,47 +165,6 @@ video {
     color: $theme-white;
     span {
         color: $theme-white;
-    }
-    &:before {
-        width: 100%;
-        height: 100%;
-        content: '';
-        margin: auto;
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        background: #E53E30;
-        transition: all .5s;
-        z-index: -1;
-    }
-    &:after {
-        width: 100%;
-        height: 100%;
-        content: '';
-        margin: auto;
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        background: #E53E30;
-        transition: all .5s;
-        z-index: -1;
-    }
-    &:hover {
-        &:before {
-            transform: rotateX(90deg);
-            -webkit-transform: rotateX(90deg);
-            -ms-transform: rotateX(90deg);
-        }
-    }
-    &:hover {
-        &:after {
-            transform: rotateY(90deg);
-            -webkit-transform: rotateY(90deg);
-            -ms-transform: rotateY(90deg);
-        }
-    }
-    &:hover {
-        color: #E53E30;
     }
 }
 
@@ -332,12 +310,14 @@ video {
 // akshay css start
 // start index css
 .megamenu-li {
+    position: static;
     .megamenu {
         position: absolute;
         width: 100%;
         left: 0;
         right: 0;
         padding: 36px 0px;
+        box-shadow: 0px 25px 24px -30px rgba(0, 0, 0, 28%);
     }
     .dropdown_wrap {
         max-width: 1140px;
@@ -354,8 +334,42 @@ video {
     }
 }
 
+.navbar {
+    padding: 0px 34px;
+}
+
+.navbar-light {
+    .navbar-nav {
+        .nav-link {
+            font-weight: $font-weight-400;
+            font-size: 15px;
+            padding: 40px 12px;
+            color: $theme-black;
+        }
+    }
+}
+
+.scrollup {
+    i {
+        background: #36aeea;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 20px;
+        color: #fff;
+        position: fixed;
+        bottom: 20px;
+        z-index: 99;
+        right: 20px;
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s asre-in-out;
+    }
+}
+
 .dropdown-menu {
     border: 0;
+    margin: 0;
 }
 
 .company_name {
@@ -374,20 +388,20 @@ video {
 }
 
 .mega-menu {
-    padding: 20px 0px 0px 50px;
+    padding: 20px 0px 0px 46px;
     li {
         padding: 8px;
         &:hover {
             cursor: pointer;
             transition: all 0.3s ease-in-out;
-            background-color: rgb(224, 222, 220);
+            background-color: rgba(0, 0, 0, 0.04);
             border-radius: 10px;
         }
         a {
             color: #606060;
             font-size: 15px;
             font-weight: 300;
-            padding-left: 24px;
+            padding-left: 30px;
             &:hover {
                 color: #1568A6;
             }
@@ -412,7 +426,7 @@ video {
 
 .overlay12 {
     position: fixed;
-    z-index: 3;
+    z-index: 49;
     top: 0;
     right: 0;
     bottom: 0;
@@ -421,18 +435,6 @@ video {
     background-color: rgba(0, 0, 0, .5);
 }
 
-// .overlay12 {
-//     display: none;
-//     background-color: #000;
-//     bottom: 0;
-//     left: 0;
-//     opacity: 0.5;
-//     filter: alpha(opacity=50);
-//     position: fixed;
-//     right: 0;
-//     top: 0;
-//     z-index: 49;
-// }
 .border_right {
     &:before {
         content: "";
@@ -466,7 +468,7 @@ video {
 // start banner css
 .banner_section {
     position: relative;
-    padding: 90px 0px 0px;
+    padding: 100px 0px 0px;
 }
 
 .banner_text {
@@ -794,24 +796,6 @@ video {
 
 // start about us css
 //01. start header style
-.navbar {
-    padding: 40px 38px 0px;
-    .dropdown {
-        position: static;
-    }
-}
-
-.navbar-light {
-    .navbar-nav {
-        .nav-link {
-            font-weight: $font-weight-400;
-            font-size: 15px;
-            padding: 0px 12px;
-            color: $theme-black;
-        }
-    }
-}
-
 //02. start banner style
 .bg_gray {
     background-color: #F6F6F8;

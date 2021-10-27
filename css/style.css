@@ -122,7 +122,16 @@ video {
   -webkit-text-stroke: 1px #e53e30 !important;
 }
 
-.header_wrap {
+.navbar-toggler-icon1 {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: 50%/100% 100% no-repeat;
+}
+
+.header_wrap.transparent_header {
   position: absolute;
   top: 0;
   left: 0;
@@ -130,9 +139,20 @@ video {
   z-index: 1030;
 }
 
+.header_wrap.nav-fixed {
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  background: #fff;
+}
+
 .comman_anchor {
   position: relative;
-  border: 1px solid #E53E30;
+  background-color: #E53E30;
   display: inline-block;
   padding: 8px 30px;
   border-radius: 100px;
@@ -149,50 +169,6 @@ video {
 
 .comman_anchor span {
   color: #fff;
-}
-
-.comman_anchor:before {
-  width: 100%;
-  height: 100%;
-  content: '';
-  margin: auto;
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  background: #E53E30;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-  z-index: -1;
-}
-
-.comman_anchor:after {
-  width: 100%;
-  height: 100%;
-  content: '';
-  margin: auto;
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  background: #E53E30;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-  z-index: -1;
-}
-
-.comman_anchor:hover:before {
-  transform: rotateX(90deg);
-  -webkit-transform: rotateX(90deg);
-  -ms-transform: rotateX(90deg);
-}
-
-.comman_anchor:hover:after {
-  transform: rotateY(90deg);
-  -webkit-transform: rotateY(90deg);
-  -ms-transform: rotateY(90deg);
-}
-
-.comman_anchor:hover {
-  color: #E53E30;
 }
 
 .header_btn {
@@ -361,12 +337,18 @@ video {
      object-fit: contain;
 }
 
+.megamenu-li {
+  position: static;
+}
+
 .megamenu-li .megamenu {
   position: absolute;
   width: 100%;
   left: 0;
   right: 0;
   padding: 36px 0px;
+  -webkit-box-shadow: 0px 25px 24px -30px black;
+          box-shadow: 0px 25px 24px -30px black;
 }
 
 .megamenu-li .dropdown_wrap {
@@ -385,8 +367,37 @@ video {
   font-family: "Roboto", sans-serif;
 }
 
+.navbar {
+  padding: 0px 34px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-weight: 400;
+  font-size: 15px;
+  padding: 40px 12px;
+  color: #000;
+}
+
+.scrollup i {
+  background: #36aeea;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  position: fixed;
+  bottom: 20px;
+  z-index: 99;
+  right: 20px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s asre-in-out;
+}
+
 .dropdown-menu {
   border: 0;
+  margin: 0;
 }
 
 .company_name .border_right:before {
@@ -403,7 +414,7 @@ video {
 }
 
 .mega-menu {
-  padding: 20px 0px 0px 50px;
+  padding: 20px 0px 0px 46px;
 }
 
 .mega-menu li {
@@ -414,7 +425,7 @@ video {
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #e0dedc;
+  background-color: rgba(0, 0, 0, 0.04);
   border-radius: 10px;
 }
 
@@ -422,7 +433,7 @@ video {
   color: #606060;
   font-size: 15px;
   font-weight: 300;
-  padding-left: 24px;
+  padding-left: 30px;
 }
 
 .mega-menu li a:hover {
@@ -448,7 +459,7 @@ video {
 
 .overlay12 {
   position: fixed;
-  z-index: 3;
+  z-index: 49;
   top: 0;
   right: 0;
   bottom: 0;
@@ -486,7 +497,7 @@ video {
 
 .banner_section {
   position: relative;
-  padding: 90px 0px 0px;
+  padding: 100px 0px 0px;
 }
 
 .banner_text h1 {
@@ -852,21 +863,6 @@ video {
 
 .client_text {
   max-width: 1044px;
-}
-
-.navbar {
-  padding: 40px 38px 0px;
-}
-
-.navbar .dropdown {
-  position: static;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  font-weight: 400;
-  font-size: 15px;
-  padding: 0px 12px;
-  color: #000;
 }
 
 .bg_gray {
