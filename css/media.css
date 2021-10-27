@@ -213,8 +213,15 @@
     .mobile-menu-dropdown {
         overflow-y: scroll;
     }
+    .mb-50 {
+        margin-bottom: 0px;
+    }
+    .dropdown-toggle::after {
+        float: right;
+        margin-top: 9px;
+    }
     .nav-item.dropdown.megamenu-li {
-        display: table;
+        display: inline-table;
     }
     .megamenu-li .megamenu {
         position: relative;

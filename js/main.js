@@ -20,10 +20,7 @@ if (window.innerWidth < 991) {
         $('.navbar-menu').removeClass('show');
     })
     $('.navbar-toggler').click(function() {
-        $('body').addClass('overflow-hidden');
-    })
-    $('.menu_close_btn').click(function() {
-        $('body').removeClass('overflow-hidden');
+        $('body').toggleClass('overflow-hidden');
     })
 
     $(function() {
@@ -36,18 +33,18 @@ if (window.innerWidth < 991) {
     });
 }
 
-var swiper = new Swiper(".testimonial_slider", {
-    grabCursor: true,
-    effect: "cards",
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-});
+// var swiper = new Swiper(".testimonial_slider", {
+//     grabCursor: true,
+//     effect: "cards",
+//     autoplay: {
+//         delay: 5000,
+//         disableOnInteraction: false,
+//     },
+//     pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//     },
+// });
 
 // $(document).ready(function () {
 //     $('select').niceSelect();
@@ -133,7 +130,7 @@ $('.counter_wrap').counterUp({
 
 
 
-// slick slider synchrinize js
+// slick slider synchronize js
 
 $('.slider-for').slick({
     slidesToShow: 1,
@@ -240,6 +237,7 @@ $('.portfolio_slider').slick({
     slidesToShow: 3,
     focusOnSelect: true,
     dots: false,
+    autoplaySpeed: 1500,
     autoplay: true,
     infinite: true,
     responsive: [{
@@ -273,10 +271,17 @@ $('.portfolio_slider').slick({
 // ---------------------------------------
 
 $(document).ready(function() {
-    $('.navbar .dropdown').hover(function() {
-        $(this).find('.dropdown-menu').first().stop(true, true).slideDown(450);
-    }, function() {
-        $(this).find('.dropdown-menu').first().stop(true, true).slideUp(305)
+    var windowSize = $(window).width();
+
+    if (windowSize >= 991) {
+        $('.navbar .dropdown').hover(function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideDown(450);
+        }, function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideUp(305)
+        });
+    }
+    $('.dropdown-toggle').click(function() {
+        $(this).next('.dropdown-menu').slideToggle(500);
     });
 });
 
@@ -301,6 +306,7 @@ $('.checkbtn').on('click', function() {
 /*====================================*
     05. SCROLLUP JS
 *=====================================*/
+
 
 $(document).ready(function() {
     $(window).scroll(function() {
