@@ -205,8 +205,69 @@ video {
   margin-bottom: 30px;
 }
 
-.right_arrow {
+.read_more1 {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.read_more1:hover {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #000;
+}
+
+.read_more {
+  color: #fff;
   width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  font-size: 14px;
+}
+
+.read_more:hover {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #000;
+}
+
+.slider_arrow.slick-arrow {
+  position: absolute;
+  top: -50px;
+  right: 400px;
+  border: 1px solid #000;
+}
+
+.slider_arrow.slide.slick-arrow {
+  position: absolute;
+  top: -50px;
+  right: 320px;
+  border: 1px solid #000;
+}
+
+.slider_arrow.slide1.slick-arrow {
+  position: absolute;
+  top: -120px;
+  right: 480px;
+  border: 1px solid #000;
+}
+
+.slider_arrow.slide2.slick-arrow {
+  position: absolute;
+  top: -120px;
+  right: 400px;
+  border: 1px solid #000;
 }
 
 .who_section .comman_span1 {
@@ -376,7 +437,7 @@ video {
 .navbar-light .navbar-nav .nav-link {
   font-weight: 400;
   font-size: 15px;
-  padding: 40px 12px;
+  padding: 36px 12px;
   color: #000;
 }
 
@@ -732,11 +793,16 @@ video {
 }
 
 .slider_img {
+  border-radius: 10px;
   padding: 0px 10px;
 }
 
 .slider_img .web_overlay {
   position: relative;
+}
+
+.slider_img .web_overlay img {
+  border-radius: 10px;
 }
 
 .slider_img .web_overlay .slider_content {
@@ -791,28 +857,22 @@ video {
   padding: 0px 14px;
 }
 
-.slider_img .web_overlay .slider_arrow {
+.slider_arrow {
   max-width: 42px;
   height: 42px;
   width: 100%;
+  color: #000;
   background-color: #fff;
-  border-radius: 42px;
+  border-radius: 50px;
+  line-height: 42px;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.slider_img .web_overlay .slider_arrow img {
-  padding: 12px;
-}
-
-.slider_img .web_overlay .slider_arrow:hover {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  background-color: #e53e30;
-}
-
-.slick_arrow_left {
-  position: absolute;
-  top: 0;
-  border: 1px solid #000;
+.slider_arrow:hover {
+  background-color: #2d2d2d;
+  color: #fff;
 }
 
 .client h2 {
@@ -1785,20 +1845,6 @@ video {
 
 .small_divider {
   height: 60px;
-}
-
-.slick_slider_arrow.slick-arrow {
-  position: absolute;
-  top: -50px;
-  right: 380px;
-  cursor: pointer;
-}
-
-.slick_slider_arrow1.slick-arrow {
-  position: absolute;
-  top: -50px;
-  right: 310px;
-  cursor: pointer;
 }
 
 .sld-wrp .slider-for {

@@ -144,8 +144,8 @@ $('.slider-nav').slick({
     asNavFor: '.slider-for',
     dots: false,
     infinite: true,
-    prevArrow: '<img src="image/icons/arrow-forward-left.svg" class="slick_slider_arrow">',
-    nextArrow: '<img src="image/icons/arrow-forward-right.svg" class="slick_slider_arrow1">',
+    prevArrow: '<a href="" class="slider_arrow"><i class="fal fa-arrow-left"></i></a>',
+    nextArrow: '<a href="" class="slider_arrow slide"><i class="fal fa-arrow-right"></i></a>',
     centerMode: true,
     responsive: [{
             breakpoint: 1199,
@@ -192,8 +192,8 @@ $('.slick-carousel').slick({
     slidesToScroll: 1,
     arrows: true,
     dots: false,
-    prevArrow: '<img src="image/icons/arrow-forward-left.svg" class="slick_slider_arrow">',
-    nextArrow: '<img src="image/icons/arrow-forward-right.svg" class="slick_slider_arrow1">',
+    prevArrow: '<a href="" class="slider_arrow slide1"><i class="fal fa-arrow-left"></i></a>',
+    nextArrow: '<a href="" class="slider_arrow slide2"><i class="fal fa-arrow-right"></i></a>',
     infinite: true,
     responsive: [{
             breakpoint: 1399,
@@ -240,7 +240,7 @@ $('.portfolio_slider').slick({
     focusOnSelect: true,
     dots: false,
     autoplaySpeed: 1500,
-    autoplay: false,
+    autoplay: true,
     infinite: true,
     responsive: [{
             breakpoint: 992,
@@ -285,6 +285,9 @@ $(document).ready(function() {
     $('.dropdown-toggle').click(function() {
         $(this).next('.dropdown-menu').slideToggle(500);
     });
+    // $(window).on("resize", function(event) {
+    //     console.log($(this).width());
+    // });
 });
 
 

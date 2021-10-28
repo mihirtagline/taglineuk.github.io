@@ -8,13 +8,22 @@
         max-width: 800px;
     }
     /* mobile development css*/
-    .slick_slider_arrow.slick-arrow {
+    .slider_arrow.slick-arrow {
         right: 100px;
     }
-    .slick_slider_arrow1.slick-arrow {
+    .slider_arrow.slide.slick-arrow {
         right: 40px;
     }
-    /* ----------- */
+    /* index css */
+    .slider_arrow.slide1.slick-arrow {
+        right: 100px;
+        top: -50px;
+    }
+    .slider_arrow.slide2.slick-arrow {
+        right: 40px;
+        top: -50px;
+    }
+    /* portfolio img*/
     .portfolio_slider .slick-list {
         width: auto;
     }
@@ -520,6 +529,7 @@
     .slider_img .web_overlay .slider_arrow {
         width: 36px;
         height: 36px;
+        line-height: 36px;
     }
     /* portfolio css */
     .portfolio_slider .slick-list {
@@ -772,6 +782,11 @@
     .service_card_wrap .card-body .technology_wrap li {
         width: 38px;
     }
+    .read_more1 {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
     .card_lead {
         font-size: 16px;
         line-height: 24px;
@@ -779,15 +794,19 @@
     .small_divider {
         height: 50px;
     }
-    .slick_slider_arrow.slick-arrow {
+    .slider_arrow.slick-arrow {
         top: -44px;
         right: 80px;
         width: 36px;
+        height: 36px;
+        line-height: 36px;
     }
-    .slick_slider_arrow1.slick-arrow {
+    .slider_arrow.slide.slick-arrow {
         top: -44px;
         right: 30px;
         width: 36px;
+        height: 36px;
+        line-height: 36px;
     }
     .slide-btn {
         font-size: 17px;
@@ -908,6 +927,20 @@
     .about_wrap h5 {
         font-size: 16px;
         line-height: 26px;
+    }
+    .slider_arrow.slide1.slick-arrow,
+    .slider_arrow.slide2.slick-arrow {
+        top: -50px;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        font-size: 12px;
+    }
+    .slider_arrow.slide1.slick-arrow {
+        right: 70px;
+    }
+    .slider_arrow.slide2.slick-arrow {
+        right: 20px;
     }
     /* portfolio css */
     .portfolio_slider .slick-list {
@@ -1238,11 +1271,12 @@
     .service_card_wrap .card-body .technology_wrap li {
         width: 34px;
     }
-    .arrow_img {
+    .read_more1,
+    .read_more {
         width: 30px;
-    }
-    .right_arrow {
-        width: 28px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
     }
     .card_lead {
         font-size: 14px;
@@ -1250,16 +1284,6 @@
     }
     .small_divider {
         height: 40px;
-    }
-    .slick_slider_arrow.slick-arrow {
-        top: -36px;
-        right: 80px;
-        width: 30px;
-    }
-    .slick_slider_arrow1.slick-arrow {
-        top: -36px;
-        right: 40px;
-        width: 30px;
     }
     .slide-btn {
         font-size: 16px;
@@ -1409,10 +1433,6 @@
     .slider_img .web_overlay .slider_overlay p {
         font-size: 13px;
         max-width: 200px;
-    }
-    .slider_img .web_overlay .slider_arrow {
-        width: 36px;
-        height: 36px;
     }
     .slider_img .web_overlay .slider_arrow img {
         padding: 9px;
