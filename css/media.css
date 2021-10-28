@@ -7,6 +7,17 @@
         right: 0;
         max-width: 800px;
     }
+    /* mobile development css*/
+    .slick_slider_arrow.slick-arrow {
+        right: 100px;
+    }
+    .slick_slider_arrow1.slick-arrow {
+        right: 40px;
+    }
+    /* ----------- */
+    .portfolio_slider .slick-list {
+        width: auto;
+    }
 }
 
 
@@ -57,12 +68,20 @@
     .recent_post {
         padding: 44px;
     }
+    /* portfolio css */
+    .slide.slick-slide.slick-current .cl .portfolio_title h2 {
+        font-size: 48px;
+    }
+    .slide.slick-slide.slick-current .cl .portfolio_text {
+        font-size: 14px;
+        letter-spacing: 4px;
+    }
 }
 
 
-/* ----------------------------------- *
-    (max-width:991px)
-*--------------------------------------*/
+/* ----------------------------------------- *
+    (min-width:992px) & (max-width:991px)
+*------------------------------------------- */
 
 @media (min-width:992px) and (max-width:1199px) {
     /* blog css */
@@ -291,7 +310,19 @@
     }
     /* portfolio css */
     .portfolio_slider .slick-list {
-        width: calc(100vw - 5%);
+        width: calc(100vw - 25%);
+    }
+}
+
+
+/* ----------------------------------- *
+    (max-width:767px)
+*--------------------------------------*/
+
+@media only screen and (max-width:860px) {
+    /* portfolio css */
+    .portfolio_slider .slick-list {
+        width: calc(100vw - 12%);
     }
 }
 
@@ -458,18 +489,12 @@
     .portfolio_slider .slick-list {
         width: calc(100vw - 25%);
     }
-    .slide.slick-slide.slick-current .cl .portfolio_title {
-        left: 16px;
-    }
     .slide.slick-slide.slick-current .cl .portfolio_title h2 {
-        font-size: 40px;
-    }
-    .slide.slick-slide.slick-current .cl .portfolio_text {
-        font-size: 14px;
-        letter-spacing: 4px;
+        font-size: 36px;
     }
     .slide.slick-slide.slick-current .cl .portfolio_title h2:after {
-        display: none;
+        width: 40px;
+        left: -48px;
     }
 }
 
@@ -509,7 +534,9 @@
     }
     .slide.slick-slide.slick-current .cl .portfolio_text {
         font-size: 12px;
-        letter-spacing: 3px;
+    }
+    .slide.slick-slide.slick-current .cl .portfolio_title h2:after {
+        display: none;
     }
 }
 
@@ -749,12 +776,25 @@
         font-size: 16px;
         line-height: 24px;
     }
+    .small_divider {
+        height: 50px;
+    }
+    .slick_slider_arrow.slick-arrow {
+        top: -44px;
+        right: 80px;
+        width: 36px;
+    }
+    .slick_slider_arrow1.slick-arrow {
+        top: -44px;
+        right: 30px;
+        width: 36px;
+    }
     .slide-btn {
         font-size: 17px;
         padding: 12px;
     }
     .education_section h2 {
-        font-size: 30px;
+        font-size: 22px;
     }
     .comman_anchor {
         padding: 6px 26px;
@@ -882,7 +922,6 @@
     }
     .slide.slick-slide.slick-current .cl .portfolio_text {
         font-size: 16px;
-        letter-spacing: 5px;
     }
 }
 
@@ -1209,6 +1248,19 @@
         font-size: 14px;
         line-height: 20px;
     }
+    .small_divider {
+        height: 40px;
+    }
+    .slick_slider_arrow.slick-arrow {
+        top: -36px;
+        right: 80px;
+        width: 30px;
+    }
+    .slick_slider_arrow1.slick-arrow {
+        top: -36px;
+        right: 40px;
+        width: 30px;
+    }
     .slide-btn {
         font-size: 16px;
         padding: 10px;
@@ -1218,7 +1270,7 @@
         height: 24px;
     }
     .education_section h2 {
-        font-size: 24px;
+        font-size: 19px;
     }
     .comman_anchor {
         padding: 4px 16px;
@@ -1367,13 +1419,12 @@
     }
     /* portfolio css */
     .portfolio_slider .slick-list {
-        width: calc(100vw - 4%);
+        width: calc(100vw - 6%);
     }
     .slide.slick-slide.slick-current .cl .portfolio_title h2 {
         font-size: 28px;
     }
     .slide.slick-slide.slick-current .cl .portfolio_text {
         font-size: 14px;
-        letter-spacing: 4px;
     }
 }

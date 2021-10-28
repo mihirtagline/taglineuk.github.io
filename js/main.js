@@ -144,8 +144,8 @@ $('.slider-nav').slick({
     asNavFor: '.slider-for',
     dots: false,
     infinite: true,
-    prevArrow: '<img src="image/icons/arrow-forward-left.svg">',
-    nextArrow: '<img src="image/icons/arrow-forward-right.svg">',
+    prevArrow: '<img src="image/icons/arrow-forward-left.svg" class="slick_slider_arrow">',
+    nextArrow: '<img src="image/icons/arrow-forward-right.svg" class="slick_slider_arrow1">',
     centerMode: true,
     responsive: [{
             breakpoint: 1199,
@@ -192,6 +192,8 @@ $('.slick-carousel').slick({
     slidesToScroll: 1,
     arrows: true,
     dots: false,
+    prevArrow: '<img src="image/icons/arrow-forward-left.svg" class="slick_slider_arrow">',
+    nextArrow: '<img src="image/icons/arrow-forward-right.svg" class="slick_slider_arrow1">',
     infinite: true,
     responsive: [{
             breakpoint: 1399,
@@ -238,7 +240,7 @@ $('.portfolio_slider').slick({
     focusOnSelect: true,
     dots: false,
     autoplaySpeed: 1500,
-    autoplay: true,
+    autoplay: false,
     infinite: true,
     responsive: [{
             breakpoint: 992,
