@@ -146,21 +146,27 @@ $('.slider-nav').slick({
     infinite: true,
     prevArrow: '<a href="" class="slider_arrow"><i class="fal fa-arrow-left"></i></a>',
     nextArrow: '<a href="" class="slider_arrow slide"><i class="fal fa-arrow-right"></i></a>',
-    centerMode: true,
+    centerMode: false,
     responsive: [{
-            breakpoint: 1199,
+            breakpoint: 1600,
+            settings: {
+                slidesToShow: 4,
+            }
+        },
+        {
+            breakpoint: 1200,
             settings: {
                 slidesToShow: 3,
             }
         },
         {
-            breakpoint: 767,
+            breakpoint: 992,
             settings: {
                 slidesToShow: 2,
             }
         },
         {
-            breakpoint: 500,
+            breakpoint: 480,
             settings: {
                 slidesToShow: 1,
             }
@@ -194,6 +200,7 @@ $('.slick-carousel').slick({
     dots: false,
     prevArrow: '<a href="" class="slider_arrow slide1"><i class="fal fa-arrow-left"></i></a>',
     nextArrow: '<a href="" class="slider_arrow slide2"><i class="fal fa-arrow-right"></i></a>',
+    autoplay: true,
     infinite: true,
     responsive: [{
             breakpoint: 1399,
@@ -272,23 +279,23 @@ $('.portfolio_slider').slick({
 
 // ---------------------------------------
 
-$(document).ready(function() {
-    var windowSize = $(window).width();
+// $(document).ready(function() {
+//     var windowSize = $(window).width();
 
-    if (windowSize >= 991) {
-        $('.navbar .dropdown').hover(function() {
-            $(this).find('.dropdown-menu').first().stop(true, true).slideDown(450);
-        }, function() {
-            $(this).find('.dropdown-menu').first().stop(true, true).slideUp(305)
-        });
-    };
-    $('.dropdown-toggle').click(function() {
-        $(this).next('.dropdown-menu').slideToggle(500);
-    });
-    // $(window).on("resize", function(event) {
-    //     console.log($(this).width());
-    // });
-});
+//     if (windowSize >= 991) {
+//         $('.navbar .dropdown').hover(function() {
+//             $(this).find('.dropdown-menu').first().stop(true, true).slideDown(450);
+//         }, function() {
+//             $(this).find('.dropdown-menu').first().stop(true, true).slideUp(305)
+//         });
+//     };
+//     $('.dropdown-toggle').click(function() {
+//         $(this).next('.dropdown-menu').slideToggle(500);
+//     });
+//     // $(window).on("resize", function(event) {
+//     //     console.log($(this).width());
+//     // });
+// });
 
 
 // --------------------------------

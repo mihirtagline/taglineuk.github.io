@@ -14,6 +14,9 @@
     .slider_arrow.slide.slick-arrow {
         right: 40px;
     }
+    .slider-nav {
+        width: 100%;
+    }
     /* index css */
     .slider_arrow.slide1.slick-arrow {
         right: 100px;
@@ -216,6 +219,10 @@
     .service_wrap {
         min-height: auto;
     }
+    .slide-btn {
+        padding: 20px 10px;
+        font-size: 22px;
+    }
     .education_section h2 {
         font-size: 46px;
     }
@@ -413,15 +420,14 @@
     .service_card_wrap .card-body .technology_wrap li {
         width: 48px;
     }
-    .slide-btn {
-        font-size: 18px;
-        padding: 16px;
-    }
     .education_img {
         margin-bottom: 16px;
     }
     .education_section h2 {
         font-size: 36px;
+    }
+    .education_section p {
+        font-size: 20px;
     }
     .comman_anchor {
         padding: 8px 28px;
@@ -521,6 +527,10 @@
     }
     .blog_text span {
         font-size: 10.2vw;
+    }
+    /* mobile development css */
+    .slide-btn {
+        font-size: 22px;
     }
     /* index css */
     .slider_img .web_overlay .slider_overlay p {
@@ -809,11 +819,10 @@
         line-height: 36px;
     }
     .slide-btn {
-        font-size: 17px;
-        padding: 12px;
+        font-size: 20px;
     }
     .education_section h2 {
-        font-size: 22px;
+        font-size: 30px;
     }
     .comman_anchor {
         padding: 6px 26px;
@@ -982,6 +991,9 @@
     /* index css */
     .gutter_sm {
         width: 100%;
+    }
+    .education_section h2 {
+        font-size: 22px;
     }
 }
 
@@ -1284,10 +1296,6 @@
     }
     .small_divider {
         height: 40px;
-    }
-    .slide-btn {
-        font-size: 16px;
-        padding: 10px;
     }
     .slide-btn.slick-slide.slick-current.slick-active.slick-center:after {
         width: 24px;
