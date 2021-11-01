@@ -404,16 +404,6 @@ video {
   position: static;
 }
 
-.megamenu-li .megamenu {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  right: 0;
-  padding: 36px 0px;
-  -webkit-box-shadow: 0px 25px 24px -30px black;
-          box-shadow: 0px 25px 24px -30px black;
-}
-
 .megamenu-li .dropdown_wrap {
   max-width: 1140px;
   margin: 0 auto;
@@ -557,7 +547,7 @@ video {
 
 .banner_section {
   position: relative;
-  padding: 100px 0px 0px;
+  padding: 94px 0px 0px;
 }
 
 .banner_text h1 {
@@ -1264,7 +1254,7 @@ video {
 }
 
 .contact_text {
-  padding-top: 66px;
+  padding-top: 26px;
 }
 
 .contact_text span {
@@ -1357,15 +1347,6 @@ video {
 .header_img {
   display: inline-block;
   margin-right: 30px;
-}
-
-.header_img:after {
-  content: "";
-  position: absolute;
-  left: 115px;
-  top: 27px;
-  border-left: 1px solid rgba(255, 255, 255, 0.25);
-  height: 72px;
 }
 
 .blog_text p {

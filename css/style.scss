@@ -369,14 +369,29 @@ video {
 // start index css
 .megamenu-li {
     position: static;
-    .megamenu {
-        position: absolute;
-        width: 100%;
-        left: 0;
-        right: 0;
-        padding: 36px 0px;
-        box-shadow: 0px 25px 24px -30px rgba(0, 0, 0, 28%);
-    }
+    // .megamenu {
+    //     position: absolute;
+    //     width: 100%;
+    //     left: 0;
+    //     right: 0;
+    //     padding: 36px 0px;
+    //     box-shadow: 0px 25px 24px -30px rgba(0, 0, 0, 28%);
+    //     display: block;
+    //     top: calc(100% + 30px);
+    //     margin: 0;
+    //     z-index: 99;
+    //     opacity: 0;
+    //     visibility: hidden;
+    //     background: #fff;
+    //     transition: 0.3s;
+    // }
+    // &:hover {
+    //     &>.dropdown-menu {
+    //         opacity: 1;
+    //         top: 100%;
+    //         visibility: visible;
+    //     }
+    // }
     .dropdown_wrap {
         max-width: 1140px;
         margin: 0 auto;
@@ -536,7 +551,7 @@ video {
 // start banner css
 .banner_section {
     position: relative;
-    padding: 100px 0px 0px;
+    padding: 94px 0px 0px;
 }
 
 .banner_text {
@@ -1206,7 +1221,7 @@ video {
 }
 
 .contact_text {
-    padding-top: 66px;
+    padding-top: 26px;
     span {
         font-weight: 700;
         -webkit-text-stroke: 1px #fff;
@@ -1299,14 +1314,14 @@ video {
 .header_img {
     display: inline-block;
     margin-right: 30px;
-    &:after {
-        content: "";
-        position: absolute;
-        left: 115px;
-        top: 27px;
-        border-left: 1px solid rgba(255, 255, 255, 0.25);
-        height: 72px;
-    }
+    // &:after {
+    //     content: "";
+    //     position: absolute;
+    //     left: 115px;
+    //     top: 27px;
+    //     border-left: 1px solid rgba(255, 255, 255, 0.25);
+    //     height: 72px;
+    // }
 }
 
 //02. start banner style
