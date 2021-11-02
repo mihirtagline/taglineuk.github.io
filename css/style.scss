@@ -88,37 +88,27 @@ video {
 }
 
 .theme-black-background {
-    background-color: $theme-black !important;
+    background-color: $theme-black;
 }
 
 .theme-red {
-    color: $theme-red !important;
+    color: $theme-red;
 }
 
 .theme-red-background {
-    background-color: $theme-red !important;
+    background-color: $theme-red;
 }
 
 .theme-white {
-    color: $theme-white !important;
+    color: $theme-white;
 }
 
 .theme-white-background {
-    background-color: $theme-white !important;
+    background-color: $theme-white;
 }
 
 .dark-background {
-    background-color: $dark-background !important;
-}
-
-.stroke-white {
-    color: transparent;
-    -webkit-text-stroke: 1px $theme-white !important;
-}
-
-.stroke-red {
-    color: transparent;
-    -webkit-text-stroke: 1px $theme-red !important;
+    background-color: $dark-background;
 }
 
 .navbar-toggler-icon1 {
@@ -146,7 +136,7 @@ video {
     left: 0;
     top: 0;
     z-index: 999;
-    background: #fff;
+    background-color: #fff;
     transition: all 0.5s ease-in-out;
 }
 
@@ -237,34 +227,6 @@ video {
         border: 1px solid $theme-white;
         color: $theme-black;
     }
-}
-
-.slider_arrow.slick-arrow {
-    position: absolute;
-    top: -50px;
-    right: 400px;
-    border: 1px solid $theme-black;
-}
-
-.slider_arrow.slide.slick-arrow {
-    position: absolute;
-    top: -50px;
-    right: 320px;
-    border: 1px solid $theme-black;
-}
-
-.slider_arrow.slide1.slick-arrow {
-    position: absolute;
-    top: -120px;
-    right: 480px;
-    border: 1px solid $theme-black;
-}
-
-.slider_arrow.slide2.slick-arrow {
-    position: absolute;
-    top: -120px;
-    right: 400px;
-    border: 1px solid $theme-black;
 }
 
 .who_section .comman_span1 {
@@ -369,29 +331,6 @@ video {
 // start index css
 .megamenu-li {
     position: static;
-    // .megamenu {
-    //     position: absolute;
-    //     width: 100%;
-    //     left: 0;
-    //     right: 0;
-    //     padding: 36px 0px;
-    //     box-shadow: 0px 25px 24px -30px rgba(0, 0, 0, 28%);
-    //     display: block;
-    //     top: calc(100% + 30px);
-    //     margin: 0;
-    //     z-index: 99;
-    //     opacity: 0;
-    //     visibility: hidden;
-    //     background: #fff;
-    //     transition: 0.3s;
-    // }
-    // &:hover {
-    //     &>.dropdown-menu {
-    //         opacity: 1;
-    //         top: 100%;
-    //         visibility: visible;
-    //     }
-    // }
     .dropdown_wrap {
         max-width: 1140px;
         margin: 0 auto;
@@ -422,6 +361,21 @@ video {
             //     transition: all 0.3s ease-in-out;
             //     color: $theme-red;
             // }
+        }
+        .nav-link-color {
+            color: $theme-white;
+        }
+    }
+}
+
+.nav-fixed {
+    .navbar-light {
+        .navbar-nav {
+            li {
+                &>a {
+                    color: #000;
+                }
+            }
         }
     }
 }
@@ -660,6 +614,20 @@ video {
 }
 
 // start industry css
+.slider_arrow.slick-arrow {
+    position: absolute;
+    top: -50px;
+    right: 400px;
+    border: 1px solid $theme-black;
+}
+
+.slider_arrow.slide.slick-arrow {
+    position: absolute;
+    top: -50px;
+    right: 320px;
+    border: 1px solid $theme-black;
+}
+
 // start apart css
 .slider-wrap {
     .slider {
@@ -759,6 +727,20 @@ video {
 .stories_heading {
     position: relative;
     max-width: 851px;
+}
+
+.slider_arrow.slide1.slick-arrow {
+    position: absolute;
+    top: -120px;
+    right: 480px;
+    border: 1px solid $theme-black;
+}
+
+.slider_arrow.slide2.slick-arrow {
+    position: absolute;
+    top: -120px;
+    right: 400px;
+    border: 1px solid $theme-black;
 }
 
 .slider_img {
@@ -882,8 +864,7 @@ video {
 }
 
 // start about us css
-//01. start header style
-//02. start banner style
+//01. start banner style
 .bg_gray {
     background-color: #F6F6F8;
     .banner_text {
@@ -908,15 +889,13 @@ video {
     }
 }
 
-// 03. start who style
+// 02. start who style
 .bg_black {
     background-color: $dark-background;
 }
 
 .who_section {
     .heading_s1 {
-        // font-weight: $font-weight-700;
-        // line-height: 50px;
         display: block;
         text-transform: capitalize;
     }
@@ -930,8 +909,6 @@ video {
 
 .who_heading {
     h3 {
-        // font-weight: $font-weight-700;
-        // line-height: 50px;
         margin-bottom: 40px;
     }
     p {
@@ -960,13 +937,11 @@ video {
     margin-top: 14px;
 }
 
-// 04.start our style
+// 03.start our style
 .our_section {
     .heading_s1 {
-        // font-weight: $font-weight-700;
         display: block;
         text-transform: capitalize;
-        // line-height: 50px;
     }
     .comman_span {
         font-weight: $font-weight-700;
@@ -1010,7 +985,7 @@ video {
     }
 }
 
-//05. start professional team style 
+//04. start professional team style 
 .professional {
     position: relative;
     margin-bottom: 30px;
@@ -1057,7 +1032,7 @@ video {
     }
 }
 
-// 06. start say hello
+// 05. start say hello
 .heading_s2 {
     font-size: $comman_text;
     display: block;
@@ -1113,7 +1088,6 @@ video {
             transition: all 0.5s ease-in-out;
             &:hover {
                 color: $theme-red;
-                padding-left: 10px;
             }
         }
     }
@@ -1202,19 +1176,7 @@ video {
 }
 
 // start contact css
-//01. start header style
-// .contact_header {
-//     .navbar-light {
-//         .navbar-nav {
-//             .nav-link {
-//                 color: $theme-white;
-//                 &:hover {
-//                     color: $theme-red;
-//                 }
-//             }
-//         }
-//     }
-// }
+// 01. start banner css
 .medium_divider {
     min-height: 430px;
     height: 100%;
@@ -1308,9 +1270,6 @@ video {
 
 // start blog css
 // 01. start header style
-// .navbar {
-//     justify-content: normal;
-// }
 .header_img {
     display: inline-block;
     margin-right: 30px;
@@ -1829,8 +1788,6 @@ video {
     }
 }
 
-// .slide-btn.slick-slide.slick-current.slick-active.slick-center {
-//     &:after {}
 // }
 .slick-prev.slick-arrow {
     display: none !important;
@@ -1903,7 +1860,6 @@ video {
     content: "\f0dd";
 }
 
-// ------------------------------
 // start portfoli css
 .portfolio_slider .slick-list {
     width: calc(100vw - 35%);

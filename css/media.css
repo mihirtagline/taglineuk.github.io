@@ -178,7 +178,7 @@
         width: 100%;
         left: 0;
         right: 0;
-        padding: 36px 0px;
+        padding: 36px 16px;
         -webkit-box-shadow: 0px 25px 24px -30px black;
         box-shadow: 0px 25px 24px -30px black;
         display: block;
@@ -278,8 +278,6 @@
         right: 0;
         top: 82px;
         height: 100vh;
-    }
-    .mobile-menu-dropdown {
         overflow-y: scroll;
     }
     .mb-50 {
@@ -802,9 +800,6 @@
     .media .bg_offgray {
         padding: 10px;
     }
-    .media img {
-        width: 20px;
-    }
     .comment .comment_lead {
         font-size: 15px;
         margin: 20px 0px;
@@ -839,14 +834,14 @@
         height: 50px;
     }
     .slider_arrow.slick-arrow {
-        top: -44px;
+        top: -38px;
         right: 80px;
         width: 36px;
         height: 36px;
         line-height: 36px;
     }
     .slider_arrow.slide.slick-arrow {
-        top: -44px;
+        top: -38px;
         right: 30px;
         width: 36px;
         height: 36px;
@@ -1380,9 +1375,6 @@
     }
     .benefits p {
         font-size: 14px;
-    }
-    .engagement_model {
-        text-align: center;
     }
     .engagement_model img {
         width: 70px;

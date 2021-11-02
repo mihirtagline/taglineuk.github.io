@@ -89,37 +89,27 @@ video {
 }
 
 .theme-black-background {
-  background-color: #000 !important;
+  background-color: #000;
 }
 
 .theme-red {
-  color: #e53e30 !important;
+  color: #e53e30;
 }
 
 .theme-red-background {
-  background-color: #e53e30 !important;
+  background-color: #e53e30;
 }
 
 .theme-white {
-  color: #fff !important;
+  color: #fff;
 }
 
 .theme-white-background {
-  background-color: #fff !important;
+  background-color: #fff;
 }
 
 .dark-background {
-  background-color: #2d2d2d !important;
-}
-
-.stroke-white {
-  color: transparent;
-  -webkit-text-stroke: 1px #fff !important;
-}
-
-.stroke-red {
-  color: transparent;
-  -webkit-text-stroke: 1px #e53e30 !important;
+  background-color: #2d2d2d;
 }
 
 .navbar-toggler-icon1 {
@@ -147,7 +137,7 @@ video {
   left: 0;
   top: 0;
   z-index: 999;
-  background: #fff;
+  background-color: #fff;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -240,34 +230,6 @@ video {
   background-color: #fff;
   border: 1px solid #fff;
   color: #000;
-}
-
-.slider_arrow.slick-arrow {
-  position: absolute;
-  top: -50px;
-  right: 400px;
-  border: 1px solid #000;
-}
-
-.slider_arrow.slide.slick-arrow {
-  position: absolute;
-  top: -50px;
-  right: 320px;
-  border: 1px solid #000;
-}
-
-.slider_arrow.slide1.slick-arrow {
-  position: absolute;
-  top: -120px;
-  right: 480px;
-  border: 1px solid #000;
-}
-
-.slider_arrow.slide2.slick-arrow {
-  position: absolute;
-  top: -120px;
-  right: 400px;
-  border: 1px solid #000;
 }
 
 .who_section .comman_span1 {
@@ -428,6 +390,14 @@ video {
   font-weight: 400;
   font-size: 15px;
   padding: 36px 12px;
+  color: #000;
+}
+
+.navbar-light .navbar-nav .nav-link-color {
+  color: #fff;
+}
+
+.nav-fixed .navbar-light .navbar-nav li > a {
   color: #000;
 }
 
@@ -667,6 +637,20 @@ video {
   }
 }
 
+.slider_arrow.slick-arrow {
+  position: absolute;
+  top: -50px;
+  right: 400px;
+  border: 1px solid #000;
+}
+
+.slider_arrow.slide.slick-arrow {
+  position: absolute;
+  top: -50px;
+  right: 320px;
+  border: 1px solid #000;
+}
+
 .slider-wrap .slider {
   margin: 20px auto;
   text-align: center;
@@ -780,6 +764,20 @@ video {
 .stories_heading {
   position: relative;
   max-width: 851px;
+}
+
+.slider_arrow.slide1.slick-arrow {
+  position: absolute;
+  top: -120px;
+  right: 480px;
+  border: 1px solid #000;
+}
+
+.slider_arrow.slide2.slick-arrow {
+  position: absolute;
+  top: -120px;
+  right: 400px;
+  border: 1px solid #000;
 }
 
 .slider_img {
@@ -1152,7 +1150,6 @@ video {
 
 .inquiry li a:hover {
   color: #e53e30;
-  padding-left: 10px;
 }
 
 .follow a img {
