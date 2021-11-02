@@ -85,7 +85,7 @@ video {
 }
 
 .theme-black {
-  color: #000;
+  color: #000 !important;
 }
 
 .theme-black-background {
@@ -97,11 +97,11 @@ video {
 }
 
 .theme-red-background {
-  background-color: #e53e30;
+  background-color: #e53e30 !important;
 }
 
 .theme-white {
-  color: #fff;
+  color: #fff !important;
 }
 
 .theme-white-background {
@@ -1402,7 +1402,6 @@ video {
 }
 
 .card_body h5 {
-  color: #6F7D8C;
   font-weight: 600;
   line-height: 35px;
   margin: 0;
@@ -1411,7 +1410,6 @@ video {
 .card_body p {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
-  color: #6F7D8C;
   margin: 18px 0px;
   line-height: 30px;
   font-weight: 300;
