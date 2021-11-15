@@ -78,7 +78,7 @@ $('.slider-nav').slick({
 window.onload = function() {
     $slideshow = $('.slider').slick({
         dots: false,
-        autoplay: false,
+        autoplay: true,
         arrows: true,
         prevArrow: '<img src="image/icons/reverse arrow.svg" class="slick_left_arrow">',
         nextArrow: '<img src="image/icons/forward arrow.svg" class="slick_right_arrow">',
@@ -181,10 +181,9 @@ $(window).on('scroll', function() {
 
     if (scroll >= 150) {
         $('header').addClass('nav-fixed');
-        // $('.nav-link-color').css({ "color": "#000" });
+        $('navbar-toggler-icon1').css('background-image', 'url(img/img_two.jpg)')
     } else {
         $('header').removeClass('nav-fixed');
-        // $('.nav-link-color').css({ "color": "#fff" });
     }
 });
 
@@ -194,20 +193,5 @@ $(window).on('scroll', function() {
 
 
 /*====================================*
-    05. SCROLLUP JS
+    
 *=====================================*/
-
-
-$(document).ready(function() {
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 100) {
-            $('.scrollup').fadeIn();
-        } else {
-            $('.scrollup').fadeOut();
-        }
-    });
-    $('.scrollup').click(function() {
-        $("html, body").animate({ scrollTop: 0 }, 1700);
-        return false;
-    });
-});

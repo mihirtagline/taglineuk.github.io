@@ -159,8 +159,9 @@ video {
   color: #fff;
 }
 
-.comman_anchor span {
-  color: #fff;
+.comman_anchor:hover {
+  background-color: transparent;
+  color: #e53e30;
 }
 
 .header_btn {
@@ -304,64 +305,6 @@ video {
           justify-content: space-between;
 }
 
-.technology_section .technology_pills li {
-  margin-right: 70px;
-}
-
-.technology_section .technology_pills li a {
-  color: #000;
-  font-weight: 600;
-  font-size: 25px;
-  padding: 10px 0;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.technology_section .technology_pills li a.active {
-  color: #e53e30;
-  background-color: transparent;
-}
-
-.technology_section .technology_pills li a.active::after {
-  position: absolute;
-  content: '';
-  width: 32px;
-  height: 32px;
-  border-radius: 100px;
-  right: -10px;
-  background-color: rgba(229, 62, 48, 0.33);
-}
-
-.technology_section .technology_image_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.technology_section .technology_image_wrap li {
-  padding: 20px;
-}
-
-.technology_section .technology_image_wrap li img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .megamenu-li {
   position: static;
 }
@@ -399,27 +342,6 @@ video {
 
 .nav-fixed .navbar-light .navbar-nav li > a {
   color: #000;
-}
-
-.scrollup i {
-  background: #e53e30;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  font-size: 20px;
-  color: #fff;
-  position: fixed;
-  bottom: 20px;
-  z-index: 99;
-  right: 20px;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s asre-in-out;
-}
-
-.scrollup i:hover {
-  background-color: #2d2d2d;
 }
 
 .dropdown-menu {
@@ -637,6 +559,10 @@ video {
   }
 }
 
+.technology_logo {
+  padding: 16px 0px;
+}
+
 .slider_arrow.slick-arrow {
   position: absolute;
   top: -50px;
@@ -734,6 +660,10 @@ video {
 
 .blog_btn {
   padding: 8px 20px;
+}
+
+.blog_btn i {
+  padding-left: 5px;
 }
 
 .about_wrap {
@@ -862,6 +792,10 @@ video {
 
 .client h2 {
   font-family: "Poppins", sans-serif;
+}
+
+.our_clients {
+  padding: 70px 0px;
 }
 
 .client-logos {
@@ -1022,9 +956,13 @@ video {
   font-family: "Roboto", sans-serif;
 }
 
+.our_box_wrap i {
+  font-size: 32px;
+}
+
 .our_box_wrap h2 {
-  font-size: 30px;
-  margin-bottom: 24px;
+  font-size: 24px;
+  margin: 16px 0px 16px;
 }
 
 .our_box_wrap .our_title h5 {

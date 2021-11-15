@@ -266,19 +266,25 @@
     }
     /* index css */
     .banner_section {
-        padding: 82px 0px 0px;
+        padding: 72px 0px 0px;
     }
-    .navbar-nav {
+    .navbar-collapse {
         background-color: #D95C1B;
     }
-    .mobile-menu-dropdown {
-        position: fixed;
-        z-index: 5;
-        left: 0;
-        right: 0;
-        top: 82px;
-        height: 100vh;
-        overflow-y: scroll;
+    .megamenu {
+        max-height: 238px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .mega-menu {
+        padding: 0px;
+    }
+    .megamenu-li .header_content {
+        padding-left: 0px;
+        padding-top: 16px;
+    }
+    .mega-menu li a:after {
+        left: 32px;
     }
     .mb-50 {
         margin-bottom: 0px;
@@ -287,12 +293,9 @@
         float: right;
         margin-top: 9px;
     }
-    /* .nav-item.dropdown.megamenu-li {
-        display: inline-table;
-    } */
     .megamenu-li .megamenu {
         /* position: relative; */
-        padding: 20px;
+        padding: 0px 16px;
     }
     .navbar-light .navbar-nav .nav-link {
         padding: 10px;
@@ -311,12 +314,6 @@
     .header_lead {
         max-width: none;
         margin: 16px 0px;
-    }
-    .header_btn {
-        position: absolute;
-        top: 19px;
-        right: 80px;
-        margin-left: 0px !important;
     }
     .banner_section .right_wrap {
         position: relative;
@@ -343,6 +340,9 @@
     }
     .about_wrap p {
         margin-top: 16px;
+    }
+    .our_clients {
+        padding: 50px 0px;
     }
     .client-logos .bg_img {
         opacity: 0.5;
@@ -485,24 +485,15 @@
         margin-top: 40px;
     }
     /* index css */
-    .mega-menu {
-        padding: 14px 0px 0px 14px;
-    }
     .mega-menu li a {
         padding-left: 24px;
         font-size: 14px;
     }
     .mega-menu li a:after {
-        left: 36px;
-    }
-    .megamenu-li .header_content {
-        padding-left: 20px;
+        left: 26px;
     }
     .megamenu-li .header_content a {
         font-size: 18px;
-    }
-    .header_btn {
-        top: 20px;
     }
     .banner_text h1 {
         font-size: 44px;
@@ -898,35 +889,20 @@
         line-height: 28px;
     }
     /* index css */
-    .header_logo {
-        width: 50px;
-    }
     .banner_section {
         padding: 68px 0px 0px;
     }
-    .mobile-menu-dropdown {
-        top: 68px;
-    }
     .megamenu-li .header_content {
-        padding-left: 10px;
-    }
-    .mega-menu {
-        padding: 0px 0px 0px 36px;
+        /* padding-left: 10px; */
     }
     .mega-menu li a:after {
-        left: 68px;
+        left: 32px;
     }
     .mega-menu li a {
         padding-left: 28px;
     }
-    .header_bottom {
-        margin-bottom: 16px;
-    }
     .navbar-toggler {
         top: 19px;
-    }
-    .header_btn {
-        top: 17px;
     }
     .banner_btn {
         font-size: 14px;
@@ -982,6 +958,9 @@
     }
     .slider_arrow.slide2.slick-arrow {
         right: 20px;
+    }
+    .our_clients {
+        padding: 34px 0px;
     }
     /* portfolio css */
     .portfolio_slider .slick-list {
@@ -1043,7 +1022,7 @@
         padding: 40px 0px;
     }
     .theme-font {
-        font-size: 24px;
+        font-size: 23px;
         line-height: 34px;
     }
     .mb_50 {
@@ -1397,11 +1376,8 @@
         line-height: 24px;
     }
     /* index css */
-    .mobile-menu-dropdown {
-        top: 60px;
-    }
     .megamenu-li .megamenu {
-        padding: 18px;
+        padding: 0px 16px;
     }
     .mega-menu li a {
         font-size: 14px;
@@ -1411,16 +1387,13 @@
         height: 8px;
     }
     .megamenu-li .header_content {
-        padding-left: 16px;
+        padding-top: 16px;
     }
     .megamenu-li .header_content h5 {
         font-size: 16px;
     }
     .navbar-toggler {
         top: 14px;
-    }
-    .header_logo {
-        width: 45px;
     }
     .banner_section {
         padding: 60px 0px 0px;
