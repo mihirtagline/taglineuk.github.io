@@ -32,6 +32,9 @@ $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    fade: true,
+    autoplay: true,
+    speed: 1000,
     asNavFor: '.slider-nav',
 });
 $('.slider-nav').slick({
