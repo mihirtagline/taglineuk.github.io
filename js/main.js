@@ -90,55 +90,6 @@ window.onload = function() {
     });
 };
 
-
-// slicks slider stories js
-$('.slick-carousel').slick({
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    arrows: true,
-    dots: false,
-    prevArrow: '<a href="" class="slider_arrow slide1"><i class="fal fa-arrow-left"></i></a>',
-    nextArrow: '<a href="" class="slider_arrow slide2"><i class="fal fa-arrow-right"></i></a>',
-    autoplay: true,
-    infinite: true,
-    responsive: [{
-            breakpoint: 1399,
-            settings: {
-                slidesToShow: 4,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 1199,
-            settings: {
-                slidesToShow: 3,
-            }
-        },
-        {
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 3,
-            }
-        },
-        {
-            breakpoint: 800,
-            settings: {
-                slidesToShow: 2,
-            }
-        },
-
-        {
-            breakpoint: 576,
-            settings: {
-                slidesToShow: 1,
-            }
-        }
-
-    ]
-
-});
-
-
 // slick slider portfolio js
 
 $('.portfolio_slider').slick({
@@ -184,7 +135,7 @@ $(window).on('scroll', function() {
 
     if (scroll >= 150) {
         $('header').addClass('nav-fixed');
-        $('navbar-toggler-icon1').css('background-image', 'url(img/img_two.jpg)')
+        // $('navbar-toggler-icon1').css('background-image', 'url(img/img_two.jpg)')
     } else {
         $('header').removeClass('nav-fixed');
     }

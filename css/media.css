@@ -196,6 +196,21 @@
         top: 100%;
         visibility: visible;
     }
+    .nav-pills-custom .nav-link::before {
+        content: '';
+        display: block;
+        border-top: 8px solid transparent;
+        border-left: 10px solid #e53e30;
+        border-bottom: 8px solid transparent;
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    .nav-pills-custom .nav-link.active::before {
+        opacity: 1;
+    }
 }
 
 
@@ -243,6 +258,17 @@
     .recent_post {
         margin-top: -60px;
     }
+    /* blog detail css */
+    .header_img {
+        width: 40px;
+    }
+    .blog_line {
+        height: 40px;
+        margin: 0px 10px;
+    }
+    .header_text {
+        font-size: 26px;
+    }
     /* mobile development css*/
     .mb {
         margin-bottom: 40px;
@@ -268,13 +294,19 @@
     .banner_section {
         padding: 72px 0px 0px;
     }
+    .header_wrap .navbar-collapse {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        z-index: 999;
+    }
+    .navbar .navbar-collapse .navbar-nav {
+        max-height: 80vh;
+        overflow-y: auto;
+    }
     .navbar-collapse {
         background-color: #fff;
-    }
-    .megamenu {
-        height: 80vh;
-        overflow-y: auto;
-        overflow-x: hidden;
     }
     .mega-menu {
         padding: 0px;
@@ -299,6 +331,7 @@
     }
     .navbar-light .navbar-nav .nav-link {
         padding: 10px;
+        color: #000;
     }
     .border_right:before,
     .border_right::after {
@@ -352,7 +385,7 @@
     }
     .navbar-toggler {
         position: absolute;
-        top: 26px;
+        top: 20px;
         right: 25px;
         padding: 0px;
     }
@@ -420,11 +453,10 @@
     .comman_anchor_robot {
         margin-top: 60px;
     }
-    /* blog css */
-    .header_img:after {
-        left: 90px;
-        top: 18px;
+    .footer_section {
+        padding: 60px 0px;
     }
+    /* blog css */
     .blog_text {
         padding-top: 60px !important;
     }
@@ -713,10 +745,10 @@
         font-size: 16px;
         padding: 6px 20px;
     }
-    /* blog css */
-    .header_img:after {
-        top: 10px;
+    .footer_section {
+        padding: 50px 0px;
     }
+    /* blog css */
     .blog_text span {
         font-size: 12vw;
     }
@@ -767,6 +799,9 @@
         width: 30px;
     }
     /* blog-detail css */
+    .header_text {
+        font-size: 24px;
+    }
     .business_section h3 {
         line-height: 40px;
     }
@@ -902,7 +937,7 @@
         padding-left: 28px;
     }
     .navbar-toggler {
-        top: 19px;
+        top: 18px;
     }
     .banner_btn {
         font-size: 14px;
@@ -1146,10 +1181,10 @@
         margin-top: 35px;
         font-size: 14px;
     }
-    /* blog css */
-    .header_img:after {
-        height: 60px;
+    .footer_section {
+        padding: 30px 0px;
     }
+    /* blog css */
     .blog_text span {
         font-size: 12vw;
     }
@@ -1217,6 +1252,9 @@
         width: 24px;
     }
     /* blog-detail css */
+    .header_text {
+        font-size: 20px;
+    }
     .business_section h6 {
         font-size: 14px;
     }
@@ -1393,7 +1431,7 @@
         font-size: 16px;
     }
     .navbar-toggler {
-        top: 14px;
+        top: 16px;
     }
     .banner_section {
         padding: 60px 0px 0px;
