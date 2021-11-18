@@ -241,7 +241,7 @@ video {
 }
 
 .service_wrap {
-  min-height: 294px;
+  min-height: 258px;
 }
 
 .service_card_wrap {
@@ -266,7 +266,7 @@ video {
   background-color: transparent;
   border: 0;
   padding: 0;
-  margin-bottom: 34px;
+  margin-bottom: 28px;
 }
 
 .service_card_wrap .card-header .card-title h5 {
@@ -314,13 +314,13 @@ video {
   margin: 0 auto;
 }
 
+.megamenu-li .dropdown_wrap .service-head:hover .header_content {
+  color: #e53e30;
+}
+
 .megamenu-li .header_content {
   padding-left: 25px;
   overflow: hidden;
-}
-
-.megamenu-li .header_content a {
-  margin: 0;
   color: #000;
   font-family: "Roboto", sans-serif;
 }
@@ -392,7 +392,7 @@ video {
 }
 
 .mega-menu li a:hover {
-  color: #1568A6;
+  color: #1568A6 !important;
 }
 
 .mega-menu li a:after {
@@ -1026,8 +1026,18 @@ video {
   color: #e53e30;
 }
 
-.follow a img {
+.widget_links li {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.widget_links li a {
   padding-right: 24px;
+  color: #000;
+}
+
+.widget_links li a:hover {
+  color: #e53e30;
 }
 
 .latest_form h3 {
@@ -1429,7 +1439,6 @@ video {
 
 .business_section h3 {
   font-weight: 600;
-  line-height: 50px;
 }
 
 .business_section h5 {
@@ -1760,36 +1769,24 @@ video {
   padding: 68px 0px 50px;
 }
 
-#main #faq .card {
-  border: none;
-  background-color: transparent;
+.panel {
   margin-bottom: 18px;
 }
 
-#main #faq .card .card_header {
-  position: relative;
-  padding: 0px 34px 0px 0px;
-}
-
-#main #faq .card .card_header .btn-header-link {
-  font-size: 21px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+.panel .panel-heading a {
   color: #425466;
-  line-height: 30px;
-  cursor: pointer;
 }
 
-#main #faq .card .card_header .btn-header-link:after {
-  content: "\f0de";
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  position: absolute;
-  top: 0;
-  right: 0;
+.panel .panel-heading a:before {
+  content: "\f078";
+  font-family: "Font Awesome 5 Pro";
+  float: right;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 14px;
 }
 
-#main #faq .card .card_content {
+.panel .panel-body {
   border-radius: 5px;
   padding: 12px 20px;
   font-size: 13px;
@@ -1798,8 +1795,18 @@ video {
   font-family: "Roboto", sans-serif;
 }
 
-#main #faq .card .card_header .btn-header-link.collapsed:after {
-  content: "\f0dd";
+.panel-title > a,
+.panel-title > a:active {
+  display: block;
+  font-size: 21px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.panel-heading.active a:before {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .portfolio_slider .slick-list {
@@ -1908,5 +1915,23 @@ video {
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+}
+
+.scrollup i {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF946D), to(#FF7D68));
+  background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 22px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  position: fixed;
+  border-radius: 40px;
+  bottom: 20px;
+  z-index: 99;
+  text-align: center;
+  right: 20px;
 }
 /*# sourceMappingURL=style.css.map */

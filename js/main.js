@@ -17,7 +17,7 @@ Blogging_animation = bodymovin.loadAnimation({
 });
 
 
-// ---------------------
+// counterwrap js
 
 $('.counter_wrap').counterUp({
     delay: 20,
@@ -126,9 +126,8 @@ $('.portfolio_slider').slick({
 //     }
 // });
 
-/*====================================*
-    05. HEADER MENU JS
-*=====================================*/
+
+// HEADER MENU JS
 
 $(window).on('scroll', function() {
     var scroll = $(window).scrollTop();
@@ -141,11 +140,34 @@ $(window).on('scroll', function() {
     }
 });
 
-// $('.checkbtn').on('click', function() {
-//     $('body').toggleClass('menu-open');
-// });
+$('.checkbtn').on('click', function() {
+    $('body').toggleClass('menu-open');
+});
 
 
-/*====================================*
-    
-*=====================================*/
+// FAQ JS
+
+$('.panel-collapse').on('show.bs.collapse', function() {
+    $(this).siblings('.panel-heading').addClass('active');
+});
+
+$('.panel-collapse').on('hide.bs.collapse', function() {
+    $(this).siblings('.panel-heading').removeClass('active');
+});
+
+
+// scrollup js 
+
+$(document).ready(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+    $('.scrollup').click(function() {
+        $("html, body").animate({ scrollTop: 0 }, 1700);
+        return false;
+    });
+});

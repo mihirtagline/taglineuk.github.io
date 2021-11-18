@@ -78,7 +78,7 @@
         font-size: 6.8vw;
     }
     .recent_post {
-        padding: 44px;
+        padding: 34px;
     }
     /* portfolio css */
     .slide.slick-slide.slick-current .cl .portfolio_title h2 {
@@ -136,11 +136,11 @@
         font-size: 20px;
     }
     .service_wrap {
-        min-height: 341px;
+        min-height: 335px;
     }
-    /* .service_card_wrap .card-body p {
+    .service_card_wrap .card-body p {
         font-size: 17px;
-    } */
+    }
     /* index css */
     .mega-menu li a {
         font-size: 14px;
@@ -173,6 +173,7 @@
 *--------------------------------------*/
 
 @media only screen and (min-width:991px) {
+    /* index css */
     .megamenu-li .megamenu {
         position: absolute;
         width: 100%;
@@ -242,9 +243,6 @@
         margin-bottom: 46px;
     }
     /* contact us css*/
-    .contact_text {
-        padding-top: 40PX;
-    }
     .contact_text span {
         font-size: 10.66vw;
     }
@@ -256,7 +254,7 @@
         font-size: 9.3vw;
     }
     .recent_post {
-        margin-top: -60px;
+        margin-top: 0px;
     }
     /* blog detail css */
     .header_img {
@@ -287,8 +285,11 @@
         max-width: none;
         min-height: 50px;
     }
-    .accordion {
-        margin-top: 40px;
+    .wrapper.center-block {
+        margin-top: 28px;
+    }
+    .panel {
+        margin-bottom: 14px;
     }
     /* index css */
     .banner_section {
@@ -453,19 +454,21 @@
     .comman_anchor_robot {
         margin-top: 60px;
     }
+    .widget_links li a {
+        padding-right: 20px;
+    }
     .footer_section {
         padding: 60px 0px;
     }
     /* blog css */
     .blog_text {
-        padding-top: 60px !important;
+        padding-top: 60px;
     }
     .blog_text span {
         font-size: 8.8vw;
     }
     .recent_post {
         padding: 30px;
-        margin-top: -60px;
     }
     .card_bottom {
         padding-bottom: 0px;
@@ -512,9 +515,6 @@
     }
     .engagement_model h5 {
         font-size: 17px;
-    }
-    .accordion {
-        margin-top: 40px;
     }
     /* index css */
     .mega-menu li a {
@@ -718,9 +718,6 @@
     .medium_divider {
         min-height: 350px;
     }
-    .contact_text {
-        padding-top: 30PX;
-    }
     .contact_text span {
         font-size: 13.16vw;
     }
@@ -756,8 +753,7 @@
         font-size: 16px;
     }
     .recent_post {
-        padding: 20px;
-        margin-top: -40px;
+        padding: 18px;
     }
     .recent_post h4 {
         font-size: 20px;
@@ -916,19 +912,14 @@
     .engagement_model h5 {
         font-size: 18px;
     }
-    .accordion {
-        margin-top: 28px;
-    }
-    #main #faq .card .card_header .btn-header-link {
+    .panel-title>a,
+    .panel-title>a:active {
         font-size: 18px;
         line-height: 28px;
     }
     /* index css */
     .banner_section {
         padding: 68px 0px 0px;
-    }
-    .megamenu-li .header_content {
-        /* padding-left: 10px; */
     }
     .mega-menu li a:after {
         left: 32px;
@@ -1057,7 +1048,7 @@
         padding: 40px 0px;
     }
     .theme-font {
-        font-size: 23px;
+        font-size: 22px;
         line-height: 34px;
     }
     .mb_50 {
@@ -1111,7 +1102,7 @@
         font-size: 14px;
     }
     .footer_bottom .widget h3 {
-        font-size: 26px;
+        font-size: 24px;
     }
     .footer_bottom .widget span {
         font-size: 14px;
@@ -1146,9 +1137,6 @@
     /* contact us css */
     .medium_divider {
         min-height: 300px;
-    }
-    .contact_text {
-        padding-top: 20PX;
     }
     .contact_text span {
         font-size: 13.16vw;
@@ -1190,10 +1178,6 @@
     }
     .blog_text p {
         font-size: 14px;
-    }
-    .recent_post {
-        padding: 18px;
-        margin-top: -14px;
     }
     .recent_post h4 {
         font-size: 17px;
@@ -1328,6 +1312,7 @@
     }
     .card_desc {
         font-size: 14px;
+        margin-bottom: 16px;
     }
     .service_card_wrap .card-body .technology_wrap li {
         width: 34px;
@@ -1402,16 +1387,16 @@
     .bg_offwhite {
         padding: 30px 0px;
     }
-    .accordion {
+    .wrapper.center-block {
         margin-top: 20px;
     }
-    #main #faq .card {
-        margin-bottom: 16px;
-        ;
-    }
-    #main #faq .card .card_header .btn-header-link {
+    .panel-title>a,
+    .panel-title>a:active {
         font-size: 16px;
         line-height: 24px;
+    }
+    .panel .panel-heading a:before {
+        font-size: 12px;
     }
     /* index css */
     .megamenu-li .megamenu {
