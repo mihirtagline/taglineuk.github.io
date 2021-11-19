@@ -284,6 +284,20 @@ video {
     }
 }
 
+@keyframes Bounce_animation {
+    0% {
+        transform: translate(0, 0);
+        animation-timing-function: ease-in
+    }
+    50% {
+        transform: translate(0, 30px);
+        animation-timing-function: ease-out
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
 // Home Page Css End
 // akshay css start
 // start index css
@@ -537,6 +551,17 @@ video {
     }
 }
 
+// start technology css
+.technology_logo {
+    padding: 16px 0px;
+    img {
+        &:hover {
+            cursor: pointer;
+            animation: Bounce_animation 0.7s;
+        }
+    }
+}
+
 @keyframes sdb10 {
     0% {
         transform: translate(0, 0);
@@ -546,17 +571,12 @@ video {
         opacity: 1;
     }
     80% {
-        transform: translate(0, 20px);
+        transform: translate(0, 14px);
         opacity: 0;
     }
     100% {
         opacity: 0;
     }
-}
-
-// start technology css
-.technology_logo {
-    padding: 16px 0px;
 }
 
 // start industry css
@@ -1551,6 +1571,21 @@ video {
         font-size: 17px;
         line-height: 30px;
         margin: 23px 0px 30px;
+    }
+}
+
+.comment_line {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        left: -50px;
+        border-left: 1px solid #c4c4c4;
+        border-bottom: 1px solid #c4c4c4;
+        width: 30px;
+        height: 70px;
+        border-bottom-left-radius: 10px;
     }
 }
 

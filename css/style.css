@@ -305,6 +305,44 @@ video {
           justify-content: space-between;
 }
 
+@-webkit-keyframes Bounce_animation {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  50% {
+    -webkit-transform: translate(0, 30px);
+            transform: translate(0, 30px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes Bounce_animation {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  50% {
+    -webkit-transform: translate(0, 30px);
+            transform: translate(0, 30px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
 .megamenu-li {
   position: static;
 }
@@ -546,6 +584,16 @@ video {
   }
 }
 
+.technology_logo {
+  padding: 16px 0px;
+}
+
+.technology_logo img:hover {
+  cursor: pointer;
+  -webkit-animation: Bounce_animation 0.7s;
+          animation: Bounce_animation 0.7s;
+}
+
 @keyframes sdb10 {
   0% {
     -webkit-transform: translate(0, 0);
@@ -556,17 +604,13 @@ video {
     opacity: 1;
   }
   80% {
-    -webkit-transform: translate(0, 20px);
-            transform: translate(0, 20px);
+    -webkit-transform: translate(0, 14px);
+            transform: translate(0, 14px);
     opacity: 0;
   }
   100% {
     opacity: 0;
   }
-}
-
-.technology_logo {
-  padding: 16px 0px;
 }
 
 .slider_arrow.slick-arrow {
@@ -1619,6 +1663,22 @@ video {
   font-size: 17px;
   line-height: 30px;
   margin: 23px 0px 30px;
+}
+
+.comment_line {
+  position: relative;
+}
+
+.comment_line::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -50px;
+  border-left: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  width: 30px;
+  height: 70px;
+  border-bottom-left-radius: 10px;
 }
 
 .mobile_text {
