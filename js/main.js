@@ -156,18 +156,9 @@ $('.panel-collapse').on('hide.bs.collapse', function() {
 });
 
 
-// scrollup js 
+// aos js
 
-$(document).ready(function() {
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 100) {
-            $('.scrollup').fadeIn();
-        } else {
-            $('.scrollup').fadeOut();
-        }
-    });
-    $('.scrollup').click(function() {
-        $("html, body").animate({ scrollTop: 0 }, 1700);
-        return false;
-    });
-});
+AOS.init({
+    duration: 1000,
+    once: true
+})

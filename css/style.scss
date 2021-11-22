@@ -330,7 +330,7 @@ video {
     .navbar-nav {
         .nav-link {
             font-weight: $font-weight-400;
-            font-size: 15px;
+            font-size: 16px;
             padding: 36px 12px;
             color: $theme-black;
             &:hover {
@@ -465,14 +465,14 @@ video {
 
 .banner_text {
     h1 {
-        font-size: 70px;
+        font-size: 44px;
         font-weight: $font-weight-400;
         margin-bottom: 20px;
-        line-height: 105px;
+        line-height: 68px;
     }
     h2 {
         display: inline-block;
-        font-size: 70px;
+        font-size: 44px;
         font-weight: $font-weight-400;
     }
     span {
@@ -480,16 +480,24 @@ video {
     }
 }
 
+.logos_img {
+    margin-bottom: 20px;
+}
+
+.logos_img:last-child() {
+    margin-bottom: 0px;
+}
+
 .banner_section {
     .right_wrap {
         position: absolute;
-        right: 5%;
+        right: 0%;
         top: 0%;
         bottom: 0;
         display: flex;
         align-items: center;
-        max-width: 900px;
-        max-height: 900px;
+        max-width: 950px;
+        max-height: 950px;
     }
 }
 
@@ -733,7 +741,7 @@ video {
 }
 
 .our_clients {
-    padding: 70px 0px;
+    padding: 20px 0px;
 }
 
 .client-logos {
@@ -885,8 +893,28 @@ video {
     i {
         font-size: 32px;
     }
+    .fa-calendar-alt {
+        background: linear-gradient(93.97deg, #008857 0%, #80D0C7 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .fa-users {
+        background: linear-gradient(93.97deg, #1568A6 0%, #8FD2FF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .fa-clock {
+        background: linear-gradient(93.97deg, #FDA085 0%, #EB4D75 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .fa-file-code {
+        background: linear-gradient(93.97deg, #FFAA00 0%, #FFE300 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
     h2 {
-        font-size: 24px;
+        font-size: 30px;
         margin: 16px 0px 16px;
     }
     .our_title {
@@ -1737,9 +1765,14 @@ video {
 }
 
 .engagement_model {
+    img {
+        max-width: 80px;
+        width: 100%;
+    }
     h5 {
         margin-top: 10px;
         font-weight: $font-weight-700;
+        font-size: 18px;
     }
 }
 
@@ -1944,20 +1977,3 @@ video {
 }
 
 // ================================
-.scrollup {
-    i {
-        background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
-        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-        color: #fff;
-        font-size: 22px;
-        height: 40px;
-        width: 40px;
-        line-height: 40px;
-        position: fixed;
-        border-radius: 40px;
-        bottom: 20px;
-        z-index: 99;
-        text-align: center;
-        right: 20px;
-    }
-}

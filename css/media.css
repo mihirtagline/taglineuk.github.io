@@ -4,8 +4,11 @@
 
 @media only screen and (max-width:1599px) {
     .banner_section .right_wrap {
-        right: 0;
         max-width: 800px;
+    }
+    .banner_text h1 {
+        font-size: 38px;
+        line-height: 60px;
     }
     /* mobile development css*/
     .slider_arrow.slick-arrow {
@@ -39,12 +42,6 @@
 
 @media only screen and (max-width:1399px) {
     /* index css */
-    .banner_text h1 {
-        font-size: 60px;
-    }
-    .banner_text h2 {
-        font-size: 60px;
-    }
     .banner_section .right_wrap {
         max-width: 700px;
     }
@@ -149,14 +146,15 @@
         padding: 36px 16px;
     }
     .banner_text h1 {
-        font-size: 50px;
-        line-height: 90px;
-    }
-    .banner_text h2 {
-        font-size: 50px;
+        font-size: 32px;
+        line-height: 50px;
     }
     .banner_section .right_wrap {
-        max-width: 500px;
+        max-width: 570px;
+        top: -100px;
+    }
+    .banner_btn {
+        padding: 10px 28px;
     }
     .about_wrap h5 {
         font-size: 18px;
@@ -352,13 +350,6 @@
     .banner_section .right_wrap {
         position: relative;
     }
-    .banner_text h1 {
-        font-size: 47px;
-        line-height: 70px;
-    }
-    .banner_text h2 {
-        font-size: 47px;
-    }
     .slider-wrap .slider h3 {
         font-size: 26px;
     }
@@ -374,9 +365,6 @@
     }
     .about_wrap p {
         margin-top: 16px;
-    }
-    .our_clients {
-        padding: 50px 0px;
     }
     .client-logos .bg_img {
         opacity: 0.5;
@@ -529,13 +517,6 @@
     }
     .megamenu-li .header_content a {
         font-size: 18px;
-    }
-    .banner_text h1 {
-        font-size: 44px;
-        line-height: 60px;
-    }
-    .banner_text h2 {
-        font-size: 44px;
     }
     .slider-wrap .slider .quote_img {
         left: 0;
@@ -918,9 +899,6 @@
     .benefits p {
         font-size: 18px
     }
-    .engagement_model h5 {
-        font-size: 18px;
-    }
     .panel-title>a,
     .panel-title>a:active {
         font-size: 18px;
@@ -993,9 +971,6 @@
     }
     .slider_arrow.slide2.slick-arrow {
         right: 20px;
-    }
-    .our_clients {
-        padding: 34px 0px;
     }
     /* portfolio css */
     .portfolio_slider .slick-list {
@@ -1393,7 +1368,7 @@
         font-size: 14px;
     }
     .engagement_model img {
-        width: 70px;
+        max-width: 70px;
     }
     .engagement_model h5 {
         font-size: 15px;
