@@ -241,7 +241,7 @@ video {
 }
 
 .service_wrap {
-  min-height: 258px;
+  min-height: 288px;
 }
 
 .service_card_wrap {
@@ -505,10 +505,6 @@ video {
 
 .logos_img {
   margin-bottom: 20px;
-}
-
-.logos_img:last-child() {
-  margin-bottom: 0px;
 }
 
 .banner_section .right_wrap {
@@ -870,7 +866,6 @@ video {
 
 .who_section .heading_s1 {
   display: block;
-  text-transform: capitalize;
 }
 
 .who_section .comman_span {
@@ -916,7 +911,6 @@ video {
 
 .our_section .heading_s1 {
   display: block;
-  text-transform: capitalize;
 }
 
 .our_section .comman_span {
@@ -1486,10 +1480,7 @@ video {
 
 .pagination .page-link:hover {
   z-index: 2;
-  color: #0056b3;
-  text-decoration: none;
-  border-color: #dee2e6;
-  color: #E53E30;
+  color: #e53e30 !important;
   background-color: transparent;
 }
 
@@ -1718,7 +1709,7 @@ video {
   margin-bottom: 25px;
 }
 
-.technical_title .technical_text {
+.technical_text {
   margin-bottom: 25px;
 }
 
@@ -1795,6 +1786,10 @@ video {
   max-width: 851px;
 }
 
+.education_section img {
+  border-radius: 20px;
+}
+
 .small_divider {
   height: 60px;
 }
@@ -1806,10 +1801,6 @@ video {
 .sld-wrp .slider-for {
   position: relative;
   z-index: 10;
-}
-
-.sld-wrp .slide-container {
-  margin-bottom: 20px;
 }
 
 .slide-btn {

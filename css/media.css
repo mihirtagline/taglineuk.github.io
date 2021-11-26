@@ -3,13 +3,6 @@
 *--------------------------------------*/
 
 @media only screen and (max-width:1599px) {
-    .banner_section .right_wrap {
-        max-width: 800px;
-    }
-    .banner_text h1 {
-        font-size: 38px;
-        line-height: 60px;
-    }
     /* mobile development css*/
     .slider_arrow.slick-arrow {
         right: 100px;
@@ -21,6 +14,17 @@
         width: 100%;
     }
     /* index css */
+    .banner_section .right_wrap {
+        max-width: 800px;
+        top: -100px;
+    }
+    .banner_text h1 {
+        font-size: 38px;
+        line-height: 60px;
+    }
+    .banner_text h2 {
+        font-size: 38px;
+    }
     .slider_arrow.slide1.slick-arrow {
         right: 100px;
         top: -50px;
@@ -89,7 +93,7 @@
 
 
 /* ----------------------------------------- *
-    (min-width:992px) & (max-width:991px)
+    (min-width:992px) & (max-width:1199px)
 *------------------------------------------- */
 
 @media (min-width:992px) and (max-width:1199px) {
@@ -139,6 +143,13 @@
         font-size: 17px;
     }
     /* index css */
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 13px;
+    }
+    .header_btn {
+        padding: 8px 22px;
+        font-size: 12px;
+    }
     .mega-menu li a {
         font-size: 14px;
     }
@@ -147,11 +158,13 @@
     }
     .banner_text h1 {
         font-size: 32px;
-        line-height: 50px;
+        line-height: 56px;
+    }
+    .banner_text h2 {
+        font-size: 32px;
     }
     .banner_section .right_wrap {
         max-width: 570px;
-        top: -100px;
     }
     .banner_btn {
         padding: 10px 28px;
@@ -162,6 +175,18 @@
     }
     .client-logos .table_logo img {
         max-width: 170px;
+    }
+}
+
+
+/* ----------------------------------------- *
+    (min-width:992px) & (max-width:1199px)
+*------------------------------------------- */
+
+@media (min-width:992px) and (max-width:1024px) {
+    .header_logo {
+        max-width: 160px;
+        width: 100%;
     }
 }
 
@@ -349,6 +374,7 @@
     }
     .banner_section .right_wrap {
         position: relative;
+        top: 0px;
     }
     .slider-wrap .slider h3 {
         font-size: 26px;
@@ -517,6 +543,13 @@
     }
     .megamenu-li .header_content a {
         font-size: 18px;
+    }
+    .banner_text h1 {
+        font-size: 32px;
+        line-height: 54px;
+    }
+    .banner_text h2 {
+        font-size: 32px;
     }
     .slider-wrap .slider .quote_img {
         left: 0;
@@ -922,10 +955,11 @@
         padding: 8px 20px;
     }
     .banner_text h1 {
-        font-size: 36px;
+        font-size: 32px;
+        line-height: 50px;
     }
     .banner_text h2 {
-        font-size: 36px;
+        font-size: 32px;
     }
     .slider-wrap .slider .quote_img {
         width: 80px;
@@ -1411,11 +1445,11 @@
         padding: 60px 0px 0px;
     }
     .banner_text h1 {
-        font-size: 30px;
+        font-size: 26px;
         line-height: 44px;
     }
     .banner_text h2 {
-        font-size: 30px;
+        font-size: 26px;
     }
     .slider-wrap .slider .quote_img {
         width: 70px;

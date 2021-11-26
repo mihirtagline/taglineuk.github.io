@@ -34,7 +34,7 @@ $('.slider-for').slick({
     arrows: false,
     fade: true,
     autoplay: true,
-    speed: 1000,
+    // speed: 1000,
     asNavFor: '.slider-nav',
 });
 $('.slider-nav').slick({
@@ -134,7 +134,6 @@ $(window).on('scroll', function() {
 
     if (scroll >= 150) {
         $('header').addClass('nav-fixed');
-        // $('navbar-toggler-icon1').css('background-image', 'url(img/img_two.jpg)')
     } else {
         $('header').removeClass('nav-fixed');
     }
