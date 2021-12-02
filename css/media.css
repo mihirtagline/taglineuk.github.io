@@ -139,9 +139,9 @@
     .service_wrap {
         min-height: 335px;
     }
-    .service_card_wrap .card-body p {
+    /* .service_card_wrap .card-body p {
         font-size: 17px;
-    }
+    } */
     /* index css */
     .navbar-light .navbar-nav .nav-link {
         font-size: 13px;
@@ -176,11 +176,24 @@
     .client-logos .table_logo img {
         max-width: 170px;
     }
+    .wrapper {
+        width: 250px;
+        height: 38px;
+    }
+    .wrapper .option span {
+        font-size: 14px;
+    }
+    /* .contacts_form .form_text {
+        font-size: 14px;
+    }
+    .contacts_form .form-control {
+        font-size: 15px;
+    } */
 }
 
 
 /* ----------------------------------------- *
-    (min-width:992px) & (max-width:1199px)
+    (min-width:992px) & (max-width:1024px)
 *------------------------------------------- */
 
 @media (min-width:992px) and (max-width:1024px) {
@@ -313,6 +326,9 @@
     }
     .panel {
         margin-bottom: 14px;
+    }
+    .engagement_model h5 {
+        font-size: 17px;
     }
     /* index css */
     .banner_section {
@@ -529,9 +545,6 @@
     }
     .benefits p {
         font-size: 22px;
-    }
-    .engagement_model h5 {
-        font-size: 17px;
     }
     /* index css */
     .mega-menu li a {
@@ -866,11 +879,6 @@
     .service_card_wrap .card-body .technology_wrap li {
         width: 38px;
     }
-    .read_more1 {
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-    }
     .card_lead {
         font-size: 16px;
         line-height: 24px;
@@ -1144,9 +1152,9 @@
     .tagline_form p {
         line-height: 24px;
     }
-    .tagline_form .form-control::-webkit-input-placeholder {
+    /* .tagline_form .form-control::-webkit-input-placeholder {
         font-size: 14px;
-    }
+    } */
     .tagline_form .form_btn {
         min-width: 110px;
         font-size: 14px;
@@ -1178,7 +1186,7 @@
         right: 18px;
     }
     .form-control::-webkit-input-placeholder {
-        font-size: 15px;
+        font-size: 14px;
     }
     .countries:first-child {
         font-size: 15px;
@@ -1340,11 +1348,10 @@
     .service_card_wrap .card-body .technology_wrap li {
         width: 34px;
     }
-    .read_more1,
     .read_more {
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
+        min-width: 30px;
+        /* min-height: 30px; */
+        line-height: 28px;
         font-size: 12px;
     }
     .card_lead {
@@ -1492,6 +1499,19 @@
     }
     .slider_img .web_overlay .slider_arrow img {
         padding: 9px;
+    }
+    .wrapper {
+        width: 250px;
+        height: 38px;
+    }
+    .wrapper .option span {
+        font-size: 14px;
+    }
+    .contacts_form .form_text {
+        font-size: 14px;
+    }
+    .contacts_form .form-control {
+        font-size: 15px;
     }
     /* portfolio css */
     .portfolio_slider .slick-list {

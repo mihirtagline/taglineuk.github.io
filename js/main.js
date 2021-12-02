@@ -1,3 +1,19 @@
+// HEADER MENU JS
+
+$(window).on('scroll', function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 150) {
+        $('header').addClass('nav-fixed');
+    } else {
+        $('header').removeClass('nav-fixed');
+    }
+});
+
+$('.checkbtn').on('click', function() {
+    $('body').toggleClass('menu-open');
+});
+
 // json file js
 $(document).ready(function() {
     if ($(window).innerWidth > 768) {
@@ -24,8 +40,6 @@ $('.counter_wrap').counterUp({
     time: 2000
 });
 
-
-
 // slick slider synchronize js
 
 $('.slider-for').slick({
@@ -34,7 +48,7 @@ $('.slider-for').slick({
     arrows: false,
     fade: true,
     autoplay: true,
-    // speed: 1000,
+    // speed: 800,
     asNavFor: '.slider-nav',
 });
 $('.slider-nav').slick({
@@ -127,23 +141,6 @@ $('.portfolio_slider').slick({
 // });
 
 
-// HEADER MENU JS
-
-$(window).on('scroll', function() {
-    var scroll = $(window).scrollTop();
-
-    if (scroll >= 150) {
-        $('header').addClass('nav-fixed');
-    } else {
-        $('header').removeClass('nav-fixed');
-    }
-});
-
-$('.checkbtn').on('click', function() {
-    $('body').toggleClass('menu-open');
-});
-
-
 // FAQ JS
 
 $('.panel-collapse').on('show.bs.collapse', function() {
@@ -158,6 +155,6 @@ $('.panel-collapse').on('hide.bs.collapse', function() {
 // aos js
 
 AOS.init({
-    duration: 1000,
+    duration: 1700,
     once: true
 })
