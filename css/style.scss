@@ -386,16 +386,6 @@ video {
     }
 }
 
-// .overlay12 {
-//     position: fixed;
-//     z-index: 49;
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-//     display: none;
-//     background-color: rgba(0, 0, 0, .5);
-// }
 .mb-50 {
     margin-bottom: 50px;
 }
@@ -742,6 +732,103 @@ video {
 
 .client_text {
     max-width: 1044px;
+}
+
+// start engement css
+.contacts_form {
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    h3 {
+        margin-bottom: 20px;
+    }
+    .form-control {
+        color: #c4c4c4;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid #C4C4C4;
+        font-weight: $font-weight-300;
+        font-family: $font-family-Roboto;
+        font-size: $comman_text;
+    }
+    .form_text {
+        font-size: $comman_text;
+        font-weight: $font-weight-300;
+        color: #c4c4c4;
+        text-align: left;
+        padding: 0px 18px;
+        margin-bottom: 16px;
+    }
+}
+
+.wrapper {
+    display: flex;
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    margin: 0 auto;
+    .option {
+        background: #fff;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: 2px solid lightgrey;
+        transition: all 0.3s ease;
+        .dot {
+            height: 16px;
+            width: 16px;
+            background: #d9d9d9;
+            border-radius: 50%;
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                top: 4px;
+                left: 4px;
+                width: 8px;
+                height: 8px;
+                background: $theme-red;
+                border-radius: 50%;
+                opacity: 0;
+                transform: scale(1.5);
+                transition: all 0.3s ease;
+            }
+        }
+        span {
+            font-size: 16px;
+            color: #808080;
+        }
+    }
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#option-1:checked:checked~.option-1,
+#option-2:checked:checked~.option-2 {
+    border-color: $theme-red;
+    background: $theme-red;
+}
+
+#option-1:checked:checked~.option-1 .dot,
+#option-2:checked:checked~.option-2 .dot {
+    background: #fff;
+}
+
+#option-1:checked:checked~.option-1 .dot::before,
+#option-2:checked:checked~.option-2 .dot::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#option-1:checked:checked~.option-1 span,
+#option-2:checked:checked~.option-2 span {
+    color: #fff;
 }
 
 // start about us css
@@ -1580,7 +1667,6 @@ video {
     margin-bottom: 25px;
 }
 
-// }
 // 02.start why choose css
 .mobile_heading {
     font-size: 50px;
@@ -1724,7 +1810,29 @@ video {
     border: 1px solid $theme-black;
 }
 
-// 05.start engement css
+// 05. start workflow css
+.sticky_section {
+    position: sticky;
+    top: 100px;
+    left: 0;
+}
+
+.new_point {
+    font-family: $font-family-Roboto;
+    h4 {
+        font-size: 25px;
+        font-weight: $font-weight-700;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        line-height: 30px;
+    }
+    p {
+        font-size: 15px;
+        font-weight: $font-weight-300;
+    }
+}
+
+// 06.start engement css
 .engagement_section {
     h2 {
         max-width: 608px;
@@ -1740,7 +1848,7 @@ video {
     }
 }
 
-// 06.start faq Css
+// 07.start faq Css
 .bg_offwhite {
     background-color: #F6F9FC;
     padding: 68px 0px 50px;
@@ -1783,223 +1891,11 @@ video {
     transform: rotate(180deg);
 }
 
-// start portfoli css
-.portfolio_slider .slick-list {
-    width: calc(100vw - 35%);
-}
-
-.portfolio_slider {
-    // margin: -20px;
-    .slick-list {
-        .slide {
-            .cl {
-                position: relative;
-                margin: 20px;
-                img {
-                    filter: grayscale(100%);
-                    width: 100%;
-                    cursor: pointer;
-                }
-                .portfolio_title,
-                .portfolio_text {
-                    visibility: hidden;
-                }
-            }
-            .slick-active {
-                padding: 20px 0;
-            }
-        }
-        .slick-current {
-            cursor: pointer;
-            position: relative;
-            z-index: 2;
-            transform: scale(1.09);
-        }
-    }
-}
-
-.slide.slick-slide.slick-current .cl {
-    &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 111;
-        filter: grayscale(0%);
-        background: rgba(229, 62, 48, 0.75);
-    }
-}
-
-.slide.yellow.slick-slide.slick-current .cl {
-    &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 111;
-        background: rgba(187, 204, 39, 0.75);
-    }
-}
-
-.slide.green.slick-slide.slick-current .cl {
-    &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 111;
-        background: rgba(2, 34, 26, 0.75);
-    }
-}
-
-.slide.slick-slide.slick-current .cl {
-    .portfolio_title {
-        position: absolute;
-        top: 50%;
-        right: -182px;
-        transform: translateY(-50%);
-        z-index: 212;
-        visibility: visible;
-        h2 {
-            margin: 0;
-            max-width: 260px;
-            font-size: 58px;
-            font-weight: $font-weight-700;
-            &:after {
-                content: "";
-                position: absolute;
-                top: 50%;
-                left: -72px;
-                border-top: 2px solid #fff;
-                width: 56px;
-            }
-        }
-    }
-    .portfolio_text {
-        position: absolute;
-        bottom: 10px;
-        z-index: 122;
-        letter-spacing: 6px;
-        width: 100%;
-        text-align: center;
-        visibility: visible;
-        font-size: 18px;
-        text-transform: uppercase;
-        font-family: $font-family-Roboto;
-        font-weight: $font-weight-300;
-    }
-}
-
 // ======================================
-.contacts_form {
-    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
-    padding: 16px;
-    h3 {
-        margin-bottom: 20px;
-    }
-    .form-control {
-        color: #c4c4c4;
-        border: none;
-        border-radius: 0;
-        border-bottom: 1px solid #C4C4C4;
-        font-weight: $font-weight-300;
-        font-family: $font-family-Roboto;
-        font-size: $comman_text;
-    }
-    .form_text {
-        font-size: $comman_text;
-        font-weight: $font-weight-300;
-        color: #c4c4c4;
-        text-align: left;
-        padding: 0px 18px;
-        margin-bottom: 16px;
-    }
-}
-
-.wrapper {
-    display: flex;
-    height: 40px;
-    width: 300px;
-    border-radius: 5px;
-    margin: 0 auto;
-    .option {
-        background: #fff;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        margin: 0 10px;
-        border-radius: 5px;
-        cursor: pointer;
-        border: 2px solid lightgrey;
-        transition: all 0.3s ease;
-        .dot {
-            height: 16px;
-            width: 16px;
-            background: #d9d9d9;
-            border-radius: 50%;
-            position: relative;
-            &::before {
-                position: absolute;
-                content: "";
-                top: 4px;
-                left: 4px;
-                width: 8px;
-                height: 8px;
-                background: $theme-red;
-                border-radius: 50%;
-                opacity: 0;
-                transform: scale(1.5);
-                transition: all 0.3s ease;
-            }
-        }
-        span {
-            font-size: 16px;
-            color: #808080;
-        }
-    }
-}
-
-input[type="radio"] {
-    display: none;
-}
-
-#option-1:checked:checked~.option-1,
-#option-2:checked:checked~.option-2 {
-    border-color: $theme-red;
-    background: $theme-red;
-}
-
-#option-1:checked:checked~.option-1 .dot,
-#option-2:checked:checked~.option-2 .dot {
-    background: #fff;
-}
-
-#option-1:checked:checked~.option-1 .dot::before,
-#option-2:checked:checked~.option-2 .dot::before {
-    opacity: 1;
-    transform: scale(1);
-}
-
-#option-1:checked:checked~.option-1 span,
-#option-2:checked:checked~.option-2 span {
-    color: #fff;
-}
-
+// home page form
 // =======================================
-.site_video {
-    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
-}
-
-.readmore_btn {
-    &:hover {
-        color: #2d2d2d;
-    }
+.abc {
+    position: absolute;
+    top: 0;
+    right: 0;
 }

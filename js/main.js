@@ -23,13 +23,13 @@ $(document).ready(function() {
     }
 })
 
-Blogging = document.getElementById("Blogging");
+Blogging = document.getElementById("ios");
 Blogging_animation = bodymovin.loadAnimation({
     wrapper: Blogging,
     animType: "svg",
     loop: true,
     autoplay: true,
-    path: 'animation/Blogging.json'
+    path: 'animation/ios.json'
 });
 
 
@@ -103,43 +103,6 @@ window.onload = function() {
         slidesToScroll: 1
     });
 };
-
-// slick slider portfolio js
-
-$('.portfolio_slider').slick({
-    slidesToShow: 3,
-    focusOnSelect: true,
-    dots: false,
-    autoplaySpeed: 1500,
-    autoplay: false,
-    infinite: true,
-    responsive: [{
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 576,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            }
-        }
-    ]
-});
-
-// --------------------
-
-// $("#dropdown01, #dropdown02, #dropdown03").hover(function() {
-//     if ($(this).parent().hasClass('show')) {
-//         $('.overlay12').fadeOut(500);
-//     } else {
-//         $('.overlay12').fadeIn(500);
-//     }
-// });
-
 
 // FAQ JS
 
