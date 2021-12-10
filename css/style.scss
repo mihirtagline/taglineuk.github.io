@@ -651,10 +651,39 @@ video {
     .nav-link {
         position: relative;
         color: $theme-black;
+        border-radius: 0px;
+        &:hover {
+            background-color: $theme-red;
+            transition: all 0.2s ease-in-out;
+            color: $theme-white;
+        }
+        &.active {
+            color: $theme-white;
+            background-color: $theme-red;
+            box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            font-size: 13px;
+            margin: 0;
+        }
     }
-    .nav-link.active {
-        color: $theme-white;
-        background-color: $theme-red;
+}
+
+.tab_effect {
+    h3 {
+        font-size: 50px;
+        margin: 0;
+    }
+    p {
+        margin: 0;
+        color: #c4c4c4;
+    }
+}
+
+.tab-pane {
+    img {
+        border-radius: 10px;
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
     }
 }
 
@@ -2056,3 +2085,5 @@ video {
     max-width: 800px;
     max-height: 800px;
 }
+
+// ======================================

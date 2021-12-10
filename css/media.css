@@ -527,6 +527,13 @@
     .about_wrap p {
         margin-top: 16px;
     }
+    .nav-pills-custom .nav-link h5 {
+        margin: 0;
+        font-size: 18px;
+    }
+    .nav-pills-custom .nav-link p {
+        display: none;
+    }
     .client-logos .bg_img {
         opacity: 0.5;
     }
@@ -696,6 +703,12 @@
     .about_wrap h5 {
         font-size: 18px;
         line-height: 30px;
+    }
+    .tab_effect {
+        margin-top: 16px;
+    }
+    .tab_effect h3 {
+        font-size: 38px;
     }
     .client-logos .table_logo img {
         max-width: 170px;
@@ -1090,6 +1103,9 @@
         font-size: 16px;
         line-height: 26px;
     }
+    .tab_effect h3 {
+        font-size: 30px;
+    }
     .slider_arrow.slide1.slick-arrow,
     .slider_arrow.slide2.slick-arrow {
         top: -50px;
@@ -1228,9 +1244,6 @@
     .tagline_form p {
         line-height: 24px;
     }
-    /* .tagline_form .form-control::-webkit-input-placeholder {
-        font-size: 14px;
-    } */
     .tagline_form .form_btn {
         min-width: 110px;
         font-size: 14px;
@@ -1575,6 +1588,15 @@
     }
     .slider_img .web_overlay .slider_arrow img {
         padding: 9px;
+    }
+    .nav-pills-custom .nav-link h5 {
+        font-size: 16px;
+    }
+    .tab_effect h3 {
+        font-size: 22px;
+    }
+    .tab_effect p {
+        font-size: 12px;
     }
     .wrapper {
         width: 250px;
