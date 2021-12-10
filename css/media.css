@@ -49,10 +49,141 @@
 
 
 /* ----------------------------------- *
+    (min-width:1200px)
+*--------------------------------------*/
+
+@media only screen and (min-width:1600px) and (max-width:1900px) {
+    .web_file {
+        max-width: 700px;
+        max-height: 700px;
+    }
+    .digital_file {
+        max-width: 800px;
+        max-height: 800px;
+    }
+    .flutter_file {
+        max-width: 850px;
+        max-height: 850px;
+    }
+    .mobile_file {
+        max-width: 750px;
+        max-height: 800px;
+    }
+    .ui_file {
+        max-width: 880px;
+        max-height: 880px;
+    }
+}
+
+
+/* ----------------------------------- *
+    (min-width:1200px)
+*--------------------------------------*/
+
+@media only screen and (min-width:1441px) and (max-width:1600px) {
+    .web_file {
+        max-width: 650px;
+        max-height: 650px;
+    }
+    .aso_file {
+        max-width: 750px;
+        max-height: 750px;
+    }
+    .digital_file {
+        max-width: 750px;
+        max-height: 750px;
+    }
+    .flutter_file {
+        max-width: 750px;
+        max-height: 850px;
+    }
+    .ios_file {
+        max-width: 800px;
+        max-height: 800px;
+    }
+    .mobile_file {
+        max-width: 650px;
+        max-height: 710px;
+    }
+    .node_file {
+        max-width: 700px;
+        max-height: 750px;
+    }
+    .ui_file {
+        max-width: 780px;
+        max-height: 780px;
+    }
+}
+
+
+/* ----------------------------------- *
+    (min-width:1200px)
+*--------------------------------------*/
+
+@media only screen and (min-width:1199px) and (max-width:1440px) {
+    .android_file {
+        max-width: 600px;
+        max-height: 600px;
+    }
+    .web_file {
+        max-width: 560px;
+        max-height: 560px;
+    }
+    .aso_file {
+        max-width: 650px;
+        max-height: 650px;
+    }
+    .cross_file {
+        max-width: 780px;
+        max-height: 780px;
+    }
+    .digital_file {
+        max-width: 700px;
+        max-height: 700px;
+    }
+    .flutter_file {
+        max-width: 600px;
+        max-height: 700px;
+    }
+    .ios_file {
+        max-width: 680px;
+        max-height: 680px;
+    }
+    .mobile_file {
+        max-width: 550px;
+        max-height: 680px;
+    }
+    .node_file {
+        max-width: 600px;
+        max-height: 750px;
+    }
+    .seo_file {
+        max-width: 460px;
+        max-height: 460px;
+    }
+    .smm_file {
+        max-width: 470px;
+        max-height: 470px;
+    }
+    .ui_file {
+        max-width: 650px;
+        max-height: 650px;
+    }
+    .react_file {
+        max-width: 650px;
+        max-height: 650px;
+    }
+}
+
+
+/* ----------------------------------- *
     (max-width:1199px)
 *--------------------------------------*/
 
 @media only screen and (max-width:1199px) {
+    .json_file {
+        display: none;
+    }
     /* about us css*/
     .section {
         padding: 70px 0px;
@@ -129,11 +260,11 @@
     }
     /* index css */
     .navbar-light .navbar-nav .nav-link {
-        font-size: 13px;
+        font-size: 14px;
     }
     .header_btn {
         padding: 8px 22px;
-        font-size: 12px;
+        font-size: 14px;
     }
     .mega-menu li a {
         font-size: 14px;

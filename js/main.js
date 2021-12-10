@@ -23,15 +23,145 @@ $(document).ready(function() {
     }
 })
 
-Blogging = document.getElementById("ios");
+Blogging = document.getElementById("Blogging");
 Blogging_animation = bodymovin.loadAnimation({
     wrapper: Blogging,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/Blogging.json'
+});
+
+// ios json file
+ios = document.getElementById("ios");
+ios_animation = bodymovin.loadAnimation({
+    wrapper: ios,
     animType: "svg",
     loop: true,
     autoplay: true,
     path: 'animation/ios.json'
 });
 
+// react json file
+react = document.getElementById("react");
+react_animation = bodymovin.loadAnimation({
+    wrapper: react,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/react.json'
+});
+
+
+// nodejs json file
+nodejs = document.getElementById("nodejs");
+nodejs_animation = bodymovin.loadAnimation({
+    wrapper: nodejs,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/nodejs.json'
+});
+
+// flutter json file
+flutter = document.getElementById("flutter");
+flutter_animation = bodymovin.loadAnimation({
+    wrapper: flutter,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/flutter.json'
+});
+
+// android json file
+android = document.getElementById("android");
+android_animation = bodymovin.loadAnimation({
+    wrapper: android,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/android.json'
+});
+
+// seo json file
+seo = document.getElementById("seo");
+seo_animation = bodymovin.loadAnimation({
+    wrapper: seo,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/seo.json'
+});
+
+// smm json file
+smm = document.getElementById("smm");
+smm_animation = bodymovin.loadAnimation({
+    wrapper: smm,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/smm.json'
+});
+
+// cross platform json file
+crossplatform = document.getElementById("crossplatform");
+crossplatform_animation = bodymovin.loadAnimation({
+    wrapper: crossplatform,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/crossplatform.json'
+});
+
+// cross platform json file
+aso = document.getElementById("aso");
+aso_animation = bodymovin.loadAnimation({
+    wrapper: aso,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/aso.json'
+});
+
+// digital marketing json file
+digitalmarketing = document.getElementById("digitalmarketing");
+digtalmarketing_animation = bodymovin.loadAnimation({
+    wrapper: digitalmarketing,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/digitalmarketing.json'
+});
+
+// ui json file
+ui = document.getElementById("ui");
+ui_animation = bodymovin.loadAnimation({
+    wrapper: ui,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/ui.json'
+});
+
+// web json file
+web = document.getElementById("web");
+web_animation = bodymovin.loadAnimation({
+    wrapper: web,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/web.json'
+});
+
+// web json file
+mobile = document.getElementById("mobile");
+mobile_animation = bodymovin.loadAnimation({
+    wrapper: mobile,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/mobile.json'
+});
 
 // counterwrap js
 
