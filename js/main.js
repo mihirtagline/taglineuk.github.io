@@ -23,7 +23,7 @@ $(document).ready(function() {
     }
 })
 
-Blogging = document.getElementById("Blogging");
+Blogging = document.getElementsByClassName("Blogging");
 Blogging_animation = bodymovin.loadAnimation({
     wrapper: Blogging,
     animType: "svg",
@@ -33,7 +33,7 @@ Blogging_animation = bodymovin.loadAnimation({
 });
 
 // ios json file
-ios = document.getElementById("ios");
+ios = document.getElementsByClassName("ios");
 ios_animation = bodymovin.loadAnimation({
     wrapper: ios,
     animType: "svg",
@@ -163,6 +163,16 @@ mobile_animation = bodymovin.loadAnimation({
     path: 'animation/mobile.json'
 });
 
+// ppc json file
+ppc = document.getElementById("ppc");
+ppc_animation = bodymovin.loadAnimation({
+    wrapper: ppc,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/ppc.json'
+});
+
 // counterwrap js
 
 $('.counter_wrap').counterUp({
@@ -177,7 +187,7 @@ $('.slider-for').slick({
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    autoplay: true,
+    autoplay: false,
     // speed: 800,
     asNavFor: '.slider-nav',
 });
@@ -252,4 +262,45 @@ AOS.init({
     once: true
 })
 
-// ==============
+// // ==============
+
+var $st = $('.pagination');
+var $slickEl = $('.center');
+
+$slickEl.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide) {
+    var i = (currentSlide ? currentSlide : 0) + 1;
+    $st.text(i + ' of ' + slick.slideCount);
+});
+
+$slickEl.slick({
+    // centerMode: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 3000,
+    cssEase: "linear",
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    responsive: [{
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+        }
+    ]
+});
