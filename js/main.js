@@ -23,7 +23,7 @@ $(document).ready(function() {
     }
 })
 
-Blogging = document.getElementsByClassName("Blogging");
+Blogging = document.getElementById("Blogging");
 Blogging_animation = bodymovin.loadAnimation({
     wrapper: Blogging,
     animType: "svg",
@@ -33,7 +33,7 @@ Blogging_animation = bodymovin.loadAnimation({
 });
 
 // ios json file
-ios = document.getElementsByClassName("ios");
+ios = document.getElementById("ios");
 ios_animation = bodymovin.loadAnimation({
     wrapper: ios,
     animType: "svg",
@@ -173,6 +173,47 @@ ppc_animation = bodymovin.loadAnimation({
     path: 'animation/ppc.json'
 });
 
+// jquery json file
+jquery = document.getElementById("jquery");
+jquery_animation = bodymovin.loadAnimation({
+    wrapper: jquery,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/jquery.json'
+});
+
+// testing json file
+testing = document.getElementById("testing");
+testing_animation = bodymovin.loadAnimation({
+    wrapper: testing,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/testing.json'
+});
+
+// ror json file
+ror = document.getElementById("ror");
+ror_animation = bodymovin.loadAnimation({
+    wrapper: ror,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/ror.json'
+});
+
+// django json file
+django = document.getElementById("django");
+django_animation = bodymovin.loadAnimation({
+    wrapper: django,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/django.json'
+});
+
+
 // counterwrap js
 
 $('.counter_wrap').counterUp({
@@ -280,27 +321,26 @@ $slickEl.slick({
     infinite: true,
     autoplay: true,
     autoplaySpeed: 0,
-    speed: 3000,
+    speed: 5000,
     cssEase: "linear",
-    pauseOnHover: true,
-    pauseOnFocus: true,
+    // pauseOnHover: true,
     responsive: [{
-            breakpoint: 768,
+            breakpoint: 1200,
             settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
                 slidesToShow: 1
             }
         },
-        {
-            breakpoint: 480,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 1
-            }
-        }
+        // {
+        //     breakpoint: 767,
+        //     settings: {
+        //         slidesToShow: 1
+        //     }
+        // },
+        // {
+        //     breakpoint: 480,
+        //     settings: {
+        //         slidesToShow: 1
+        //     }
+        // }
     ]
 });

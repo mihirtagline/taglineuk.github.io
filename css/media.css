@@ -48,9 +48,9 @@
 }
 
 
-/* ----------------------------------- *
-    (min-width:1200px)
-*--------------------------------------*/
+/* -------------------------------------- *
+   (min-width:1600px) & (max-width:1900px)
+*---------------------------------------- */
 
 @media only screen and (min-width:1600px) and (max-width:1900px) {
     .web_file {
@@ -77,12 +77,24 @@
         max-width: 750px;
         max-height: 750px;
     }
+    .testing_file {
+        max-width: 720px;
+        max-height: 720px;
+    }
+    .ror_file {
+        max-width: 750px;
+        max-height: 750px;
+    }
+    .django_file {
+        max-width: 750px;
+        max-height: 750px;
+    }
 }
 
 
-/* ----------------------------------- *
-    (min-width:1200px)
-*--------------------------------------*/
+/* --------------------------------------- *
+   (min-width:1441px) & (max-width:1600px)
+*----------------------------------------- */
 
 @media only screen and (min-width:1441px) and (max-width:1600px) {
     .web_file {
@@ -121,14 +133,30 @@
         max-width: 700px;
         max-height: 700px;
     }
+    .jquery_file {
+        max-width: 600px;
+        max-height: 600px;
+    }
+    .testing_file {
+        max-width: 620px;
+        max-height: 620px;
+    }
+    .ror_file {
+        max-width: 700px;
+        max-height: 700px;
+    }
+    .django_file {
+        max-width: 700px;
+        max-height: 700px;
+    }
 }
 
 
-/* ----------------------------------- *
-    (min-width:1200px)
-*--------------------------------------*/
+/* ----------------------------------------- *
+    (min-width:1200px) & (max-width:1440px)
+*-------------------------------------------*/
 
-@media only screen and (min-width:1199px) and (max-width:1440px) {
+@media only screen and (min-width:1200px) and (max-width:1440px) {
     .android_file {
         max-width: 600px;
         max-height: 600px;
@@ -184,6 +212,22 @@
     .ppc_file {
         max-width: 650px;
         max-height: 650px;
+    }
+    .jquery_file {
+        max-width: 530px;
+        max-height: 530px;
+    }
+    .testing_file {
+        max-width: 500px;
+        max-height: 500px;
+    }
+    .ror_file {
+        max-width: 600px;
+        max-height: 600px;
+    }
+    .django_file {
+        max-width: 600px;
+        max-height: 600px;
     }
 }
 
@@ -317,6 +361,10 @@
     .contacts_form .form-control {
         font-size: 15px;
     } */
+    /* soical network */
+    .border_box {
+        padding: 20px;
+    }
 }
 
 
@@ -558,6 +606,10 @@
         right: 25px;
         padding: 0px;
     }
+    /* social network css */
+    .border_box {
+        border: 0px;
+    }
 }
 
 
@@ -724,6 +776,16 @@
     }
     .client-logos .table_logo img {
         max-width: 170px;
+    }
+    /* social nwetwork css */
+    .banner_counter {
+        margin-top: 30px;
+    }
+    .banner_counter h2 {
+        line-height: 70px;
+    }
+    .banner_counter p {
+        font-size: 26px;
     }
 }
 
@@ -1137,10 +1199,6 @@
         font-size: 30px;
         line-height: 44px;
     }
-    .comman_lead1 {
-        font-size: 16px;
-        line-height: 30px;
-    }
     .banner_counter {
         margin-top: 20px;
     }
@@ -1151,8 +1209,8 @@
     .banner_counter p {
         font-size: 22px;
     }
-    .help_section h3 {
-        font-size: 28px;
+    .border_box {
+        padding: 16px;
     }
 }
 
@@ -1625,7 +1683,7 @@
         font-size: 16px;
     }
     .tab_effect h3 {
-        font-size: 22px;
+        font-size: 24px;
     }
     .tab_effect p {
         font-size: 12px;
@@ -1648,19 +1706,12 @@
         font-size: 22px;
         line-height: 34px;
     }
-    .comman_lead1 {
-        font-size: 14px;
-        line-height: 26px;
-    }
     .banner_counter h2 {
         font-size: 30px;
         line-height: 40px;
     }
     .banner_counter p {
         font-size: 20px;
-    }
-    .help_section h3 {
-        font-size: 22px;
     }
     .border_box {
         padding: 16px;
