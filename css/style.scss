@@ -1997,8 +1997,11 @@ video {
     transform: rotate(180deg);
 }
 
-// ======================================
-// home page form
+// start portfolio css
+.site_video {
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+}
+
 // =======================================
 .json_file {
     position: absolute;
@@ -2131,7 +2134,7 @@ video {
 // 01. start banner css
 .industry_text {
     h2 {
-        font-size: 37px;
+        font-size: 38px;
         line-height: 50px;
         font-weight: $font-weight-400;
     }
@@ -2140,12 +2143,12 @@ video {
     }
     p {
         font-size: 32px;
+        font-weight: $font-weight-300;
     }
 }
 
 .comman_lead1 {
     font-weight: $font-weight-300;
-    line-height: 35px;
 }
 
 .banner_counter {
@@ -2212,11 +2215,6 @@ video {
 
 // start development methodology css
 // 01. start work css
-.process_box {
-    position: relative;
-    z-index: 10;
-}
-
 .dev_process {
     display: flex;
     flex-wrap: wrap;
@@ -2236,6 +2234,10 @@ video {
             font-size: $comman_text;
             font-weight: $font-weight-300;
         }
+    }
+    .process_box {
+        position: relative;
+        z-index: 10;
         &:after {
             content: '';
             position: absolute;
@@ -2245,5 +2247,28 @@ video {
             z-index: -5;
             border-bottom: 1px dotted #fff;
         }
+        &:last-child {
+            &:after {
+                border-bottom: none !important;
+            }
+        }
+    }
+}
+
+.heading_content {
+    margin-bottom: 25px;
+}
+
+// portfoli-detail css
+.about_section {
+    margin-bottom: 88px;
+    h4 {
+        font-size: 22px;
+        color: #8E8E8E;
+        font-weight: $font-weight-700;
+    }
+    a {
+        color: $theme-red;
+        font-weight: 500;
     }
 }

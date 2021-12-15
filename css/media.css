@@ -616,7 +616,13 @@
         border: 0px;
     }
     /*development methodology css */
-    .dev_process .work_box:after {
+    .dev_process {
+        justify-content: space-around;
+    }
+    .dev_process .process_box {
+        margin-bottom: 16px;
+    }
+    .dev_process .process_box:after {
         border-bottom: 0px;
     }
 }
@@ -774,7 +780,7 @@
     .client-logos .table_logo img {
         max-width: 170px;
     }
-    /* social nwetwork css */
+    /* social network css */
     .banner_counter {
         margin-top: 30px;
     }
@@ -813,6 +819,10 @@
         width: 36px;
         height: 36px;
         line-height: 36px;
+    }
+    /* development methodology css*/
+    .industry_text p {
+        font-size: 28px;
     }
 }
 
@@ -1210,11 +1220,8 @@
         padding: 16px;
     }
     /* development methodology css*/
-    .process_box {
-        margin-bottom: 16px;
-    }
-    .dev_process {
-        justify-content: space-around;
+    .industry_text p {
+        font-size: 22px;
     }
 }
 
@@ -1723,5 +1730,8 @@
     /* development methodology */
     .industry_text p {
         font-size: 18px;
+    }
+    .heading_content {
+        margin-bottom: 16px;
     }
 }

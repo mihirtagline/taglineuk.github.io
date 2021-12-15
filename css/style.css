@@ -2024,6 +2024,11 @@ video {
           transform: rotate(180deg);
 }
 
+.site_video {
+  -webkit-box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+}
+
 .json_file {
   position: absolute;
   display: -webkit-box;
@@ -2155,7 +2160,7 @@ video {
 }
 
 .industry_text h2 {
-  font-size: 37px;
+  font-size: 38px;
   line-height: 50px;
   font-weight: 400;
 }
@@ -2166,11 +2171,11 @@ video {
 
 .industry_text p {
   font-size: 32px;
+  font-weight: 300;
 }
 
 .comman_lead1 {
   font-weight: 300;
-  line-height: 35px;
 }
 
 .banner_counter {
@@ -2241,11 +2246,6 @@ video {
           box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
 }
 
-.process_box {
-  position: relative;
-  z-index: 10;
-}
-
 .dev_process {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2276,7 +2276,12 @@ video {
   font-weight: 300;
 }
 
-.dev_process .work_box:after {
+.dev_process .process_box {
+  position: relative;
+  z-index: 10;
+}
+
+.dev_process .process_box:after {
   content: '';
   position: absolute;
   top: 50%;
@@ -2284,5 +2289,28 @@ video {
   width: 100%;
   z-index: -5;
   border-bottom: 1px dotted #fff;
+}
+
+.dev_process .process_box:last-child:after {
+  border-bottom: none !important;
+}
+
+.heading_content {
+  margin-bottom: 25px;
+}
+
+.about_section {
+  margin-bottom: 88px;
+}
+
+.about_section h4 {
+  font-size: 22px;
+  color: #8E8E8E;
+  font-weight: 700;
+}
+
+.about_section a {
+  color: #e53e30;
+  font-weight: 500;
 }
 /*# sourceMappingURL=style.css.map */
