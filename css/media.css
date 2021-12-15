@@ -229,6 +229,11 @@
         max-width: 600px;
         max-height: 600px;
     }
+    .network_file {
+        right: 0;
+        max-width: 570px;
+        max-height: 570px;
+    }
 }
 
 
@@ -610,18 +615,10 @@
     .border_box {
         border: 0px;
     }
-}
-
-
-/* ----------------------------------- *
-    (max-width:767px)
-*--------------------------------------*/
-
-@media only screen and (max-width:860px) {
-    /* portfolio css
-    .portfolio_slider .slick-list {
-        width: calc(100vw - 12%);
-    } */
+    /*development methodology css */
+    .dev_process .work_box:after {
+        border-bottom: 0px;
+    }
 }
 
 
@@ -1212,6 +1209,13 @@
     .border_box {
         padding: 16px;
     }
+    /* development methodology css*/
+    .process_box {
+        margin-bottom: 16px;
+    }
+    .dev_process {
+        justify-content: space-around;
+    }
 }
 
 
@@ -1715,5 +1719,9 @@
     }
     .border_box {
         padding: 16px;
+    }
+    /* development methodology */
+    .industry_text p {
+        font-size: 18px;
     }
 }

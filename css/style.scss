@@ -2119,6 +2119,13 @@ video {
     max-height: 850px;
 }
 
+.network_file {
+    right: 5%;
+    top: 100px;
+    max-width: 600px;
+    max-height: 600px;
+}
+
 // ======================================
 // start industry css
 // 01. start banner css
@@ -2171,9 +2178,6 @@ video {
     }
 }
 
-// .abc {
-//     width: 1506px;
-// }
 .slide.slider_nav_box.slick-slide {
     width: auto !important;
     margin: auto 10px !important;
@@ -2206,33 +2210,40 @@ video {
     }
 }
 
+// start development methodology css
+// 01. start work css
 .process_box {
     position: relative;
     z-index: 10;
 }
 
-.work_box {
-    padding: 28px 28px 16px;
-    width: 178px;
-    max-width: 100%;
-    height: 178px;
-    max-height: 100%;
-    border-radius: 10px;
-    img {
-        margin-bottom: 10px;
-    }
-    p {
-        margin: 0;
-        font-size: $comman_text;
-        font-weight: $font-weight-300;
-    }
-    &:after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        right: -31%;
-        width: 100%;
-        z-index: -5;
-        border-bottom: 1px dotted #fff;
+.dev_process {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .work_box {
+        padding: 28px 28px 16px;
+        width: 178px;
+        max-width: 100%;
+        height: 178px;
+        max-height: 100%;
+        border-radius: 10px;
+        img {
+            margin-bottom: 10px;
+        }
+        p {
+            margin: 0;
+            font-size: $comman_text;
+            font-weight: $font-weight-300;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 31%;
+            width: 100%;
+            z-index: -5;
+            border-bottom: 1px dotted #fff;
+        }
     }
 }

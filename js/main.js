@@ -213,6 +213,16 @@ django_animation = bodymovin.loadAnimation({
     path: 'animation/django.json'
 });
 
+// network json file
+network = document.getElementById("network");
+network_animation = bodymovin.loadAnimation({
+    wrapper: network,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/network.json'
+});
+
 
 // counterwrap js
 
@@ -303,7 +313,7 @@ AOS.init({
     once: true
 })
 
-// // ==============
+// SOLUTION PAGE JS
 
 var $st = $('.pagination');
 var $slickEl = $('.center');
