@@ -344,8 +344,8 @@ video {
 }
 
 .header_lead {
-    max-width: 210px;
-    margin: 15px auto 50px;
+    margin: 0;
+    padding: 10px 0px;
     font-size: 14px;
     color: #C4C4C4;
     font-weight: 500;
@@ -417,9 +417,9 @@ video {
         content: "";
         position: absolute;
         top: 0;
-        right: 38px;
+        right: 8px;
         border-right: 1px solid #cdcdcd;
-        height: 146px;
+        height: 100px;
     }
 }
 
@@ -2129,6 +2129,18 @@ video {
     max-height: 650px;
 }
 
+.reactnative_file {
+    top: 50px;
+    max-width: 850px;
+    max-height: 850px;
+}
+
+.frontend_file {
+    top: 100px;
+    max-width: 800px;
+    max-height: 800px;
+}
+
 .network_file {
     right: 5%;
     top: 100px;
@@ -2306,4 +2318,15 @@ video {
         color: $theme-red;
         font-weight: $font-weight-700;
     }
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
 }

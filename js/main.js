@@ -223,6 +223,26 @@ python_animation = bodymovin.loadAnimation({
     path: 'animation/python.json'
 });
 
+// reactnative json file
+reactnative = document.getElementById("reactnative");
+reactnative_animation = bodymovin.loadAnimation({
+    wrapper: reactnative,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/reactnative.json'
+});
+
+// frontend json file
+frontend = document.getElementById("frontend");
+frontend_animation = bodymovin.loadAnimation({
+    wrapper: frontend,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/frontend.json'
+});
+
 // network json file
 network = document.getElementById("network");
 network_animation = bodymovin.loadAnimation({

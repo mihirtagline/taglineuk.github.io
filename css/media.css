@@ -1,58 +1,8 @@
-/* ----------------------------------- *
-    (max-width:1599px)
-*--------------------------------------*/
+/* ---------------------------------- *
+     (max-width:1900px)
+*------------------------------------ */
 
-@media only screen and (max-width:1599px) {
-    /* mobile development css*/
-    .slider_arrow.slick-arrow {
-        right: 100px;
-    }
-    .slider_arrow.slide.slick-arrow {
-        right: 40px;
-    }
-    .slider-nav {
-        width: 100%;
-    }
-    /* index css */
-    .banner_section .right_wrap {
-        max-width: 800px;
-        top: -100px;
-    }
-    .banner_text h1 {
-        font-size: 38px;
-        line-height: 60px;
-    }
-    .banner_text h2 {
-        font-size: 38px;
-    }
-    .slider_arrow.slide1.slick-arrow {
-        right: 100px;
-        top: -50px;
-    }
-    .slider_arrow.slide2.slick-arrow {
-        right: 40px;
-        top: -50px;
-    }
-}
-
-
-/* ----------------------------------- *
-    (max-width:1399px)
-*--------------------------------------*/
-
-@media only screen and (max-width:1399px) {
-    /* index css */
-    .banner_section .right_wrap {
-        max-width: 700px;
-    }
-}
-
-
-/* -------------------------------------- *
-   (min-width:1600px) & (max-width:1900px)
-*---------------------------------------- */
-
-@media only screen and (min-width:1600px) and (max-width:1900px) {
+@media only screen and (max-width:1900px) {
     .web_file {
         max-width: 700px;
         max-height: 700px;
@@ -89,14 +39,52 @@
         max-width: 750px;
         max-height: 750px;
     }
+    .frontend_file {
+        max-width: 750px;
+        max-height: 750px;
+    }
 }
 
 
-/* --------------------------------------- *
-   (min-width:1441px) & (max-width:1600px)
-*----------------------------------------- */
+/* -------------------------------- *
+     (max-width:1600px)
+*---------------------------------- */
 
-@media only screen and (min-width:1441px) and (max-width:1600px) {
+@media only screen and (max-width:1600px) {
+    /* index css */
+    .banner_section .right_wrap {
+        max-width: 800px;
+    }
+    .banner_text h1 {
+        font-size: 38px;
+        line-height: 60px;
+    }
+    .banner_text h2 {
+        font-size: 38px;
+    }
+    .slider_arrow.slide1.slick-arrow {
+        right: 100px;
+        top: -50px;
+    }
+    .slider_arrow.slide2.slick-arrow {
+        right: 40px;
+        top: -50px;
+    }
+    /* mobile development css*/
+    .slider_arrow.slick-arrow {
+        right: 100px;
+    }
+    .slider_arrow.slide.slick-arrow {
+        right: 40px;
+    }
+    .slider-nav {
+        width: 100%;
+    }
+    /* json file */
+    .android_file {
+        max-width: 750px;
+        max-height: 750px;
+    }
     .web_file {
         max-width: 650px;
         max-height: 650px;
@@ -149,14 +137,29 @@
         max-width: 700px;
         max-height: 700px;
     }
+    .reactnative_file {
+        max-width: 750px;
+        max-height: 750px;
+    }
+    .frontend_file {
+        max-width: 680px;
+        max-height: 680px;
+    }
+    .network_file {
+        right: 0;
+    }
 }
 
 
-/* ----------------------------------------- *
-    (min-width:1200px) & (max-width:1440px)
-*-------------------------------------------*/
+/* -------------------------------- *
+    (max-width:1440px)
+*----------------------------------*/
 
-@media only screen and (min-width:1200px) and (max-width:1440px) {
+@media only screen and (max-width:1440px) {
+    .banner_section .right_wrap {
+        max-width: 680px;
+        /* max-height: 680px; */
+    }
     .android_file {
         max-width: 600px;
         max-height: 600px;
@@ -233,6 +236,15 @@
         right: 0;
         max-width: 600px;
         max-height: 600px;
+    }
+    .reactnative_file {
+        max-width: 620px;
+        max-height: 620px;
+    }
+    .frontend_file {
+        top: 100px;
+        max-width: 580px;
+        max-height: 580px;
     }
     .network_file {
         right: 0;
@@ -365,12 +377,6 @@
     .wrapper .option span {
         font-size: 14px;
     }
-    /* .contacts_form .form_text {
-        font-size: 14px;
-    }
-    .contacts_form .form-control {
-        font-size: 15px;
-    } */
     /* soical network */
     .border_box {
         padding: 20px;
@@ -579,7 +585,6 @@
     }
     .banner_section .right_wrap {
         position: relative;
-        top: 0px;
     }
     .slider-wrap .slider h3 {
         font-size: 26px;
