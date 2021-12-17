@@ -229,6 +229,11 @@
         max-width: 600px;
         max-height: 600px;
     }
+    .python_file {
+        right: 0;
+        max-width: 600px;
+        max-height: 600px;
+    }
     .network_file {
         right: 0;
         max-width: 570px;
@@ -625,6 +630,10 @@
     .dev_process .process_box:after {
         border-bottom: 0px;
     }
+    /* portfolio-detail css */
+    .about_content {
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -790,6 +799,10 @@
     .banner_counter p {
         font-size: 26px;
     }
+    /* development methodology css*/
+    .industry_text p {
+        font-size: 28px;
+    }
 }
 
 
@@ -819,10 +832,6 @@
         width: 36px;
         height: 36px;
         line-height: 36px;
-    }
-    /* development methodology css*/
-    .industry_text p {
-        font-size: 28px;
     }
 }
 
@@ -1222,6 +1231,19 @@
     /* development methodology css*/
     .industry_text p {
         font-size: 22px;
+    }
+    /* portfolio-detail css */
+    .about_content {
+        margin-bottom: 16px;
+    }
+    .stack_content {
+        margin: 0 auto;
+    }
+    .footer_content h2 {
+        font-size: 38px;
+    }
+    .footer_content {
+        padding-bottom: 20px;
     }
 }
 
@@ -1724,14 +1746,18 @@
     .banner_counter p {
         font-size: 20px;
     }
-    .border_box {
-        padding: 16px;
-    }
     /* development methodology */
     .industry_text p {
         font-size: 18px;
     }
     .heading_content {
         margin-bottom: 16px;
+    }
+    /* portfolio-detail css */
+    .footer_content {
+        padding-bottom: 16px;
+    }
+    .footer_content h2 {
+        font-size: 30px;
     }
 }

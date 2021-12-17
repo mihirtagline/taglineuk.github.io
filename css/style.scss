@@ -2122,6 +2122,13 @@ video {
     max-height: 850px;
 }
 
+.python_file {
+    right: 2%;
+    top: 100px;
+    max-width: 650px;
+    max-height: 650px;
+}
+
 .network_file {
     right: 5%;
     top: 100px;
@@ -2260,7 +2267,7 @@ video {
 }
 
 // portfoli-detail css
-.about_section {
+.about_content {
     margin-bottom: 88px;
     h4 {
         font-size: 22px;
@@ -2270,5 +2277,33 @@ video {
     a {
         color: $theme-red;
         font-weight: 500;
+    }
+}
+
+.stack_content {
+    width: 160px;
+    height: 160px;
+    padding: 12px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    h4 {
+        font-weight: 500;
+    }
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    }
+    img {
+        height: 70px;
+        object-fit: cover;
+    }
+}
+
+.footer_content {
+    padding-bottom: 30px;
+    h2 {
+        font-size: 50px;
+        color: $theme-red;
+        font-weight: $font-weight-700;
     }
 }

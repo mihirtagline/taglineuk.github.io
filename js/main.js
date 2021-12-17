@@ -213,6 +213,16 @@ django_animation = bodymovin.loadAnimation({
     path: 'animation/django.json'
 });
 
+// django json file
+python = document.getElementById("python");
+python_animation = bodymovin.loadAnimation({
+    wrapper: python,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/python.json'
+});
+
 // network json file
 network = document.getElementById("network");
 network_animation = bodymovin.loadAnimation({
