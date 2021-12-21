@@ -774,10 +774,17 @@ video {
         color: #c4c4c4;
         border: none;
         border-radius: 0;
+        padding: 3px;
         border-bottom: 1px solid #C4C4C4;
         font-weight: $font-weight-300;
         font-family: $font-family-Roboto;
         font-size: $comman_text;
+        option {
+            color: $theme-red;
+            &:hover {
+                background-color: yellow;
+            }
+        }
     }
     .form_text {
         font-size: $comman_text;
@@ -1321,6 +1328,7 @@ video {
     }
     .form-control {
         border: none;
+        color: $theme-black;
         border-radius: 0;
         border-bottom: 1px solid #C4C4C4;
     }
@@ -1960,43 +1968,40 @@ video {
     padding: 68px 0px 50px;
 }
 
-.panel {
-    margin-bottom: 18px;
-    .panel-heading {
-        a {
-            color: #425466;
-            &:before {
-                content: "\f078";
-                font-family: "Font Awesome 5 Pro";
-                float: right;
-                transition: all 0.5s;
-                font-size: 14px;
-            }
-        }
-    }
-    .panel-body {
-        border-radius: 5px;
-        padding: 12px 20px;
-        font-size: 13px;
-        line-height: 22px;
-        color: #425466;
-        font-family: $font-family-Roboto;
-    }
-}
-
-.panel-title>a,
-.panel-title>a:active {
-    display: block;
-    font-size: 21px;
-    font-family: $font-family-Roboto;
-    font-weight: 500;
-    line-height: 30px;
-}
-
-.panel-heading.active a:before {
-    transform: rotate(180deg);
-}
-
+// .panel {
+//     margin-bottom: 18px;
+//     .panel-heading {
+//         a {
+//             color: #425466;
+//             &:before {
+//                 content: "\f078";
+//                 font-family: "Font Awesome 5 Pro";
+//                 float: right;
+//                 transition: all 0.5s;
+//                 font-size: 14px;
+//             }
+//         }
+//     }
+//     .panel-body {
+//         border-radius: 5px;
+//         padding: 12px 20px;
+//         font-size: 13px;
+//         line-height: 22px;
+//         color: #425466;
+//         font-family: $font-family-Roboto;
+//     }
+// }
+// .panel-title>a,
+// .panel-title>a:active {
+//     display: block;
+//     font-size: 21px;
+//     font-family: $font-family-Roboto;
+//     font-weight: 500;
+//     line-height: 30px;
+// }
+// .panel-heading.active a:before {
+//     transform: rotate(180deg);
+// }
 // start portfolio css
 .site_video {
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
@@ -2146,6 +2151,12 @@ video {
     top: 100px;
     max-width: 600px;
     max-height: 600px;
+}
+
+.taxi_file {
+    top: 100px;
+    max-width: 950px;
+    max-height: 950px;
 }
 
 // ======================================
@@ -2321,8 +2332,8 @@ video {
 }
 
 #background-video {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 900px;
     object-fit: cover;
     left: 0;
     right: 0;
@@ -2330,3 +2341,84 @@ video {
     bottom: 0;
     z-index: -1;
 }
+
+// ------------------------------
+.faq {
+    .faq-list {
+        padding: 0;
+        list-style: none;
+        li {
+            margin-bottom: 18px;
+        }
+        a {
+            display: block;
+            position: relative;
+            font-size: 21px;
+            color: #425466;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0px 16px 0px 0px;
+            font-family: $font-family-Roboto;
+        }
+        i {
+            font-size: 16px;
+            position: absolute;
+            right: 0px;
+            top: 6px;
+            transition: 1s;
+        }
+        p {
+            margin: 0;
+            font-size: 13px;
+            color: #425466;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-weight: 400;
+            transition: 0.5s;
+            background-color: $theme-white;
+            font-family: $font-family-Roboto;
+        }
+    }
+}
+
+.collapsed {
+    i.fa-caret-up {
+        transform: rotate(-180deg);
+    }
+}
+
+// .abc {
+//     text-align: center;
+//     padding: 20px;
+//     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+//     h3 {
+//         font-size: 24px;
+//         margin-bottom: 18px;
+//     }
+//     .form1 {
+//         max-width: 450px;
+//         margin: 0 auto;
+//         border: none;
+//         border-radius: 0px;
+//         border-bottom: 1px solid #d85e1a;
+//         background-color: transparent;
+//     }
+//     .btn1 {
+//         padding: 10px 20px;
+//         font-size: 16px;
+//         margin-top: 20px;
+//         border: none;
+//         background-color: #d85e1a;
+//         transition: all 0.5s;
+//         a {
+//             color: #fff;
+//             &:hover {
+//                 color: #d85e1a;
+//             }
+//         }
+//         &:hover {
+//             background-color: transparent;
+//             border: 1px solid #d85e1a;
+//         }
+//     }
+// }

@@ -213,7 +213,7 @@ django_animation = bodymovin.loadAnimation({
     path: 'animation/django.json'
 });
 
-// django json file
+// python json file
 python = document.getElementById("python");
 python_animation = bodymovin.loadAnimation({
     wrapper: python,
@@ -251,6 +251,16 @@ network_animation = bodymovin.loadAnimation({
     loop: true,
     autoplay: true,
     path: 'animation/network.json'
+});
+
+// network json file
+taxi = document.getElementById("taxi");
+taxi_animation = bodymovin.loadAnimation({
+    wrapper: taxi,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/taxi.json'
 });
 
 
@@ -327,13 +337,13 @@ window.onload = function() {
 
 // FAQ JS
 
-$('.panel-collapse').on('show.bs.collapse', function() {
-    $(this).siblings('.panel-heading').addClass('active');
-});
+// $('.panel-collapse').on('show.bs.collapse', function() {
+//     $(this).siblings('.panel-heading').addClass('active');
+// });
 
-$('.panel-collapse').on('hide.bs.collapse', function() {
-    $(this).siblings('.panel-heading').removeClass('active');
-});
+// $('.panel-collapse').on('hide.bs.collapse', function() {
+//     $(this).siblings('.panel-heading').removeClass('active');
+// });
 
 
 // aos js
@@ -354,33 +364,20 @@ $slickEl.on('init reInit afterChange', function(event, slick, currentSlide, next
 });
 
 $slickEl.slick({
-    // centerMode: true,
+    arrows: false,
     slidesToShow: 5,
     slidesToScroll: 1,
     dots: false,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 0,
-    speed: 5000,
+    speed: 7000,
     cssEase: "linear",
-    // pauseOnHover: true,
+    pauseOnHover: true,
     responsive: [{
-            breakpoint: 1200,
-            settings: {
-                slidesToShow: 1
-            }
-        },
-        // {
-        //     breakpoint: 767,
-        //     settings: {
-        //         slidesToShow: 1
-        //     }
-        // },
-        // {
-        //     breakpoint: 480,
-        //     settings: {
-        //         slidesToShow: 1
-        //     }
-        // }
-    ]
+        breakpoint: 1200,
+        settings: {
+            slidesToShow: 1
+        }
+    }]
 });

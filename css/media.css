@@ -148,6 +148,10 @@
     .network_file {
         right: 0;
     }
+    .taxi_file {
+        max-width: 800px;
+        max-height: 800px;
+    }
 }
 
 
@@ -250,6 +254,10 @@
         right: 0;
         max-width: 570px;
         max-height: 570px;
+    }
+    .taxi_file {
+        max-width: 700px;
+        max-height: 700px;
     }
 }
 
@@ -370,13 +378,13 @@
     .client-logos .table_logo img {
         max-width: 170px;
     }
-    .wrapper {
+    /* .wrapper {
         width: 250px;
         height: 38px;
     }
     .wrapper .option span {
         font-size: 14px;
-    }
+    } */
     /* soical network */
     .border_box {
         padding: 20px;
@@ -516,12 +524,12 @@
     .engagement_model h5 {
         font-size: 17px;
     }
-    .wrapper.center-block {
+    /* .wrapper.center-block {
         margin-top: 28px;
-    }
-    .panel {
+    } */
+    /* .panel {
         margin-bottom: 14px;
-    }
+    } */
     .sticky_section {
         position: unset;
     }
@@ -1138,10 +1146,13 @@
     .new_point h4 {
         font-size: 20px;
     }
-    .panel-title>a,
+    /* .panel-title>a,
     .panel-title>a:active {
         font-size: 18px;
         line-height: 28px;
+    } */
+    .faq .faq-list a {
+        font-size: 18px;
     }
     /* index css */
     .banner_section {
@@ -1634,16 +1645,22 @@
     .bg_offwhite {
         padding: 30px 0px;
     }
-    .wrapper.center-block {
+    /* .wrapper.center-block {
         margin-top: 20px;
-    }
-    .panel-title>a,
+    } */
+    /* .panel-title>a,
     .panel-title>a:active {
         font-size: 16px;
         line-height: 24px;
     }
     .panel .panel-heading a:before {
         font-size: 12px;
+    } */
+    .faq .faq-list a {
+        font-size: 16px;
+    }
+    .faq .faq-list li {
+        margin-bottom: 16px;
     }
     /* index css */
     .megamenu-li .megamenu {
@@ -1726,13 +1743,13 @@
     .tab_effect p {
         font-size: 12px;
     }
-    .wrapper {
+    /* .wrapper {
         width: 250px;
         height: 38px;
     }
     .wrapper .option span {
         font-size: 14px;
-    }
+    } */
     .contacts_form .form_text {
         font-size: 14px;
     }

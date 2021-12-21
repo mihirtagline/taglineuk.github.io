@@ -828,10 +828,19 @@ video {
   color: #c4c4c4;
   border: none;
   border-radius: 0;
+  padding: 3px;
   border-bottom: 1px solid #C4C4C4;
   font-weight: 300;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
+}
+
+.contacts_form .form-control option {
+  color: #e53e30;
+}
+
+.contacts_form .form-control option:hover {
+  background-color: yellow;
 }
 
 .contacts_form .form_text {
@@ -1342,6 +1351,7 @@ video {
 
 .contact_form .form-control {
   border: none;
+  color: #000;
   border-radius: 0;
   border-bottom: 1px solid #C4C4C4;
 }
@@ -1984,46 +1994,6 @@ video {
   padding: 68px 0px 50px;
 }
 
-.panel {
-  margin-bottom: 18px;
-}
-
-.panel .panel-heading a {
-  color: #425466;
-}
-
-.panel .panel-heading a:before {
-  content: "\f078";
-  font-family: "Font Awesome 5 Pro";
-  float: right;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  font-size: 14px;
-}
-
-.panel .panel-body {
-  border-radius: 5px;
-  padding: 12px 20px;
-  font-size: 13px;
-  line-height: 22px;
-  color: #425466;
-  font-family: "Roboto", sans-serif;
-}
-
-.panel-title > a,
-.panel-title > a:active {
-  display: block;
-  font-size: 21px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  line-height: 30px;
-}
-
-.panel-heading.active a:before {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
 .site_video {
   -webkit-box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
@@ -2176,6 +2146,12 @@ video {
   top: 100px;
   max-width: 600px;
   max-height: 600px;
+}
+
+.taxi_file {
+  top: 100px;
+  max-width: 950px;
+  max-height: 950px;
 }
 
 .industry_text h2 {
@@ -2369,8 +2345,8 @@ video {
 }
 
 #background-video {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 900px;
   -o-object-fit: cover;
      object-fit: cover;
   left: 0;
@@ -2378,5 +2354,52 @@ video {
   top: 0;
   bottom: 0;
   z-index: -1;
+}
+
+.faq .faq-list {
+  padding: 0;
+  list-style: none;
+}
+
+.faq .faq-list li {
+  margin-bottom: 18px;
+}
+
+.faq .faq-list a {
+  display: block;
+  position: relative;
+  font-size: 21px;
+  color: #425466;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0px 16px 0px 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+.faq .faq-list i {
+  font-size: 16px;
+  position: absolute;
+  right: 0px;
+  top: 6px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.faq .faq-list p {
+  margin: 0;
+  font-size: 13px;
+  color: #425466;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-weight: 400;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.collapsed i.fa-caret-up {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 /*# sourceMappingURL=style.css.map */
