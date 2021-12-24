@@ -253,7 +253,7 @@ network_animation = bodymovin.loadAnimation({
     path: 'animation/network.json'
 });
 
-// network json file
+// taxi json file
 taxi = document.getElementById("taxi");
 taxi_animation = bodymovin.loadAnimation({
     wrapper: taxi,
@@ -263,6 +263,25 @@ taxi_animation = bodymovin.loadAnimation({
     path: 'animation/taxi.json'
 });
 
+// food json file
+food = document.getElementById("food");
+food_animation = bodymovin.loadAnimation({
+    wrapper: food,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/food.json'
+});
+
+// healthcare json file
+healthcare = document.getElementById("healthcare");
+healthcare_animation = bodymovin.loadAnimation({
+    wrapper: healthcare,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/healthcare.json'
+});
 
 // counterwrap js
 
@@ -334,17 +353,6 @@ window.onload = function() {
         slidesToScroll: 1
     });
 };
-
-// FAQ JS
-
-// $('.panel-collapse').on('show.bs.collapse', function() {
-//     $(this).siblings('.panel-heading').addClass('active');
-// });
-
-// $('.panel-collapse').on('hide.bs.collapse', function() {
-//     $(this).siblings('.panel-heading').removeClass('active');
-// });
-
 
 // aos js
 

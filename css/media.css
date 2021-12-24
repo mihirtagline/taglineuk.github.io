@@ -43,6 +43,15 @@
         max-width: 750px;
         max-height: 750px;
     }
+    .food_file {
+        top: 0;
+        max-width: 800px;
+        min-height: 800px;
+    }
+    .healthcare_file {
+        max-width: 850px;
+        max-height: 850px;
+    }
 }
 
 
@@ -152,6 +161,14 @@
         max-width: 800px;
         max-height: 800px;
     }
+    .food_file {
+        max-width: 700px;
+        max-height: 700px;
+    }
+    .healthcare_file {
+        max-width: 750px;
+        max-height: 750px;
+    }
 }
 
 
@@ -258,6 +275,27 @@
     .taxi_file {
         max-width: 700px;
         max-height: 700px;
+    }
+    .food_file {
+        max-width: 650px;
+        max-height: 650px;
+    }
+    .healthcare_file {
+        top: 50px;
+        max-width: 650px;
+        max-height: 650px;
+    }
+}
+
+
+/* -------------------------------- *
+    (max-width:1300px)
+*----------------------------------*/
+
+@media only screen and (max-width:1300px) {
+    .food_file {
+        max-width: 550px;
+        max-height: 550px;
     }
 }
 

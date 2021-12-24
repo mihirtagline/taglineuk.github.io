@@ -730,7 +730,7 @@ video {
   color: #c4c4c4;
 }
 
-.tab-pane img {
+.stories_img {
   border-radius: 10px;
   -webkit-box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
@@ -1994,6 +1994,53 @@ video {
   padding: 68px 0px 50px;
 }
 
+.faq .faq-list {
+  padding: 0;
+  list-style: none;
+}
+
+.faq .faq-list li {
+  margin-bottom: 18px;
+}
+
+.faq .faq-list a {
+  display: block;
+  position: relative;
+  font-size: 21px;
+  color: #425466;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0px 16px 0px 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+.faq .faq-list i {
+  font-size: 16px;
+  position: absolute;
+  right: 0px;
+  top: 6px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.faq .faq-list p {
+  margin: 0;
+  font-size: 13px;
+  color: #425466;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-weight: 400;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.collapsed i.fa-caret-up {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
 .site_video {
   -webkit-box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
@@ -2150,6 +2197,18 @@ video {
 
 .taxi_file {
   top: 100px;
+  max-width: 950px;
+  max-height: 950px;
+}
+
+.food_file {
+  top: 100px;
+  max-width: 900px;
+  max-height: 900px;
+}
+
+.healthcare_file {
+  top: 0px;
   max-width: 950px;
   max-height: 950px;
 }
@@ -2356,50 +2415,42 @@ video {
   z-index: -1;
 }
 
-.faq .faq-list {
-  padding: 0;
-  list-style: none;
+.solution_item {
+  list-style: inside circle;
 }
 
-.faq .faq-list li {
-  margin-bottom: 18px;
+.solution_item li {
+  margin-bottom: 10px;
+  font-weight: 300;
 }
 
-.faq .faq-list a {
-  display: block;
+.solution_item li:hover {
+  color: #e53e30;
+  cursor: pointer;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #000;
+  background-color: transparent;
+}
+
+.nav-pills li {
+  list-style: square;
+}
+
+.nav-pills li:hover {
+  color: #e53e30;
+}
+
+.nav-pills a:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #e53e30;
+}
+
+.nav-pills .nav-link {
+  color: #000;
   position: relative;
-  font-size: 21px;
-  color: #425466;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 0px 16px 0px 0px;
-  font-family: "Roboto", sans-serif;
-}
-
-.faq .faq-list i {
-  font-size: 16px;
-  position: absolute;
-  right: 0px;
-  top: 6px;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.faq .faq-list p {
-  margin: 0;
-  font-size: 13px;
-  color: #425466;
-  padding: 12px 20px;
-  border-radius: 5px;
-  font-weight: 400;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  background-color: #fff;
-  font-family: "Roboto", sans-serif;
-}
-
-.collapsed i.fa-caret-up {
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
 }
 /*# sourceMappingURL=style.css.map */
