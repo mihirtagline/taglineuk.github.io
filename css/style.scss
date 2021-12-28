@@ -2179,6 +2179,13 @@ video {
     max-height: 950px;
 }
 
+.travel_file {
+    right: 10%;
+    top: 150px;
+    max-width: 550px;
+    max-height: 550px;
+}
+
 // ======================================
 // start industry css
 // 01. start banner css
@@ -2376,41 +2383,49 @@ video {
 }
 
 // =================================================
-.nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
-    color: $theme-black;
-    background-color: transparent;
-}
-
-.nav-pills {
-    li {
-        list-style: square;
-        &:hover {
+.feature_tabs {
+    .nav-pills {
+        .nav-link.active {
             color: $theme-red;
+            background-color: transparent;
+        }
+        .nav-link {
+            color: $theme-black;
+            &:before {
+                content: '';
+                position: absolute;
+                border: 1px solid #1568A6;
+                left: 0px;
+                right: 0;
+                width: 10px;
+                height: 10px;
+                border-radius: 50px;
+                margin-top: 7px;
+                .active {
+                    border: 1px solid $theme-red;
+                }
+            }
+            &:hover {
+                color: $theme-red;
+                &:before {
+                    border: 1px solid $theme-red;
+                }
+            }
         }
     }
-    a {
-        &:hover {
-            transition: all 0.3s ease-in-out;
-            color: $theme-red;
-        }
-    }
 }
 
-.nav-pills .nav-link {
-    color: $theme-black;
+.features_img {
+    display: block;
+    margin: 0 auto;
+}
+
+.dm-width {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.iphone-mockup {
     position: relative;
-    // &:before {
-    //     content: '';
-    //     position: absolute;
-    //     border: 1px solid #1568A6;
-    //     top: 50%;
-    //     transform: translateY(-50%);
-    //     right: 0;
-    //     left: 0px;
-    //     right: 0;
-    //     width: 10px;
-    //     height: 10px;
-    //     border-radius: 50px;
-    // }
+    z-index: 5;
 }

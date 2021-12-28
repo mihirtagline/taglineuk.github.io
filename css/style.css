@@ -2213,6 +2213,13 @@ video {
   max-height: 950px;
 }
 
+.travel_file {
+  right: 10%;
+  top: 150px;
+  max-width: 550px;
+  max-height: 550px;
+}
+
 .industry_text h2 {
   font-size: 38px;
   line-height: 50px;
@@ -2429,28 +2436,51 @@ video {
   cursor: pointer;
 }
 
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  color: #000;
+.feature_tabs .nav-pills .nav-link.active {
+  color: #e53e30;
   background-color: transparent;
 }
 
-.nav-pills li {
-  list-style: square;
-}
-
-.nav-pills li:hover {
-  color: #e53e30;
-}
-
-.nav-pills a:hover {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  color: #e53e30;
-}
-
-.nav-pills .nav-link {
+.feature_tabs .nav-pills .nav-link {
   color: #000;
+}
+
+.feature_tabs .nav-pills .nav-link:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #1568A6;
+  left: 0px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  margin-top: 7px;
+}
+
+.feature_tabs .nav-pills .nav-link:before .active {
+  border: 1px solid #e53e30;
+}
+
+.feature_tabs .nav-pills .nav-link:hover {
+  color: #e53e30;
+}
+
+.feature_tabs .nav-pills .nav-link:hover:before {
+  border: 1px solid #e53e30;
+}
+
+.features_img {
+  display: block;
+  margin: 0 auto;
+}
+
+.dm-width {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.iphone-mockup {
   position: relative;
+  z-index: 5;
 }
 /*# sourceMappingURL=style.css.map */

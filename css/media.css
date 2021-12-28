@@ -52,6 +52,9 @@
         max-width: 850px;
         max-height: 850px;
     }
+    .travel_file {
+        right: 5%;
+    }
 }
 
 
@@ -169,6 +172,10 @@
         max-width: 750px;
         max-height: 750px;
     }
+    .travel_file {
+        max-width: 500px;
+        max-height: 500px;
+    }
 }
 
 
@@ -284,6 +291,10 @@
         top: 50px;
         max-width: 650px;
         max-height: 650px;
+    }
+    .travel_file {
+        max-width: 450px;
+        max-height: 450px;
     }
 }
 
