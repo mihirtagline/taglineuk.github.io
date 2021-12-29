@@ -2220,6 +2220,13 @@ video {
   max-height: 550px;
 }
 
+.dating_file {
+  right: 5%;
+  top: 100px;
+  max-width: 850px;
+  max-height: 850px;
+}
+
 .industry_text h2 {
   font-size: 38px;
   line-height: 50px;
@@ -2474,13 +2481,31 @@ video {
   margin: 0 auto;
 }
 
-.dm-width {
-  width: 500px;
+.related_box_1 {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.related_box {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 12.35px 0.65px rgba(71, 71, 71, 0.2);
+  box-shadow: 0 0 12.35px 0.65px rgba(71, 71, 71, 0.2);
+  padding: 10px;
+  position: relative;
   margin: 0 auto;
 }
 
-.iphone-mockup {
-  position: relative;
-  z-index: 5;
+.related_box:hover {
+  background: linear-gradient(93.97deg, #EB4D75 0%, #FDA085 100%);
+}
+
+.related_box_name {
+  font-size: 18px;
+  margin: 16px 0px 10px;
+  font-weight: 300;
 }
 /*# sourceMappingURL=style.css.map */

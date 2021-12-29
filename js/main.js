@@ -14,29 +14,6 @@ $('.checkbtn').on('click', function() {
     $('body').toggleClass('menu-open');
 });
 
-$('.owl-carousel').owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: false,
-    autoplay: true,
-    dots: false,
-    responsive: {
-        0: {
-            items: 2
-        },
-
-        600: {
-            items: 3
-        },
-        900: {
-            items: 4
-        },
-        1200: {
-            items: 5
-        }
-    }
-})
-
 // json file js
 $(document).ready(function() {
     if ($(window).innerWidth > 768) {
@@ -314,6 +291,16 @@ travel_animation = bodymovin.loadAnimation({
     loop: true,
     autoplay: true,
     path: 'animation/travel.json'
+});
+
+// Dating json file
+dating = document.getElementById("dating");
+dating_animation = bodymovin.loadAnimation({
+    wrapper: dating,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/dating.json'
 });
 
 

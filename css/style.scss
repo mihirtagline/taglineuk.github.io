@@ -2186,6 +2186,13 @@ video {
     max-height: 550px;
 }
 
+.dating_file {
+    right: 5%;
+    top: 100px;
+    max-width: 850px;
+    max-height: 850px;
+}
+
 // ======================================
 // start industry css
 // 01. start banner css
@@ -2420,12 +2427,28 @@ video {
     margin: 0 auto;
 }
 
-.dm-width {
-    width: 500px;
-    margin: 0 auto;
+// ======================================
+.related_box_1 {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    justify-content: center;
 }
 
-.iphone-mockup {
+.related_box {
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 12.35px .65px rgba(71, 71, 71, .2);
+    box-shadow: 0 0 12.35px .65px rgba(71, 71, 71, .2);
+    padding: 10px;
     position: relative;
-    z-index: 5;
+    margin: 0 auto;
+    &:hover {
+        background: linear-gradient(93.97deg, #EB4D75 0%, #FDA085 100%);
+    }
+}
+
+.related_box_name {
+    font-size: 18px;
+    margin: 16px 0px 10px;
+    font-weight: $font-weight-300;
 }

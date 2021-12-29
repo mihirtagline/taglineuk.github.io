@@ -176,6 +176,11 @@
         max-width: 500px;
         max-height: 500px;
     }
+    .dating_file {
+        right: 0;
+        max-width: 650px;
+        max-height: 650px;
+    }
 }
 
 
@@ -295,6 +300,10 @@
     .travel_file {
         max-width: 450px;
         max-height: 450px;
+    }
+    .dating_file {
+        max-width: 550px;
+        max-height: 550px;
     }
 }
 
