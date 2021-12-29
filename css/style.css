@@ -2314,6 +2314,34 @@ video {
           box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
 }
 
+.related_box_1 {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.related_box {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 12.35px 0.65px rgba(71, 71, 71, 0.2);
+  box-shadow: 0 0 12.35px 0.65px rgba(71, 71, 71, 0.2);
+  padding: 10px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.related_box:hover {
+  background: linear-gradient(93.97deg, #EB4D75 0%, #FDA085 100%);
+}
+
+.related_box_name {
+  font-size: 18px;
+  margin: 16px 0px 10px;
+  font-weight: 300;
+}
+
 .dev_process {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2441,71 +2469,5 @@ video {
 .solution_item li:hover {
   color: #e53e30;
   cursor: pointer;
-}
-
-.feature_tabs .nav-pills .nav-link.active {
-  color: #e53e30;
-  background-color: transparent;
-}
-
-.feature_tabs .nav-pills .nav-link {
-  color: #000;
-}
-
-.feature_tabs .nav-pills .nav-link:before {
-  content: '';
-  position: absolute;
-  border: 1px solid #1568A6;
-  left: 0px;
-  right: 0;
-  width: 10px;
-  height: 10px;
-  border-radius: 50px;
-  margin-top: 7px;
-}
-
-.feature_tabs .nav-pills .nav-link:before .active {
-  border: 1px solid #e53e30;
-}
-
-.feature_tabs .nav-pills .nav-link:hover {
-  color: #e53e30;
-}
-
-.feature_tabs .nav-pills .nav-link:hover:before {
-  border: 1px solid #e53e30;
-}
-
-.features_img {
-  display: block;
-  margin: 0 auto;
-}
-
-.related_box_1 {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.related_box {
-  background-color: #fff;
-  -webkit-box-shadow: 0 0 12.35px 0.65px rgba(71, 71, 71, 0.2);
-  box-shadow: 0 0 12.35px 0.65px rgba(71, 71, 71, 0.2);
-  padding: 10px;
-  position: relative;
-  margin: 0 auto;
-}
-
-.related_box:hover {
-  background: linear-gradient(93.97deg, #EB4D75 0%, #FDA085 100%);
-}
-
-.related_box_name {
-  font-size: 18px;
-  margin: 16px 0px 10px;
-  font-weight: 300;
 }
 /*# sourceMappingURL=style.css.map */
