@@ -181,6 +181,10 @@
         max-width: 650px;
         max-height: 650px;
     }
+    .education_file {
+        max-width: 550px;
+        max-height: 550px;
+    }
 }
 
 
@@ -304,6 +308,10 @@
     .dating_file {
         max-width: 550px;
         max-height: 550px;
+    }
+    .education_file {
+        max-width: 450px;
+        max-height: 450px;
     }
 }
 

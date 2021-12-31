@@ -303,6 +303,16 @@ dating_animation = bodymovin.loadAnimation({
     path: 'animation/dating.json'
 });
 
+// education json file
+education = document.getElementById("education");
+education_animation = bodymovin.loadAnimation({
+    wrapper: education,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/education.json'
+});
+
 
 // counterwrap js
 

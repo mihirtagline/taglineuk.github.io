@@ -2227,6 +2227,13 @@ video {
   max-height: 850px;
 }
 
+.education_file {
+  right: 5%;
+  top: 150px;
+  max-width: 650px;
+  max-height: 650px;
+}
+
 .industry_text h2 {
   font-size: 38px;
   line-height: 50px;
