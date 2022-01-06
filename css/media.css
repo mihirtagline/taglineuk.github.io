@@ -55,6 +55,10 @@
     .travel_file {
         right: 5%;
     }
+    .fitness_file {
+        max-width: 650px;
+        max-height: 650px;
+    }
 }
 
 
@@ -185,6 +189,14 @@
         max-width: 550px;
         max-height: 550px;
     }
+    .event_file {
+        max-width: 550px;
+        max-height: 550px;
+    }
+    .fitness_file {
+        max-width: 600px;
+        max-height: 600px;
+    }
 }
 
 
@@ -313,6 +325,14 @@
         max-width: 450px;
         max-height: 450px;
     }
+    .event_file {
+        max-width: 450px;
+        max-height: 450px;
+    }
+    .fitness_file {
+        max-width: 550px;
+        max-height: 550px;
+    }
 }
 
 
@@ -324,6 +344,9 @@
     .food_file {
         max-width: 550px;
         max-height: 550px;
+    }
+    .fitness_file {
+        right: 0;
     }
 }
 
@@ -514,6 +537,10 @@
     .nav-pills-custom .nav-link.active::before {
         opacity: 1;
     }
+    /* blog-1 css */
+    .categories_tabs .nav-link {
+        padding: 8px 12px;
+    }
 }
 
 
@@ -557,6 +584,10 @@
     }
     .recent_post {
         margin-top: 0px;
+    }
+    /* blog-1 css */
+    .categories_tabs .nav-tabs {
+        justify-content: normal;
     }
     /* blog detail css */
     .header_img {
@@ -1510,7 +1541,7 @@
         font-size: 14px;
     }
     .card_body {
-        padding: 16px;
+        padding: 16px 12px;
     }
     .card_body h5 {
         font-size: 16px;
@@ -1553,6 +1584,13 @@
     }
     .pagination .page-link img {
         width: 24px;
+    }
+    /* blog-1 css */
+    .post_stats a {
+        line-height: 22px;
+    }
+    .categories_tabs .nav-link {
+        font-size: 14px;
     }
     /* blog-detail css */
     .header_text {

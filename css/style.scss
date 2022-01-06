@@ -133,6 +133,7 @@ video {
     background-color: #E53E30;
     display: inline-block;
     padding: 8px 30px;
+    // padding: 8px 20px;
     border-radius: 100px;
     font-size: 18px;
     overflow: hidden;
@@ -615,13 +616,12 @@ video {
     cursor: pointer;
 }
 
-.blog_btn {
-    padding: 8px 20px;
-    i {
-        padding-left: 5px;
-    }
-}
-
+// .blog_btn {
+//     padding: 8px 20px;
+//     i {
+//         padding-left: 5px;
+//     }
+// }
 .about_wrap {
     padding-left: 65px;
     max-width: 507px;
@@ -1374,6 +1374,41 @@ video {
 }
 
 // start blog css
+.navbar-nav {
+    li {
+        &:hover {
+            >ul.dropdown-menu {
+                display: block;
+                transition: all 0.5s;
+            }
+        }
+    }
+}
+
+.dropdown-submenu {
+    position: relative;
+    >.dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: 0px;
+        transition: all 0.5s;
+    }
+}
+
+.dropdown-menu {
+    >li {
+        >a {
+            &:hover {
+                &:after {
+                    transition: all 0.5s;
+                    text-decoration: underline;
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+    }
+}
+
 //01. start banner style
 .blog_text {
     p {
@@ -1431,12 +1466,14 @@ video {
         font-weight: 600;
         line-height: 35px;
         margin: 0;
+        color: #6F7D8C;
     }
     p {
         font-size: $comman_text;
         font-family: $font-family-Roboto;
         margin: 18px 0px;
         line-height: 30px;
+        color: #6F7D8C;
         font-weight: $font-weight-300;
     }
 }
@@ -1531,7 +1568,7 @@ video {
     text-transform: uppercase;
 }
 
-// 0.start other blog post css
+// 05.start other blog post css
 .border_bottom {
     border-bottom: 1px solid #d7d7d7;
 }
@@ -1540,19 +1577,65 @@ video {
     padding-bottom: 16px;
 }
 
-.pagination {
-    margin-top: 50px;
-    .page-link {
-        border: 0;
-        font-weight: $font-weight-400;
-        font-family: $font-family-Roboto;
-        font-size: 30px;
-        padding: 0px 12px;
-        &:hover {
-            z-index: 2;
-            color: $theme-red !important;
-            background-color: transparent;
+// .pagination {
+//     margin-top: 50px;
+//     .page-link {
+//         border: 0;
+//         font-weight: $font-weight-400;
+//         font-family: $font-family-Roboto;
+//         font-size: 30px;
+//         padding: 0px 12px;
+//         &:hover {
+//             z-index: 2;
+//             color: $theme-red !important;
+//             background-color: transparent;
+//         }
+//     }
+// }
+// blog-1 css
+// 01. start resend post css
+.post_stats {
+    a {
+        padding-top: 16px;
+        line-height: 26px;
+        font-weight: 500;
+    }
+    span {
+        font-size: 12px;
+    }
+}
+
+.categories_tabs {
+    .nav {
+        justify-content: space-between;
+    }
+    .nav-tabs {
+        border-bottom: 2px solid #DDD;
+        .nav-link.active {
+            color: #000;
+            border-color: transparent;
+            border-bottom: 2px solid #000;
+            // &:hover {
+            //     border-bottom: 2px solid #000;
+            // }
         }
+    }
+    .nav-link {
+        font-weight: 500;
+        color: #6F7D8C;
+        &:focus {
+            border-color: transparent;
+        }
+        &:hover {
+            border-color: transparent;
+        }
+    }
+    .tab-pane.fade {
+        transition: all 0.5s;
+        transform: translateY(16px);
+    }
+    .tab-pane.fade.show {
+        transform: translateY(0px);
     }
 }
 
@@ -2200,6 +2283,20 @@ video {
     max-height: 650px;
 }
 
+.event_file {
+    right: 5%;
+    top: 180px;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.fitness_file {
+    right: 5%;
+    top: 50px;
+    max-width: 750px;
+    max-height: 750px;
+}
+
 // ======================================
 // start industry css
 // 01. start banner css
@@ -2309,6 +2406,20 @@ video {
     font-weight: $font-weight-300;
 }
 
+// ------------------------------
+.solution_item {
+    list-style: inside circle;
+    li {
+        font-size: 15px;
+        margin-bottom: 10px;
+        font-weight: $font-weight-300;
+        &:hover {
+            color: $theme-red;
+            cursor: pointer;
+        }
+    }
+}
+
 // start development methodology css
 // 01. start work css
 .dev_process {
@@ -2408,53 +2519,16 @@ video {
     z-index: -1;
 }
 
-// ------------------------------
-.solution_item {
-    list-style: inside circle;
-    li {
-        margin-bottom: 10px;
-        font-weight: $font-weight-300;
-        &:hover {
-            color: $theme-red;
-            cursor: pointer;
-        }
+// ------------------------
+.page-link {
+    background-color: transparent;
+    border: 1px solid transparent;
+    &:hover {
+        background-color: transparent;
+        border: 1px solid transparent;
     }
 }
 
-// =================================================
-// .feature_tabs {
-//     .nav-pills {
-//         .nav-link.active {
-//             color: $theme-red;
-//             background-color: transparent;
-//         }
-//         .nav-link {
-//             color: $theme-black;
-//             &:before {
-//                 content: '';
-//                 position: absolute;
-//                 border: 1px solid #1568A6;
-//                 left: 0px;
-//                 right: 0;
-//                 width: 10px;
-//                 height: 10px;
-//                 border-radius: 50px;
-//                 margin-top: 7px;
-//                 .active {
-//                     border: 1px solid $theme-red;
-//                 }
-//             }
-//             &:hover {
-//                 color: $theme-red;
-//                 &:before {
-//                     border: 1px solid $theme-red;
-//                 }
-//             }
-//         }
-//     }
-// }
-// .features_img {
-//     display: block;
-//     margin: 0 auto;
-// }
-// ======================================
+.post_text_inner {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 15%);
+}

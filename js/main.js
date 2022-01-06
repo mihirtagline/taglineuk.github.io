@@ -313,6 +313,25 @@ education_animation = bodymovin.loadAnimation({
     path: 'animation/education.json'
 });
 
+// event json file
+event = document.getElementById("event");
+event_animation = bodymovin.loadAnimation({
+    wrapper: event,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/event.json'
+});
+
+// fitness json file
+fitness = document.getElementById("fitness");
+fitness_animation = bodymovin.loadAnimation({
+    wrapper: fitness,
+    animType: "svg",
+    loop: true,
+    autoplay: true,
+    path: 'animation/fitness.json'
+});
 
 // counterwrap js
 
@@ -329,7 +348,7 @@ $('.slider-for').slick({
     arrows: false,
     fade: true,
     autoplay: false,
-    // speed: 800,
+    speed: 800,
     asNavFor: '.slider-nav',
 });
 $('.slider-nav').slick({
@@ -420,3 +439,17 @@ $slickEl.slick({
         }
     }]
 });
+
+// =====================
+
+// $(".card").swipe({
+//     swipeLeft: function(event, direction, distance, duration, fingerCount) {
+//         $(".nav-tabs li.active").next('li').find('a').tab('show');
+//     },
+//     swipeRight: function(event, direction, distance, duration, fingerCount) {
+//         $(".nav-tabs li.active").prev('li').find('a').tab('show');
+//     },
+// });
+
+//created by Hassan Rana
+//hassanrana300@gmal.com
