@@ -2529,6 +2529,49 @@ video {
     }
 }
 
-.post_text_inner {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 15%);
-}
+// .post_img {
+//     img {
+//         height: 260px;
+//     }
+// }
+// .post_text {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     background-color: $theme-white;
+//     top: 10px;
+//     width: 55%;
+//     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+//     .post_text_inner {
+//         padding: 18px;
+//         h4 {
+//             font-size: 23px;
+//             font-weight: 600;
+//             line-height: 35px;
+//         }
+//         p {
+//             margin: 16px 0px;
+//             color: #6F7D8C;
+//             line-height: 28px;
+//             font-weight: $font-weight-300;
+//             font-family: $font-family-Roboto;
+//         }
+//     }
+// }
+// .tc_post_publish_date {
+//     position: absolute;
+//     background-color: #fff;
+//     padding: 2px 12px;
+//     text-align: center;
+//     top: 10px;
+//     left: 30px;
+//     .tc_newpost_day {
+//         font-size: 22px;
+//         font-weight: $font-weight-700;
+//     }
+//     .tc_newpost_month {
+//         text-transform: uppercase;
+//         font-weight: 600;
+//         font-size: 12px;
+//     }
+// }
