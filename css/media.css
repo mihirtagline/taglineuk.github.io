@@ -1240,14 +1240,12 @@
     .benefits p {
         font-size: 18px
     }
+    .heading_s3 {
+        font-size: 26px;
+    }
     .new_point h4 {
         font-size: 20px;
     }
-    /* .panel-title>a,
-    .panel-title>a:active {
-        font-size: 18px;
-        line-height: 28px;
-    } */
     .faq .faq-list a {
         font-size: 18px;
     }
@@ -1847,13 +1845,6 @@
     .tab_effect p {
         font-size: 12px;
     }
-    /* .wrapper {
-        width: 250px;
-        height: 38px;
-    }
-    .wrapper .option span {
-        font-size: 14px;
-    } */
     .contacts_form .form_text {
         font-size: 14px;
     }

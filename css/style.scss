@@ -1735,13 +1735,16 @@ video {
 
 .social_icon {
     position: relative;
+    z-index: 9;
     ul {
         position: absolute;
         top: 0;
         right: 100%;
         left: auto;
         min-width: 11.5rem;
-        z-index: -1;
+        // z-index: -1;
+        z-index: 0;
+        visibility:hidden;
         li {
             margin-right: 0px;
             display: inline-block;
@@ -2025,6 +2028,12 @@ video {
         font-size: 15px;
         font-weight: $font-weight-300;
     }
+}
+
+.heading_s3 {
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: $font-weight-700;
 }
 
 // 06.start engement css
