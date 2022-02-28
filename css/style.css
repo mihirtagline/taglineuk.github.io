@@ -841,7 +841,7 @@ video {
   margin-bottom: 16px;
 }
 
-.abc {
+.contacts_forms {
   position: absolute;
   top: -20px;
   left: 50%;
@@ -857,7 +857,7 @@ video {
   padding: 8px 60px;
 }
 
-.abc:before {
+.contacts_forms:before {
   display: inline-block;
   width: 0;
   height: 0;
@@ -871,7 +871,7 @@ video {
   top: 0px;
 }
 
-.abc:after {
+.contacts_forms:after {
   display: inline-block;
   width: 0;
   height: 0;
@@ -2611,7 +2611,7 @@ video {
 }
 
 .hire-banner-block h1 {
-  max-width: 295px;
+  max-width: 350px;
   font-weight: 600;
 }
 
@@ -2624,9 +2624,15 @@ video {
   content: "";
   position: absolute;
   top: -100px;
-  left: 182px;
+  left: 187px;
   border-left: 2px dashed #fff;
   height: 190px;
+}
+
+.rounded-gif {
+  width: 230px;
+  position: relative;
+  z-index: 11;
 }
 
 .plans-card {

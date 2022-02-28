@@ -788,7 +788,7 @@ video {
   }
 }
 
-.abc {
+.contacts_forms {
   position: absolute;
   top: -20px;
   left: 50%;
@@ -827,71 +827,6 @@ video {
     }
 }
 
-// .wrapper {
-//     display: flex;
-//     height: 40px;
-//     width: 300px;
-//     border-radius: 5px;
-//     margin: 0 auto;
-//     .option {
-//         background: #fff;
-//         height: 100%;
-//         width: 100%;
-//         display: flex;
-//         align-items: center;
-//         justify-content: space-evenly;
-//         margin: 0 10px;
-//         border-radius: 5px;
-//         cursor: pointer;
-//         border: 2px solid lightgrey;
-//         transition: all 0.3s ease;
-//         .dot {
-//             height: 16px;
-//             width: 16px;
-//             background: #d9d9d9;
-//             border-radius: 50%;
-//             position: relative;
-//             &::before {
-//                 position: absolute;
-//                 content: "";
-//                 top: 4px;
-//                 left: 4px;
-//                 width: 8px;
-//                 height: 8px;
-//                 background: $theme-red;
-//                 border-radius: 50%;
-//                 opacity: 0;
-//                 transform: scale(1.5);
-//                 transition: all 0.3s ease;
-//             }
-//         }
-//         span {
-//             font-size: 16px;
-//             color: #808080;
-//         }
-//     }
-// }
-// input[type="radio"] {
-//     display: none;
-// }
-// #option-1:checked:checked~.option-1,
-// #option-2:checked:checked~.option-2 {
-//     border-color: $theme-red;
-//     background: $theme-red;
-// }
-// #option-1:checked:checked~.option-1 .dot,
-// #option-2:checked:checked~.option-2 .dot {
-//     background: #fff;
-// }
-// #option-1:checked:checked~.option-1 .dot::before,
-// #option-2:checked:checked~.option-2 .dot::before {
-//     opacity: 1;
-//     transform: scale(1);
-// }
-// #option-1:checked:checked~.option-1 span,
-// #option-2:checked:checked~.option-2 span {
-//     color: #fff;
-// }
 [type="radio"] {
   &:checked {
     position: absolute;
@@ -2585,7 +2520,7 @@ video {
 // start banner css
 .hire-banner-block {
   h1 {
-    max-width: 295px;
+    max-width: 350px;
     font-weight: 600;
   }
   .hire-btn {
@@ -2601,10 +2536,16 @@ video {
     content: "";
     position: absolute;
     top: -100px;
-    left: 182px;
+    left: 187px;
     border-left: 2px dashed #fff;
     height: 190px;
   }
+}
+
+.rounded-gif{
+  width: 230px;
+  position: relative;
+  z-index: 11;
 }
 
 // start python expert
